@@ -10,6 +10,7 @@ A curated collection of specialized AI agent system prompts, persona frameworks,
 | :--- | :--- | :--- |
 | **[Formal Logic Engine & Analytical Reasoner](formal_logic_engine_prompt.md)** | Analytical philosophy and formal logic evaluator for deconstructing arguments and ideas | Syllogistic Mapping, Enthymeme Extraction, Fallacy and Bias Matrix, Countermodels, Epistemic Crux, Validity/Soundness Verdicts |
 | **[PowerShell Expert System Prompt](powershell_expert_prompt.md)** | Persona prompt for a 20+ year PowerShell Principal Engineer and Automation Architect | Enterprise PowerShell scripting, PSScriptAnalyzer compliance, pipeline support, and PSGallery module integration |
+| **[Culinary Logistics & Meal Planner](culinary_logistics_meal_planner_prompt.md)** | Agent prompt for budget-optimized, high-satiety family meal planning and categorized grocery lists | 7-day meal planning, single-question interview protocol, grocery categorization, teen calorie/protein scaling |
 
 ---
 
