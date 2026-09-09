@@ -8,16 +8,35 @@ A curated collection of specialized AI agent system prompts, persona frameworks,
 
 | Prompt Name | Description | Key Focus Areas |
 | :--- | :--- | :--- |
-| **[Formal Logic Engine & Analytical Reasoner](formal_logic_engine_prompt.md)** | Analytical philosophy and formal logic evaluator for deconstructing arguments and ideas | Syllogistic Mapping, Enthymeme Extraction, Fallacy Detection, Adversarial Countermodels |
-| **[PowerShell Expert System Prompt](powershell_expert_prompt.md)** | Persona prompt for a 20+ year PowerShell Principal Engineer and Automation Architect | Enterprise PowerShell scripting, PSScriptAnalyzer, Module Development, Advanced Debugging |
-| **[Culinary Logistics & Meal Planner](culinary_logistics_meal_planner_prompt.md)** | Agent prompt for budget-optimized, high-satiety family meal planning and categorized grocery lists | 7-day meal planning, Budget optimization, Nutritional scaling, Grocery categorization |
+| **[Azure Cloud Solutions Architect & Enterprise IaC](azure_cloud_solutions_architect_prompt.md)** | Senior Principal Azure Architect persona covering all Microsoft Azure services, scenario decision matrices, and IaC | Full Azure Service Catalog, Scenario Routing & Decision Matrices, Zero-Trust Architecture, Well-Architected Framework (WAF), Enterprise Landing Zones (CAF), Modular Bicep/Terraform/CLI/PowerShell |
+| **[Formal Logic Engine & Analytical Reasoner](formal_logic_engine_prompt.md)** | Analytical philosophy and formal logic evaluator for deconstructing arguments and ideas | Syllogistic Mapping, Enthymeme Extraction, Fallacy and Bias Matrix, Countermodels, Epistemic Crux, Validity/Soundness Verdicts |
+| **[PowerShell Expert System Prompt](powershell_expert_prompt.md)** | Persona prompt for a 20+ year PowerShell Principal Engineer and Automation Architect | Enterprise PowerShell scripting, PSScriptAnalyzer compliance, pipeline support, and PSGallery module integration |
+| **[Culinary Logistics & Meal Planner](culinary_logistics_meal_planner_prompt.md)** | Agent prompt for budget-optimized, high-satiety family meal planning and categorized grocery lists | 7-day meal planning, single-question interview protocol, grocery categorization, teen calorie/protein scaling |
 | **[Personal Finance Management](personal_finance_management_prompt.md)** | Personal finance management agent for budget planning, expense tracking, debt management, and financial goal setting | Budget planning, Expense tracking, Debt payoff strategies, Financial goal setting, Savings optimization |
+
+---
+
+## Featured Prompt: Azure Cloud Solutions Architect & Enterprise IaC
+
+The **[Azure Cloud Solutions Architect](azure_cloud_solutions_architect_prompt.md)** prompt transforms an AI assistant into a Senior Principal Cloud Solutions Architect and Automation Fellow with deep, authoritative knowledge across the entire Microsoft Azure ecosystem.
+
+### Core Architectural Capabilities:
+1. **Universal Azure Service Catalog & Scenario Decision Engine:** Know exactly *when* and *how* to select the right Azure service across Compute (ACA, AKS, App Service, Functions, Batch, VMs), Networking (vWAN, Front Door, App Gateway, Private Link, Firewall, Bastion), Databases (Cosmos DB, Azure SQL, Postgres/MySQL Flexible Server), Analytics & AI (Microsoft Fabric, Azure OpenAI, AI Search, Synapse, Databricks, Data Factory, Stream Analytics, ADX), Messaging (Service Bus, Event Grid, APIM, Logic Apps), and Hybrid/Edge (Azure Arc, Azure Stack).
+2. **Zero-Trust & Security-by-Default:** Natively designs with Azure Private Endpoints, Managed Identities, Azure Key Vault, Azure Policy, Defender for Cloud, and Least-Privilege RBAC.
+3. **Azure Well-Architected Framework (WAF) & CAF Landing Zones:** Ensures strict alignment with Reliability (Multi-AZ / Multi-region failovers), Security, Cost Optimization, Operational Excellence, and Performance Efficiency.
+4. **Standard 6-Part Enterprise Response Structure:**
+   - **Part 1:** Strategic Architecture & Business Rationale (Trade-off analysis & architecture patterns)
+   - **Part 2:** Service Selection & Decision Matrix (Side-by-side comparison of selected vs discarded services)
+   - **Part 3:** Architecture Topology & Network Flow (Zero-trust private networking & traffic routing)
+   - **Part 4:** Prerequisites & Governance Baseline (Resource providers, RBAC assignments, policies)
+   - **Part 5:** Production-Ready Infrastructure as Code (Bicep, Terraform, Azure CLI, or PowerShell Az)
+   - **Part 6:** Operationalization, Verification & Day-2 Operations (Validation commands, health metrics, DR runbooks)
 
 ---
 
 ## Featured Prompt: Formal Logic Engine & Analytical Reasoner
 
-The **[Formal Logic Engine](formal_logic_engine_prompt.md)** configures an AI model into an objective analytical engine designed to stress-test premises, debate topics, strategic decisions, and logical constructs through formal and informal reasoning frameworks.
+The **[Formal Logic Engine](formal_logic_engine_prompt.md)** configures an AI model into an objective analytical engine designed to stress-test premises, debate topics, strategic decisions, and logical arguments.
 
 ### 7-Stage Analytical Pipeline:
 1. **Taxonomy Classification:** Routes into Deductive, Inductive, Abductive, or Analogical reasoning models.
@@ -32,7 +51,7 @@ The **[Formal Logic Engine](formal_logic_engine_prompt.md)** configures an AI mo
 
 ## How to Use
 
-1. Select any prompt file above (e.g. [`formal_logic_engine_prompt.md`](formal_logic_engine_prompt.md), [`powershell_expert_prompt.md`](powershell_expert_prompt.md), or [`personal_finance_management_prompt.md`](personal_finance_management_prompt.md)).
+1. Select any prompt file above (e.g. [`azure_cloud_solutions_architect_prompt.md`](azure_cloud_solutions_architect_prompt.md), [`formal_logic_engine_prompt.md`](formal_logic_engine_prompt.md), or [`powershell_expert_prompt.md`](powershell_expert_prompt.md)).
 2. Copy the system prompt instructions.
 3. Paste into your AI assistant, system instructions, Custom GPT, or autonomous agent framework.
-4. Provide the topic, premise, or script requirements to execute.
+4. Provide the workload scenario, requirements, or architecture challenge to execute.
