@@ -8,11 +8,30 @@ A curated collection of specialized AI agent system prompts, persona frameworks,
 
 | Prompt Name | Description | Key Focus Areas |
 | :--- | :--- | :--- |
+| **[Microsoft Enterprise AI Architect & Mentor](microsoft_ai_architect_mentor_prompt.md)** | Authoritative system prompt for an Enterprise AI Architect specializing in M365 Copilot, Copilot Studio, Azure AI Foundry, and Semantic Kernel | Dual-phase verification protocol, Declarative & Custom Engine Agents, Azure AI Search Hybrid RAG, Multi-agent swarms, Entra ID OBO security, Purview governance |
 | **[Azure Cloud Solutions Architect & Enterprise IaC](azure_cloud_solutions_architect_prompt.md)** | Senior Principal Azure Architect persona covering all Microsoft Azure services, scenario decision matrices, and IaC | Full Azure Service Catalog, Scenario Routing & Decision Matrices, Zero-Trust Architecture, Well-Architected Framework (WAF), Enterprise Landing Zones (CAF), Modular Bicep/Terraform/CLI/PowerShell |
 | **[Formal Logic Engine & Analytical Reasoner](formal_logic_engine_prompt.md)** | Analytical philosophy and formal logic evaluator for deconstructing arguments and ideas | Syllogistic Mapping, Enthymeme Extraction, Fallacy and Bias Matrix, Countermodels, Epistemic Crux, Validity/Soundness Verdicts |
 | **[PowerShell Expert System Prompt](powershell_expert_prompt.md)** | Persona prompt for a 20+ year PowerShell Principal Engineer and Automation Architect | Enterprise PowerShell scripting, PSScriptAnalyzer compliance, pipeline support, and PSGallery module integration |
 | **[Culinary Logistics & Meal Planner](culinary_logistics_meal_planner_prompt.md)** | Agent prompt for budget-optimized, high-satiety family meal planning and categorized grocery lists | 7-day meal planning, single-question interview protocol, grocery categorization, teen calorie/protein scaling |
 | **[Personal Finance Management](personal_finance_management_prompt.md)** | Personal finance management agent for budget planning, expense tracking, debt management, and financial goal setting | Budget planning, Expense tracking, Debt payoff strategies, Financial goal setting, Savings optimization |
+
+---
+
+## Featured Prompt: Microsoft Enterprise AI Architect & Mentor
+
+The **[Microsoft Enterprise AI Architect & Mentor](microsoft_ai_architect_mentor_prompt.md)** prompt configures an AI model into an authoritative, enterprise-grade AI Solutions Architect and technical mentor across the complete Microsoft AI Stack (Microsoft 365 Copilot, Copilot Studio, Azure AI Foundry, Semantic Kernel, and AutoGen).
+
+### Core Architectural Capabilities:
+1. **Mandatory Dual-Phase Execution Protocol:**
+   - **Phase 1: Internal Triple-Check Verification (`<verification>`)**: Enforces an explicit pre-output audit covering product capability fact-checking, assumption/edge-case identification, licensing/cost feasibility, and readiness determination (`[STATUS: SUFFICIENT]` vs `[STATUS: CONTEXT_REQUIRED]`).
+   - **Phase 2: Architectural Delivery or Targeted Scoping**: Either halts to present a structured diagnostic scoping matrix or outputs a comprehensive 6-part enterprise AI blueprint.
+2. **Standard 6-Part Enterprise AI Response Structure:**
+   - **Part 1:** Architecture Topology & Multi-Agent Flow (Mermaid diagrams, zero-trust boundaries, agent coordination patterns)
+   - **Part 2:** Microsoft AI Stack Selection & Trade-Off Matrix (Declarative Agent vs Custom Engine vs Semantic Kernel vs Copilot Studio)
+   - **Part 3:** Security, Identity, Network & Purview Governance (Entra ID OBO flow, Managed Identities, Private Link, Purview DLP, Content Safety)
+   - **Part 4:** Production-Ready Technical Specifications & Artifact Code (`declarativeAgent.json`, OpenAPI 3.0 / MCP schemas, Semantic Kernel C#/Python implementations, Bicep IaC)
+   - **Part 5:** Data Grounding, RAG & Vector Retrieval Pipeline (Hybrid search + Semantic Ranker, Graph connectors, chunking strategies)
+   - **Part 6:** Evaluation, Observability & Day-2 Operations (Azure AI Evaluation harness, OpenTelemetry App Insights tracing, CI/CD release governance)
 
 ---
 
@@ -51,7 +70,7 @@ The **[Formal Logic Engine](formal_logic_engine_prompt.md)** configures an AI mo
 
 ## How to Use
 
-1. Select any prompt file above (e.g. [`azure_cloud_solutions_architect_prompt.md`](azure_cloud_solutions_architect_prompt.md), [`formal_logic_engine_prompt.md`](formal_logic_engine_prompt.md), or [`powershell_expert_prompt.md`](powershell_expert_prompt.md)).
+1. Select any prompt file above (e.g. [`microsoft_ai_architect_mentor_prompt.md`](microsoft_ai_architect_mentor_prompt.md), [`azure_cloud_solutions_architect_prompt.md`](azure_cloud_solutions_architect_prompt.md), [`formal_logic_engine_prompt.md`](formal_logic_engine_prompt.md), or [`powershell_expert_prompt.md`](powershell_expert_prompt.md)).
 2. Copy the system prompt instructions.
 3. Paste into your AI assistant, system instructions, Custom GPT, or autonomous agent framework.
 4. Provide the workload scenario, requirements, or architecture challenge to execute.
