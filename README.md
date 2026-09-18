@@ -25,6 +25,7 @@ A curated collection of specialized AI agent system prompts, persona frameworks,
 | **[Linux Systems Administration Expert](linux_systems_administration_prompt.md)** | Senior Principal Linux Systems Architect covering RHEL/Ubuntu server administration | systemd services, Package management (dnf/apt), LVM/filesystems, SELinux/AppArmor, SSH hardening, Bash scripting, Performance tuning (CPU/memory/disk/network), NFS/iSCSI, Podman/Docker containers |
 | **[Incident Response & Troubleshooting Expert](incident_response_troubleshooting_prompt.md)** | Senior Principal SRE & Incident Commander for structured incident management and root cause analysis | Severity classification (P1-P4), RCA methodologies (5 Whys, Ishikawa), Runbook templates, Blameless post-mortem templates, SLI/SLO/SLA management, War room facilitation, Diagnostic command reference |
 | **[Security & Compliance Hardening Expert](security_compliance_hardening_prompt.md)** | Senior Principal Security Architect for security hardening and regulatory compliance | CIS Benchmarks, NIST 800-53, DISA STIGs, ISO 27001, SOC 2, Zero-Trust architecture, IAM/PAM/PIM, Vulnerability/Patch management, Encryption/PKI, Hardening checklists (Windows/Linux/VMware/Network) |
+| **[Enterprise Data Center Hardware Expert](datacenter_hardware_expert_prompt.md)** | Distinguished 30+ year Data Center Hardware Architect covering server and storage hardware from Lenovo, HPE, Dell, and Cisco | Complete server portfolios (ThinkSystem/ProLiant/PowerEdge/UCS), Storage arrays (PowerStore/Alletra/DE-DM-DG/HyperFlex), CPU/RAM/drive/NIC/RAID selection matrices, Workload-to-hardware blueprints, Vendor comparison, Power/cooling/rack planning, TCO analysis, Tribal knowledge & failure mode awareness |
 
 ---
 
@@ -89,6 +90,19 @@ The **[Incident Response & Troubleshooting Expert](incident_response_troubleshoo
 
 ---
 
+## Featured Prompt: Enterprise Data Center Hardware Expert
+
+The **[Enterprise Data Center Hardware Expert](datacenter_hardware_expert_prompt.md)** prompt configures an AI model into a Distinguished Data Center Hardware Architect with 30+ years of hands-on experience across every generation of enterprise server and storage hardware from Lenovo, HPE, Dell, and Cisco.
+
+### Core Capabilities:
+1. **Complete Server Portfolio Mastery:** Every current-generation server from all four vendors — Lenovo ThinkSystem (SR630/SR650/SR645/SR665/SR850 V3), HPE ProLiant (DL360/DL380/DL385/DL560 Gen11, Synergy), Dell PowerEdge (R660/R760/R6625/R7625/R960/XE9680), and Cisco UCS (C220/C240/C245 M7, X-Series blades).
+2. **Storage Array Decision Engine:** Dell PowerStore/PowerScale/PowerFlex/PowerVault, HPE Alletra (5000/6000/9000/Storage MP)/MSA/StoreOnce, Lenovo DE/DM/DG Series (NetApp OEM), and Cisco HyperFlex/MDS SAN fabric switches.
+3. **Component-Level Expertise:** CPU selection matrices (Intel Xeon vs AMD EPYC by workload), memory population rules (channels, DPC, RDIMM vs LRDIMM), drive selection (NVMe/SAS/NL-SAS with DWPD ratings), RAID level decision matrix, and NIC/HBA selection (1G through 400GbE + InfiniBand + FC HBAs).
+4. **Workload-to-Hardware Blueprints:** Pre-built hardware configurations for VMware clusters, SQL Server OLTP, SAP HANA, VDI, Kubernetes, backup targets, AI/ML GPU servers, and edge deployments.
+5. **30 Years of Tribal Knowledge:** Known failure modes, firmware gotchas, common misconfigurations, vendor strengths/weaknesses, and TCO-optimized decision-making baked into every recommendation.
+
+---
+
 ## How to Use
 
 1. Select any prompt file from the **Prompts Directory** table above.
@@ -109,3 +123,4 @@ For maximum effectiveness, combine related prompts based on your current task:
 | Security audit preparation | Security & Compliance Hardening | Windows Server, Linux Admin, Networking |
 | Production incident handling | Incident Response & Troubleshooting | (any technology-specific prompt) |
 | Infrastructure project planning | IT Project Management Expert | (any technology-specific prompt) |
+| Hardware procurement & data center design | Data Center Hardware Expert | VMware Expert, Windows Server Expert, Networking Expert |
