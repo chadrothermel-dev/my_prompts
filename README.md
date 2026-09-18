@@ -26,6 +26,7 @@ A curated collection of specialized AI agent system prompts, persona frameworks,
 | **[Incident Response & Troubleshooting Expert](incident_response_troubleshooting_prompt.md)** | Senior Principal SRE & Incident Commander for structured incident management and root cause analysis | Severity classification (P1-P4), RCA methodologies (5 Whys, Ishikawa), Runbook templates, Blameless post-mortem templates, SLI/SLO/SLA management, War room facilitation, Diagnostic command reference |
 | **[Security & Compliance Hardening Expert](security_compliance_hardening_prompt.md)** | Senior Principal Security Architect for security hardening and regulatory compliance | CIS Benchmarks, NIST 800-53, DISA STIGs, ISO 27001, SOC 2, Zero-Trust architecture, IAM/PAM/PIM, Vulnerability/Patch management, Encryption/PKI, Hardening checklists (Windows/Linux/VMware/Network) |
 | **[Enterprise Data Center Hardware Expert](datacenter_hardware_expert_prompt.md)** | Distinguished 30+ year Data Center Hardware Architect covering server and storage hardware from Lenovo, HPE, Dell, and Cisco | Complete server portfolios (ThinkSystem/ProLiant/PowerEdge/UCS), Storage arrays (PowerStore/Alletra/DE-DM-DG/HyperFlex), CPU/RAM/drive/NIC/RAID selection matrices, Workload-to-hardware blueprints, Vendor comparison, Power/cooling/rack planning, TCO analysis, Tribal knowledge & failure mode awareness |
+| **[Cribl Pipeline Architect (Elastic & Sentinel)](cribl_elastic_sentinel_pipeline_prompt.md)** | Senior Principal Observability Pipeline Architect specializing in dual-routing pipelines to Elastic Serverless Cloud and Microsoft Sentinel | Pack-first design (Dispensary research), no-code-first native function priority, ECS compliance (`data_stream.*`, `event.*`), Sentinel DCR/DCE & ASIM/CommonSecurityLog mapping, Clone/Output Router patterns, SIEM cost reduction |
 
 ---
 
@@ -103,6 +104,20 @@ The **[Enterprise Data Center Hardware Expert](datacenter_hardware_expert_prompt
 
 ---
 
+## Featured Prompt: Cribl Pipeline Architect (Elastic Serverless & Sentinel)
+
+The **[Cribl Pipeline Architect](cribl_elastic_sentinel_pipeline_prompt.md)** prompt configures an AI assistant into a specialized Senior Observability Pipeline Architect focused exclusively on building production-grade, highly maintainable Cribl Stream pipelines routing logs simultaneously to **Elastic Serverless Cloud** and **Microsoft Sentinel**.
+
+### Core Capabilities:
+1. **Pack-First Evaluation:** Actively researches and prioritizes Cribl Pack Dispensary solutions (e.g., `cribl-microsoft-sentinel`, `cribl-elastic-output`, `cribl-palo-alto-networks`, `cribl-crowdstrike-fdr`, `cribl-windows-events`) before custom pipelines are built, extending them cleanly via Pipeline Chaining.
+2. **No-Code-First Maintainability:** Strictly minimizes/avoids the `Code` function in favor of native pipeline functions (`Eval`, `Rename`, `Lookup`, `Parser`, `Grok`, `Mask`, `Keep`, `Drop`) with clear comments and descriptive function labeling so any downstream administrator can easily maintain it.
+3. **Dual-Destination Schema Compliance:**
+   - **Elastic Serverless Cloud:** Strict ECS (Elastic Common Schema v8/v9) mapping, ISO 8601 `@timestamp`, automatic `data_stream.type`, `data_stream.dataset`, `data_stream.namespace` routing, and correlation arrays (`related.ip`, `related.user`).
+   - **Microsoft Sentinel:** Modern Azure Monitor Logs Ingestion API (DCR/DCE) formatting, ASIM schema normalization, and CEF field mapping for `CommonSecurityLog` and custom `_CL` tables.
+4. **Clone & Output Router Architecture:** Blueprints for shared pre-processing (noise reduction, PII masking, GeoIP) followed by cloned fork pipelines tailored to each SIEM's ingestion format and cost tier (Analytics vs Basic).
+
+---
+
 ## How to Use
 
 1. Select any prompt file from the **Prompts Directory** table above.
@@ -119,6 +134,7 @@ For maximum effectiveness, combine related prompts based on your current task:
 | Cloud infrastructure deployment | Azure Cloud Solutions Architect | Terraform Expert, Security & Compliance |
 | On-prem VM environment management | VMware Virtualization Expert | Windows Server Expert, PowerShell Expert |
 | Log pipeline engineering | Cribl Cloud & Stream Expert | Elastic Serverless Cloud Expert |
+| Dual-SIEM log routing & optimization | Cribl Pipeline Architect (Elastic & Sentinel) | Elastic Serverless Cloud, Azure Solutions Architect |
 | Infrastructure automation | Ansible Automation Expert | Linux Admin, Windows Server, Terraform |
 | Security audit preparation | Security & Compliance Hardening | Windows Server, Linux Admin, Networking |
 | Production incident handling | Incident Response & Troubleshooting | (any technology-specific prompt) |
