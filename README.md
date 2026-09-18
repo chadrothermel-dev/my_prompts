@@ -1,6 +1,6 @@
 # My Prompts Repository
 
-A curated collection of specialized AI agent system prompts, persona frameworks, analytical engines, and automation engineering blueprints.
+A curated collection of specialized AI agent system prompts, persona frameworks, analytical engines, and automation engineering blueprints for enterprise systems engineering.
 
 ---
 
@@ -15,77 +15,97 @@ A curated collection of specialized AI agent system prompts, persona frameworks,
 | **[PowerShell Expert System Prompt](powershell_expert_prompt.md)** | Persona prompt for a 20+ year PowerShell Principal Engineer and Automation Architect | Enterprise PowerShell scripting, PSScriptAnalyzer compliance, pipeline support, and PSGallery module integration |
 | **[Culinary Logistics & Meal Planner](culinary_logistics_meal_planner_prompt.md)** | Agent prompt for budget-optimized, high-satiety family meal planning and categorized grocery lists | 7-day meal planning, single-question interview protocol, grocery categorization, teen calorie/protein scaling |
 | **[Personal Finance Management](personal_finance_management_prompt.md)** | Personal finance management agent for budget planning, expense tracking, debt management, and financial goal setting | Budget planning, Expense tracking, Debt payoff strategies, Financial goal setting, Savings optimization |
+| **[VMware Virtualization Expert](vmware_virtualization_expert_prompt.md)** | Senior Principal Virtualization Architect covering the complete VMware vSphere ecosystem, vSAN, NSX, and Aria operations | ESXi/vCenter/VCSA, HA/DRS/FT, vMotion, vSAN architecture, Distributed Switches, NSX micro-segmentation, Aria Operations, HCX migrations, PowerCLI automation, esxtop troubleshooting |
+| **[Elastic Serverless Cloud & Stack Expert](elastic_serverless_cloud_prompt.md)** | Senior Observability & Security Analytics Architect for both Elastic Cloud Serverless and self-managed Elastic Stack | Elasticsearch cluster architecture, KQL/ES\|QL/Query DSL/EQL query languages, Ingest pipelines, Elastic Agent/Fleet, SIEM detection rules, MITRE ATT&CK mapping, APM, ILM policies, Kibana dashboards |
+| **[Ansible Automation Expert](ansible_automation_expert_prompt.md)** | Senior Principal Automation Architect covering the complete Ansible ecosystem for Windows and Linux automation | Playbook design, Roles/Collections, AWX/AAP, Inventory management, Jinja2 templating, 22-level variable precedence, Vault, Windows/Linux module ecosystem, idempotency enforcement, Molecule testing |
+| **[Terraform Infrastructure Expert](terraform_infrastructure_expert_prompt.md)** | Senior Principal IaC Architect for multi-provider Terraform across cloud and on-premises environments | HCL deep-dive, Provider ecosystem (Azure/AWS/VMware/on-prem), State management, Module design patterns, Workspaces, Terragrunt, CI/CD pipelines, Policy-as-Code (Sentinel/OPA), drift detection |
+| **[Windows Server Expert](windows_server_expert_prompt.md)** | Senior Principal Windows Platform Architect covering the complete Windows Server ecosystem | AD DS/FSMO/replication, GPO (LSDOU), DNS/DHCP, Failover Clustering, Hyper-V, IIS, Storage Spaces Direct, WSUS, Certificate Services (PKI), LAPS, CIS/STIG hardening, PowerShell cmdlet reference |
+| **[IT Project Management Expert](project_management_expert_prompt.md)** | Senior IT Project Management Architect with ITIL expertise for infrastructure project delivery | Agile/Scrum/Kanban, ITIL 4 service management, Change/Incident/Problem management, RACI matrices, Risk registers, EVM metrics, Stakeholder communication templates, Azure DevOps Boards integration |
+| **[Enterprise Networking Infrastructure Expert](networking_infrastructure_expert_prompt.md)** | Senior Principal Network Architect covering the complete enterprise networking stack | OSI model, TCP/IP protocols, VLANs/STP/LACP, OSPF/BGP/EIGRP routing, Palo Alto/Fortinet firewalls, IPSec/SSL VPN, DNS/DHCP architecture, F5 load balancing, SD-WAN, Wireshark analysis, 802.1X NAC |
+| **[Linux Systems Administration Expert](linux_systems_administration_prompt.md)** | Senior Principal Linux Systems Architect covering RHEL/Ubuntu server administration | systemd services, Package management (dnf/apt), LVM/filesystems, SELinux/AppArmor, SSH hardening, Bash scripting, Performance tuning (CPU/memory/disk/network), NFS/iSCSI, Podman/Docker containers |
+| **[Incident Response & Troubleshooting Expert](incident_response_troubleshooting_prompt.md)** | Senior Principal SRE & Incident Commander for structured incident management and root cause analysis | Severity classification (P1-P4), RCA methodologies (5 Whys, Ishikawa), Runbook templates, Blameless post-mortem templates, SLI/SLO/SLA management, War room facilitation, Diagnostic command reference |
+| **[Security & Compliance Hardening Expert](security_compliance_hardening_prompt.md)** | Senior Principal Security Architect for security hardening and regulatory compliance | CIS Benchmarks, NIST 800-53, DISA STIGs, ISO 27001, SOC 2, Zero-Trust architecture, IAM/PAM/PIM, Vulnerability/Patch management, Encryption/PKI, Hardening checklists (Windows/Linux/VMware/Network) |
 
 ---
 
-## Featured Prompt: Microsoft Enterprise AI Architect & Mentor
+## Featured Prompt: VMware Virtualization Expert
 
-The **[Microsoft Enterprise AI Architect & Mentor](microsoft_ai_architect_mentor_prompt.md)** prompt configures an AI model into an authoritative, enterprise-grade AI Solutions Architect and technical mentor across the complete Microsoft AI Stack (Microsoft 365 Copilot, Copilot Studio, Azure AI Foundry, Semantic Kernel, and AutoGen).
-
-### Core Architectural Capabilities:
-1. **Mandatory Dual-Phase Execution Protocol:**
-   - **Phase 1: Internal Triple-Check Verification (`<verification>`)**: Enforces an explicit pre-output audit covering product capability fact-checking, assumption/edge-case identification, licensing/cost feasibility, and readiness determination (`[STATUS: SUFFICIENT]` vs `[STATUS: CONTEXT_REQUIRED]`).
-   - **Phase 2: Architectural Delivery or Targeted Scoping**: Either halts to present a structured diagnostic scoping matrix or outputs a comprehensive 6-part enterprise AI blueprint.
-2. **Standard 6-Part Enterprise AI Response Structure:**
-   - **Part 1:** Architecture Topology & Multi-Agent Flow (Mermaid diagrams, zero-trust boundaries, agent coordination patterns)
-   - **Part 2:** Microsoft AI Stack Selection & Trade-Off Matrix (Declarative Agent vs Custom Engine vs Semantic Kernel vs Copilot Studio)
-   - **Part 3:** Security, Identity, Network & Purview Governance (Entra ID OBO flow, Managed Identities, Private Link, Purview DLP, Content Safety)
-   - **Part 4:** Production-Ready Technical Specifications & Artifact Code (`declarativeAgent.json`, OpenAPI 3.0 / MCP schemas, Semantic Kernel C#/Python implementations, Bicep IaC)
-   - **Part 5:** Data Grounding, RAG & Vector Retrieval Pipeline (Hybrid search + Semantic Ranker, Graph connectors, chunking strategies)
-   - **Part 6:** Evaluation, Observability & Day-2 Operations (Azure AI Evaluation harness, OpenTelemetry App Insights tracing, CI/CD release governance)
-
----
-
-## Featured Prompt: Cribl Cloud & Stream Expert
-
-The **[Cribl Cloud & Stream Expert](cribl_cloud_expert_prompt.md)** prompt configures an AI model into a Senior Principal Observability Pipeline Architect with complete mastery of the Cribl product suite (Cribl Stream, Cribl Cloud, Cribl Edge, Cribl Lake, and Cribl Search).
+The **[VMware Virtualization Expert](vmware_virtualization_expert_prompt.md)** prompt configures an AI model into a Senior Principal Virtualization Architect with complete mastery of the VMware vSphere ecosystem.
 
 ### Core Capabilities:
-1. **Complete Pipeline Function Mastery:** Knows every pipeline function (Drop, Eval, Mask, Sampling, Dynamic Sampling, Suppress, Lookup, GeoIP, Regex Extract, Parser, Aggregations, Publish Metrics, Chain, Clone, Serialize, CEF Serializer, JSON/XML Unroll, and more), including exact configuration parameters and optimal ordering.
-2. **Mandatory Pipeline Optimization Ordering:** Enforces a strict 6-stage pipeline architecture: Filter & Reduce → Parse & Extract → Enrich & Transform → Secure & Comply → Aggregate & Convert → Route & Output.
-3. **Full Source/Destination Catalog:** Covers every supported input (Syslog, HTTP/S, OTLP, AWS Kinesis/S3/SQS, GCP Pub/Sub, Azure Event Hubs, Splunk HEC/S2S, Kafka, CrowdStrike, O365) and output (Splunk, Datadog, Elasticsearch, Sentinel, S3, Cribl Lake, and 30+ more).
-4. **Cribl Expression Language & C.\* Methods:** Complete reference for JavaScript expressions, `C.Lookup`, `C.Mask`, `C.Crypto`, `C.Net`, `C.Text`, `C.Time`, `C.env`, `C.vars`, and all internal fields (`_raw`, `_time`, `__inputId`, `__outputId`, `__srcIpPort`).
-5. **Data Reduction Blueprints:** Delivers estimated reduction impact assessments (typically 50-80%) with technique-by-technique breakdowns for any log source.
-6. **Pack-First Design:** Always checks the Cribl Pack Dispensary for pre-built, community-validated configurations before designing custom pipelines.
+1. **Complete vSphere Platform Mastery:** ESXi hypervisor internals (VMkernel, DCUI, host profiles), vCenter Server (VCSA, SSO, Enhanced Linked Mode), VM lifecycle management (hardware versions, snapshots, templates, content libraries).
+2. **High Availability & Resource Management:** HA architecture (heartbeat networks, admission control, slot calculations), DRS (migration thresholds, affinity/anti-affinity rules), Fault Tolerance, vMotion/Storage vMotion/Cross-vCenter vMotion.
+3. **Storage Architecture:** VMFS vs NFS vs vVols decision matrices, vSAN (disk groups, hybrid vs all-flash, ESA, storage policies, stretched clusters), SPBM policy-based management.
+4. **Networking:** Standard Switch vs Distributed Switch comparison, NSX micro-segmentation and distributed firewalls, NIOC, VLAN tagging modes.
+5. **PowerCLI Automation:** Production-ready PowerCLI examples for every operational task.
 
 ---
 
-## Featured Prompt: Azure Cloud Solutions Architect & Enterprise IaC
+## Featured Prompt: Elastic Serverless Cloud & Stack Expert
 
-The **[Azure Cloud Solutions Architect](azure_cloud_solutions_architect_prompt.md)** prompt transforms an AI assistant into a Senior Principal Cloud Solutions Architect and Automation Fellow with deep, authoritative knowledge across the entire Microsoft Azure ecosystem.
+The **[Elastic Serverless Cloud & Stack Expert](elastic_serverless_cloud_prompt.md)** prompt configures an AI model into a Senior Observability & Security Analytics Architect covering both Elastic Cloud Serverless and self-managed Elastic Stack deployments.
 
-### Core Architectural Capabilities:
-1. **Universal Azure Service Catalog & Scenario Decision Engine:** Know exactly *when* and *how* to select the right Azure service across Compute (ACA, AKS, App Service, Functions, Batch, VMs), Networking (vWAN, Front Door, App Gateway, Private Link, Firewall, Bastion), Databases (Cosmos DB, Azure SQL, Postgres/MySQL Flexible Server), Analytics & AI (Microsoft Fabric, Azure OpenAI, AI Search, Synapse, Databricks, Data Factory, Stream Analytics, ADX), Messaging (Service Bus, Event Grid, APIM, Logic Apps), and Hybrid/Edge (Azure Arc, Azure Stack).
-2. **Zero-Trust & Security-by-Default:** Natively designs with Azure Private Endpoints, Managed Identities, Azure Key Vault, Azure Policy, Defender for Cloud, and Least-Privilege RBAC.
-3. **Azure Well-Architected Framework (WAF) & CAF Landing Zones:** Ensures strict alignment with Reliability (Multi-AZ / Multi-region failovers), Security, Cost Optimization, Operational Excellence, and Performance Efficiency.
-4. **Standard 6-Part Enterprise Response Structure:**
-   - **Part 1:** Strategic Architecture & Business Rationale (Trade-off analysis & architecture patterns)
-   - **Part 2:** Service Selection & Decision Matrix (Side-by-side comparison of selected vs discarded services)
-   - **Part 3:** Architecture Topology & Network Flow (Zero-trust private networking & traffic routing)
-   - **Part 4:** Prerequisites & Governance Baseline (Resource providers, RBAC assignments, policies)
-   - **Part 5:** Production-Ready Infrastructure as Code (Bicep, Terraform, Azure CLI, or PowerShell Az)
-   - **Part 6:** Operationalization, Verification & Day-2 Operations (Validation commands, health metrics, DR runbooks)
+### Core Capabilities:
+1. **Complete Query Language Mastery:** KQL, ES|QL, Query DSL, EQL (Event Query Language), and Painless scripting with production-ready examples for each.
+2. **Ingest Pipeline Engineering:** Complete processor reference (grok, dissect, set, rename, convert, geoip, enrich, and more) with conditional processing and failure handling patterns.
+3. **Elastic Security (SIEM):** Detection rule authoring (custom, threshold, EQL, ML, ES|QL), MITRE ATT&CK coverage mapping, timeline investigation, and Elastic Defend endpoint protection.
+4. **Elastic Observability:** APM tracing, log/metrics correlation, SLO management, and alerting framework configuration.
 
 ---
 
-## Featured Prompt: Formal Logic Engine & Analytical Reasoner
+## Featured Prompt: Terraform Infrastructure Expert
 
-The **[Formal Logic Engine](formal_logic_engine_prompt.md)** configures an AI model into an objective analytical engine designed to stress-test premises, debate topics, strategic decisions, and logical arguments.
+The **[Terraform Infrastructure Expert](terraform_infrastructure_expert_prompt.md)** prompt configures an AI model into a Senior Principal IaC Architect with deep expertise in Terraform as a standalone multi-provider infrastructure tool for both cloud and on-premises environments.
 
-### 7-Stage Analytical Pipeline:
-1. **Taxonomy Classification:** Routes into Deductive, Inductive, Abductive, or Analogical reasoning models.
-2. **Standard Form Reconstruction:** Breaks the argument down into explicit premises ($P_1, P_2, \dots$) and derived conclusions ($\vdash C$).
-3. **Hidden Assumption / Enthymeme Extraction:** Pinpoints unstated empirical dependencies and semantic shifts.
-4. **Fallacy and Bias Matrix:** Identifies formal fallacies, informal fallacies (e.g. *Motte-and-Bailey*, *False Dilemma*), and cognitive distortions (*survivorship bias*, *measure surrogation*).
-5. **Adversarial Countermodel:** Constructs the strongest possible counterexample and executes a *reductio ad absurdum* test.
-6. **Epistemic Crux:** Pinpoints the single critical variable upon which the entire claim stands or falls.
-7. **Definitive Verdict & Calibrated Confidence:** Outputs a formal judgment (**Valid/Sound** or **Strong/Cogent**) with an explicit confidence percentage.
+### Core Capabilities:
+1. **Complete HCL Language Reference:** Type system, expressions, built-in functions by category (string, collection, filesystem, encoding, crypto, networking), meta-arguments, and dynamic blocks.
+2. **Multi-Provider Mastery:** Azure, AWS, GCP, VMware vSphere, Palo Alto, Active Directory, and 20+ utility providers with decision matrices for each.
+3. **State Management:** Remote backends, state locking, import workflows, drift detection, moved blocks for safe refactoring.
+4. **Enterprise Patterns:** Module composition, Terragrunt DRY configurations, CI/CD pipelines (GitHub Actions, Azure DevOps, Atlantis), and Policy-as-Code (Sentinel, OPA).
+
+---
+
+## Featured Prompt: Security & Compliance Hardening Expert
+
+The **[Security & Compliance Hardening Expert](security_compliance_hardening_prompt.md)** prompt configures an AI model into a Senior Principal Security Architect specializing in infrastructure hardening and regulatory compliance across heterogeneous environments.
+
+### Core Capabilities:
+1. **Multi-Framework Compliance:** CIS Benchmarks, NIST 800-53 Rev 5, NIST CSF 2.0, DISA STIGs, ISO 27001/27002, SOC 2 Type II, PCI-DSS 4.0, and HIPAA Security Rule.
+2. **Zero-Trust Architecture:** Complete implementation checklists across identity, endpoints, network, data, and applications.
+3. **Hardening Checklists:** Actionable, line-item hardening checklists for Windows Server, Linux (RHEL/Ubuntu), VMware ESXi, and network devices.
+4. **Vulnerability & Patch Management:** CVSS scoring, remediation prioritization, SLA matrices, and patch lifecycle management across Windows, Linux, and VMware.
+
+---
+
+## Featured Prompt: Incident Response & Troubleshooting Expert
+
+The **[Incident Response & Troubleshooting Expert](incident_response_troubleshooting_prompt.md)** prompt configures an AI model into a Senior Principal SRE and Incident Commander for structured incident management, root cause analysis, and operational resilience.
+
+### Core Capabilities:
+1. **Structured RCA Methodologies:** 5 Whys, Fishbone/Ishikawa diagrams, Fault Tree Analysis, and timeline reconstruction with real infrastructure examples.
+2. **Runbook Engineering:** Complete runbook templates for common scenarios (service outage, high CPU, disk critical, certificate expiration, AD replication failure, VPN tunnel down).
+3. **Blameless Post-Mortems:** Full post-mortem template with timeline, root cause, contributing factors, action items, and lessons learned.
+4. **Cross-Platform Diagnostics:** Diagnostic command quick-reference organized by technology (Windows, Linux, Network, VMware, Azure).
 
 ---
 
 ## How to Use
 
-1. Select any prompt file above (e.g. [`cribl_cloud_expert_prompt.md`](cribl_cloud_expert_prompt.md), [`microsoft_ai_architect_mentor_prompt.md`](microsoft_ai_architect_mentor_prompt.md), [`azure_cloud_solutions_architect_prompt.md`](azure_cloud_solutions_architect_prompt.md), [`formal_logic_engine_prompt.md`](formal_logic_engine_prompt.md), or [`powershell_expert_prompt.md`](powershell_expert_prompt.md)).
-2. Copy the system prompt instructions.
-3. Paste into your AI assistant, system instructions, Custom GPT, or autonomous agent framework.
-4. Provide the workload scenario, requirements, or architecture challenge to execute.
+1. Select any prompt file from the **Prompts Directory** table above.
+2. Copy the full system prompt instructions from the selected file.
+3. Paste into your AI assistant's system instructions, Custom GPT configuration, or autonomous agent framework.
+4. Provide the workload scenario, requirements, troubleshooting case, or architecture challenge to execute.
+
+### Recommended Prompt Combinations
+
+For maximum effectiveness, combine related prompts based on your current task:
+
+| Task | Primary Prompt | Supporting Prompt(s) |
+| :--- | :--- | :--- |
+| Cloud infrastructure deployment | Azure Cloud Solutions Architect | Terraform Expert, Security & Compliance |
+| On-prem VM environment management | VMware Virtualization Expert | Windows Server Expert, PowerShell Expert |
+| Log pipeline engineering | Cribl Cloud & Stream Expert | Elastic Serverless Cloud Expert |
+| Infrastructure automation | Ansible Automation Expert | Linux Admin, Windows Server, Terraform |
+| Security audit preparation | Security & Compliance Hardening | Windows Server, Linux Admin, Networking |
+| Production incident handling | Incident Response & Troubleshooting | (any technology-specific prompt) |
+| Infrastructure project planning | IT Project Management Expert | (any technology-specific prompt) |
