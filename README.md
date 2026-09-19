@@ -27,6 +27,11 @@ A curated collection of specialized AI agent system prompts, persona frameworks,
 | **[Security & Compliance Hardening Expert](security_compliance_hardening_prompt.md)** | Senior Principal Security Architect for security hardening and regulatory compliance | CIS Benchmarks, NIST 800-53, DISA STIGs, ISO 27001, SOC 2, Zero-Trust architecture, IAM/PAM/PIM, Vulnerability/Patch management, Encryption/PKI, Hardening checklists (Windows/Linux/VMware/Network) |
 | **[Enterprise Data Center Hardware Expert](datacenter_hardware_expert_prompt.md)** | Distinguished 30+ year Data Center Hardware Architect covering server and storage hardware from Lenovo, HPE, Dell, and Cisco | Complete server portfolios (ThinkSystem/ProLiant/PowerEdge/UCS), Storage arrays (PowerStore/Alletra/DE-DM-DG/HyperFlex), CPU/RAM/drive/NIC/RAID selection matrices, Workload-to-hardware blueprints, Vendor comparison, Power/cooling/rack planning, TCO analysis, Tribal knowledge & failure mode awareness |
 | **[Cribl Pipeline Architect (Elastic & Sentinel)](cribl_elastic_sentinel_pipeline_prompt.md)** | Senior Principal Observability Pipeline Architect specializing in dual-routing pipelines to Elastic Serverless Cloud and Microsoft Sentinel | Pack-first design (Dispensary research), no-code-first native function priority, ECS compliance (`data_stream.*`, `event.*`), Sentinel DCR/DCE & ASIM/CommonSecurityLog mapping, Clone/Output Router patterns, SIEM cost reduction |
+| **[Enterprise BCDR & Backup Architect](bcdr_disaster_recovery_expert_prompt.md)** | Distinguished Enterprise BCDR Architect specializing in mission-critical backup, disaster recovery, and ransomware resilience | Veeam v12+ (Hardened Linux Repositories, SOBR, CDP, SureBackup), Azure Site Recovery (ASR), Azure Backup, Commvault/Cohesity/Data Domain, 3-2-1-1-0 rule, RPO/RTO calculations, ransomware recovery runbooks, automated failover orchestration |
+| **[Kubernetes & Container Platform Engineer](kubernetes_container_platform_prompt.md)** | Senior Principal Kubernetes Architect covering enterprise container infrastructure on-prem and in hybrid cloud | Multi-master control plane HA, etcd snapshot/restore, CNI (Cilium eBPF, Calico), CSI (vSphere CSI, local-path, Ceph), Ingress & MetalLB, GitOps (ArgoCD/Flux), Helm 3, Kyverno/Gatekeeper policies, Day-2 cluster maintenance |
+| **[Cloud FinOps & Cost Optimization Architect](cloud_finops_cost_optimization_prompt.md)** | Principal Cloud FinOps Architect specializing in multi-cloud financial governance, rightsizing, and cloud waste elimination | Azure Reservations & Savings Plans, Azure Hybrid Benefit (AHB), Storage lifecycle tiering math, automated waste hunting (unattached disks, orphan IPs/NICs), Elastic VCU & Cribl credit tuning, tagging governance |
+| **[PKI, TLS/SSL & Certificate Lifecycle Architect](pki_certificate_lifecycle_prompt.md)** | Senior Principal PKI Architect covering enterprise certification authorities, TLS hardening, and certificate automation | Microsoft AD CS multi-tier hierarchy, Certificate Templates, GPO Auto-Enrollment, ACME/SCEP/NDES, Azure Key Vault / HashiCorp Vault, CRL/OCSP responders, OpenSSL CLI encyclopedia, TLS 1.2/1.3 hardening, outage prevention |
+| **[CI/CD & GitOps Infrastructure Pipeline Engineer](cicd_gitops_infrastructure_prompt.md)** | Senior Principal Infrastructure Automation Architect covering automated delivery pipelines for IaC | Multi-stage Azure DevOps YAML pipelines, GitHub Actions with OIDC (workload identity federation), self-hosted runners, quality & security gates (tflint, checkov, PSScriptAnalyzer, Pester), Atlantis GitOps for Terraform, automated drift detection |
 
 ---
 
@@ -118,6 +123,66 @@ The **[Cribl Pipeline Architect](cribl_elastic_sentinel_pipeline_prompt.md)** pr
 
 ---
 
+## Featured Prompt: Enterprise BCDR & Backup Architect
+
+The **[Enterprise BCDR & Backup Architect](bcdr_disaster_recovery_expert_prompt.md)** prompt configures an AI assistant into a Distinguished Enterprise BCDR Architect & Certified Recovery Master specializing in mission-critical backup architecture, disaster recovery orchestration, and ransomware recovery.
+
+### Core Capabilities:
+1. **3-2-1-1-0 Availability Architecture:** Rigorous enforcement of 3 copies, 2 media, 1 offsite, 1 immutable/air-gapped, and 0 errors post-automated verification with mathematical RPO/RTO downtime cost modeling.
+2. **Veeam Backup & Replication v12+ Mastery:** Deep architecture coverage of Hardened Linux Repositories (HLR) with XFS reflink immutability, Scale-Out Backup Repositories (SOBR), Continuous Data Protection (CDP) via vSphere VAIO, and automated SureBackup validation.
+3. **Hybrid & Public Cloud DR:** Azure Site Recovery (ASR) orchestration, Azure Backup Multi-User Authorization (MUA) via Resource Guard, AWS Elastic Disaster Recovery (DRS), and Microsoft 365 backup strategies.
+4. **Ransomware Defense & Clean Room Recovery:** Air-gap topologies (LTO tape, immutable object lock), Isolated Recovery Environments (IRE), and YARA-rule automated malware scanning during restore.
+
+---
+
+## Featured Prompt: Kubernetes & Container Platform Engineer
+
+The **[Kubernetes & Container Platform Engineer](kubernetes_container_platform_prompt.md)** prompt transforms an AI assistant into a Senior Principal Kubernetes Architect & CKA/CKS expert for enterprise container infrastructure on-premises (VMware Tanzu, Red Hat OpenShift, Rancher/RKE2) and in the cloud.
+
+### Core Capabilities:
+1. **Control Plane Resiliency & etcd:** Multi-master topologies, stacked vs. external etcd quorum calculations, disk fsync latency baselines, and full `etcdctl` backup/restore disaster recovery runbooks.
+2. **CNI & Ingress Engineering:** In-depth selection and configuration of Cilium (eBPF, Hubble, BGP), Calico, MetalLB for bare-metal load balancing, Gateway API, and granular default-deny NetworkPolicies.
+3. **CSI Persistent Storage:** Production patterns for VMware vSphere CSI (CNS/FCD), Dell CSI, NetApp Trident, Ceph Rook, and dynamic volume expansion.
+4. **GitOps & Declarative Security:** ArgoCD and Flux v2 multi-tenant patterns, Helm 3 chart authoring, Kyverno and OPA/Gatekeeper policy enforcement, Pod Security Standards (PSS Restricted), and Velero cluster backups.
+
+---
+
+## Featured Prompt: Cloud FinOps & Cost Optimization Architect
+
+The **[Cloud FinOps & Cost Optimization Architect](cloud_finops_cost_optimization_prompt.md)** prompt configures an AI assistant into a Principal Cloud FinOps Architect specializing in multi-cloud financial governance, rightsizing, and automated waste elimination.
+
+### Core Capabilities:
+1. **FinOps Lifecycle & KPIs:** Inform, Optimize, and Operate phases with concrete unit economic modeling, commitment coverage (>80%), and showback/chargeback allocation.
+2. **Azure Rate & Usage Optimization:** 1-yr vs. 3-yr Reservations vs. Savings Plans decision matrices, Azure Hybrid Benefit (AHB) dual-use migration modeling, and Storage Blob lifecycle tiering (Hot/Cool/Cold/Archive) rehydration break-even math.
+3. **Automated Cloud Waste Hunting:** Production Azure Resource Graph KQL queries and PowerShell scripts to hunt unattached managed disks, orphan NICs, disassociated public IPs, and idle gateways.
+4. **Observability Spend Control:** Virtual Compute Unit (VCU) management in Elastic Serverless, Sentinel Analytics vs. Basic tier routing, and Cribl log reduction ROI calculations.
+
+---
+
+## Featured Prompt: PKI, TLS/SSL & Certificate Lifecycle Architect
+
+The **[PKI, TLS/SSL & Certificate Lifecycle Architect](pki_certificate_lifecycle_prompt.md)** prompt transforms an AI assistant into a Senior Principal PKI Architect with deep expertise in enterprise cryptographic infrastructure, TLS hardening, and certificate automation.
+
+### Core Capabilities:
+1. **Microsoft AD CS Architecture:** Two-tier and three-tier hierarchy design (offline Root CA with `CAPolicy.inf` + Enterprise Subordinate CAs), Certificate Templates design, and GPO Auto-Enrollment.
+2. **High-Availability Revocation (CRL & OCSP):** Resilient HTTP-based CRL Distribution Points (CDP), Authority Information Access (AIA), and OCSP responder caching and tuning.
+3. **Automated Lifecycle & ACME:** Internal ACME servers (step-ca, win-acme, Certbot), SCEP/NDES for mobile and network devices, and Azure Key Vault / HashiCorp Vault certificate auto-rotation.
+4. **TLS Hardening & Command Encyclopedia:** Complete OpenSSL CLI and `certutil` command references for CSR generation with SAN, chain validation, format conversions (PEM/PFX/DER), and emergency revocation runbooks.
+
+---
+
+## Featured Prompt: CI/CD & GitOps Infrastructure Pipeline Engineer
+
+The **[CI/CD & GitOps Infrastructure Pipeline Engineer](cicd_gitops_infrastructure_prompt.md)** prompt configures an AI assistant into a Senior Principal Infrastructure Automation Architect specializing in automated delivery pipelines for Terraform, Ansible, PowerShell, and Bicep.
+
+### Core Capabilities:
+1. **Secure Cloud Authentication:** Eliminates static credentials using Azure Workload Identity Federation (OIDC) and AWS AssumeRoleWithWebIdentity in both Azure DevOps and GitHub Actions.
+2. **Multi-Stage Delivery Pipelines:** Production-ready YAML manifests featuring Speculative Plan on PR -> Manual Environment Gates -> Apply on Merge to Main.
+3. **Automated Quality & Security Gates:** Enforces static linting and security scans (`tflint`, `terraform validate`, `checkov`, `tfsec`, `ansible-lint`, `PSScriptAnalyzer`, and `Pester` v5 tests) before infrastructure changes execute.
+4. **GitOps & Drift Detection:** Atlantis pull-request driven automation workflows and scheduled drift detection alerts to catch out-of-band infrastructure modifications.
+
+---
+
 ## How to Use
 
 1. Select any prompt file from the **Prompts Directory** table above.
@@ -140,3 +205,8 @@ For maximum effectiveness, combine related prompts based on your current task:
 | Production incident handling | Incident Response & Troubleshooting | (any technology-specific prompt) |
 | Infrastructure project planning | IT Project Management Expert | (any technology-specific prompt) |
 | Hardware procurement & data center design | Data Center Hardware Expert | VMware Expert, Windows Server Expert, Networking Expert |
+| Disaster recovery & immutable backup design | Enterprise BCDR & Backup Architect | VMware Expert, Windows Server Expert, Azure Solutions Architect |
+| Container platform & Kubernetes operations | Kubernetes & Container Platform Engineer | Linux Admin, Ansible Expert, Enterprise Networking |
+| Cloud cost reduction & FinOps governance | Cloud FinOps & Cost Optimization Architect | Azure Solutions Architect, Terraform Expert |
+| Enterprise PKI, TLS & certificate management | PKI, TLS/SSL & Certificate Lifecycle Architect | Windows Server Expert, Linux Admin, Enterprise Networking |
+| Infrastructure CI/CD & GitOps delivery | CI/CD & GitOps Infrastructure Pipeline Engineer | Terraform Expert, Ansible Expert, PowerShell Expert |
