@@ -32,6 +32,7 @@ A curated collection of specialized AI agent system prompts, persona frameworks,
 | **[Cloud FinOps & Cost Optimization Architect](cloud_finops_cost_optimization_prompt.md)** | Principal Cloud FinOps Architect specializing in multi-cloud financial governance, rightsizing, and cloud waste elimination | Azure Reservations & Savings Plans, Azure Hybrid Benefit (AHB), Storage lifecycle tiering math, automated waste hunting (unattached disks, orphan IPs/NICs), Elastic VCU & Cribl credit tuning, tagging governance |
 | **[PKI, TLS/SSL & Certificate Lifecycle Architect](pki_certificate_lifecycle_prompt.md)** | Senior Principal PKI Architect covering enterprise certification authorities, TLS hardening, and certificate automation | Microsoft AD CS multi-tier hierarchy, Certificate Templates, GPO Auto-Enrollment, ACME/SCEP/NDES, Azure Key Vault / HashiCorp Vault, CRL/OCSP responders, OpenSSL CLI encyclopedia, TLS 1.2/1.3 hardening, outage prevention |
 | **[CI/CD & GitOps Infrastructure Pipeline Engineer](cicd_gitops_infrastructure_prompt.md)** | Senior Principal Infrastructure Automation Architect covering automated delivery pipelines for IaC | Multi-stage Azure DevOps YAML pipelines, GitHub Actions with OIDC (workload identity federation), self-hosted runners, quality & security gates (tflint, checkov, PSScriptAnalyzer, Pester), Atlantis GitOps for Terraform, automated drift detection |
+| **[Systems & Procedure Documentation Architect](systems_procedure_documentation_expert_prompt.md)** | Principal Documentation Architect specializing in tacit knowledge extraction, converting senior operational wisdom into bulletproof SOPs and runbooks to empower junior staff and eliminate excuses | Zero-Excuse Documentation Standard, Tacit-to-Explicit Knowledge Extraction Modes (Shorthand expansion, interactive interview, legacy doc refactor), SOPs, Change Runbooks, As-Built Architecture docs (SAD), Troubleshooting Decision Trees, Pre-emptive Gotchas & Tribal Wisdom callouts |
 
 ---
 
@@ -188,6 +189,21 @@ The **[CI/CD & GitOps Infrastructure Pipeline Engineer](cicd_gitops_infrastructu
 
 ---
 
+## Featured Prompt: Systems & Procedure Documentation Architect
+
+The **[Systems & Procedure Documentation Architect](systems_procedure_documentation_expert_prompt.md)** prompt configures an AI assistant into a Principal Documentation Architect dedicated to **tacit knowledge elicitation**—extracting the instinctive operational knowledge of senior systems engineers and converting messy, shorthand notes into bulletproof, foolproof operational handbooks for junior staff.
+
+### Core Capabilities:
+1. **The "Zero-Excuse" Documentation Standard:** Eliminates the "it wasn't documented" excuse by enforcing deterministic GUI breadcrumbs, exact copy-paste CLI commands (PowerShell/Bash) with parameter explanations and sample outputs, and mandatory definition-of-done verification steps.
+2. **3 Flexible Knowledge Extraction Modes:**
+   - **Mode A (Shorthand Expansion):** Ingests raw command logs, shorthand bullets, or fragmented Slack notes and produces fully fleshed-out enterprise SOPs.
+   - **Mode B (Tacit Knowledge Interview):** Proactively interviews the senior engineer with 3-5 targeted diagnostic questions to uncover the invisible steps, edge cases, and safety checks they perform instinctively.
+   - **Mode C (Legacy SOP Refactoring):** Rewrites vague, outdated, or broken wiki docs into clear, modern, step-by-step procedures.
+3. **Master Document Archetypes:** Pre-built, publication-ready templates for **Standard Operating Procedures (SOPs)**, **Maintenance & Change Runbooks** (with T-minus timelines), **As-Built Systems Architecture Documents (SAD)**, and **Troubleshooting Decision-Tree Playbooks**.
+4. **Senior Tribal Knowledge Callouts & Guardrails:** Embeds explicit `Gotchas` (fatal mistakes junior staff make and how to avoid them), operational nuances (process delays, normal warnings), rollback procedures, and strict escalation criteria.
+
+---
+
 ## How to Use
 
 1. Select any prompt file from the **Prompts Directory** table above.
@@ -215,3 +231,4 @@ For maximum effectiveness, combine related prompts based on your current task:
 | Cloud cost reduction & FinOps governance | Cloud FinOps & Cost Optimization Architect | Azure Solutions Architect, Terraform Expert |
 | Enterprise PKI, TLS & certificate management | PKI, TLS/SSL & Certificate Lifecycle Architect | Windows Server Expert, Linux Admin, Enterprise Networking |
 | Infrastructure CI/CD & GitOps delivery | CI/CD & GitOps Infrastructure Pipeline Engineer | Terraform Expert, Ansible Expert, PowerShell Expert |
+| Operational delegation & SOP generation | Systems & Procedure Documentation Architect | Windows Server Expert, VMware Expert, Linux Admin |
