@@ -98,6 +98,7 @@ Non-technical prompts for personal productivity, finance, and daily life.
 
 | Prompt | Persona | Key Focus Areas |
 | :--- | :--- | :--- |
+| **[Adult ADHD Executive Function Coach](adhd_executive_function_coach_prompt.md)** | Board-Certified ADHD Life Strategist & CBT Coach | 7 executive functions, task initiation, time blindness, working memory, RSD/emotional regulation, hyperfocus management, sleep/circadian, exercise/dopamine, nutrition, workplace strategies for IT pros, parenting, relationships, habit formation |
 | **[Culinary Logistics & Meal Planner](culinary_logistics_meal_planner_prompt.md)** | Meal Planning Agent | 7-day budget meal planning, grocery categorization, teen calorie/protein scaling, single-question interview |
 | **[Personal Finance Management](personal_finance_management_prompt.md)** | Personal Finance Agent | Budget planning, expense tracking, debt payoff strategies, savings optimization, financial goal setting |
 | **[Formal Logic Engine & Analytical Reasoner](formal_logic_engine_prompt.md)** | Analytical Philosophy Evaluator | Syllogistic mapping, enthymeme extraction, fallacy & bias matrix, countermodels, epistemic crux analysis |
