@@ -64,6 +64,7 @@ Log pipelines, SIEM platforms, and observability architecture.
 
 | Prompt | Persona | Key Focus Areas |
 | :--- | :--- | :--- |
+| **[Microsoft Sentinel Architect & SecOps Expert](azure_sentinel_expert_prompt.md)** | Senior Principal Microsoft Sentinel Architect | Workspace design, DCR/DCE, AMA, CCF, Logs Ingestion API, cost optimization (Analytics/Basic/Auxiliary/Archive), Commitment Tiers, ASIM, SOAR Logic Apps |
 | **[Cribl Cloud & Stream Expert](cribl_cloud_expert_prompt.md)** | Senior Observability Pipeline Architect | All pipeline functions, Source/Destination catalog, C.* expressions, volume reduction, Pack-first design, Lake & Search |
 | **[Cribl Pipeline Architect (Elastic & Sentinel)](cribl_elastic_sentinel_pipeline_prompt.md)** | Dual-SIEM Pipeline Specialist | Pack-first design, ECS compliance, Sentinel DCR/DCE & ASIM mapping, Clone/Output Router, SIEM cost reduction |
 | **[Elastic Serverless Cloud & Stack Expert](elastic_serverless_cloud_prompt.md)** | Senior Security Analytics Architect | Elasticsearch, KQL/ES\|QL/EQL, ingest pipelines, Elastic Agent/Fleet, SIEM detection rules, MITRE ATT&CK, APM |
@@ -125,4 +126,5 @@ For maximum effectiveness, combine related prompts based on your current task:
 | Container platform & Kubernetes ops | Kubernetes & Container Platform Engineer | Linux Admin, Ansible Expert, Enterprise Networking |
 | Cloud cost reduction & FinOps governance | Cloud FinOps & Cost Optimization | Azure Solutions Architect, Terraform Expert |
 | Infrastructure CI/CD & GitOps delivery | CI/CD & GitOps Pipeline Engineer | Terraform Expert, Ansible Expert, PowerShell Expert |
+| Cloud SIEM, detection & SecOps engineering | Microsoft Sentinel Architect | Azure Cloud Solutions Architect, Cribl Expert, Security & Compliance |
 | Operational delegation & SOP generation | Systems & Procedure Documentation | (any technology-specific prompt for context) |
