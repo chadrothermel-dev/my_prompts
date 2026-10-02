@@ -1,6 +1,6 @@
 # My Prompts Repository
 
-A curated library of **32** specialized AI system prompts for enterprise systems engineering, identity, observability, security, communication, and personal productivity.
+A curated library of **38** specialized AI system prompts for enterprise systems engineering, identity, observability, security, communication, and personal productivity.
 
 ---
 
@@ -103,6 +103,12 @@ Non-technical prompts for personal productivity, career growth, finance, and dai
 | Prompt | Persona | Key Focus Areas |
 | :--- | :--- | :--- |
 | **[Adult ADHD Executive Function Coach & Behavioral Analyst](adhd_executive_function_coach_prompt.md)** | Board-Certified ADHD Life Strategist & Behavioral Analyst | Behavioral decoding (ABC model), 10 ADHD behavioral archetypes (Waiting Mode, Restraint Collapse, Urgency Addiction), 7 executive functions, task initiation, time blindness, working memory, RSD, workplace strategies for IT pros, parenting, habit formation |
+| **[Weekly Reset & Life Operating System Coach](weekly_reset_life_planning_prompt.md)** | Personal Operations Coach (GTD + ADHD scaffolding) | 20–30 min weekly reset, brain dump → sort buckets, Big 3 priorities, time-blindness padding, daily/monthly check-ins |
+| **[Health, Fitness & Sustainable Habit Coach](health_fitness_habit_coach_prompt.md)** | Personal Trainer & Habit Coach (non-medical) | Minimum-effective-dose strength plans, "Floor" plans for bad weeks, sleep & energy, desk-worker correctives, habit stacking |
+| **[Home Maintenance & Household Operations Manager](home_maintenance_household_ops_prompt.md)** | Household Ops Manager ("Home as Infrastructure") | Home asset inventory, seasonal PM schedules, DIY vs. pro decisions, contractor vetting, chore matrix, capital replacement forecast |
+| **[Family Travel & Trip Logistics Planner](family_travel_trip_planner_prompt.md)** | Travel Logistics Planner | Day trips to week-long vacations, pacing rules, teen buy-in, booking priority, weather backups, packing & prep timelines, Game Day mode |
+| **[Genealogy & Local History Research Assistant](genealogy_local_history_research_prompt.md)** | Professional Genealogist & Local Historian | Genealogical Proof Standard, PA/Mid-Atlantic record map, PA German church records, brick-wall strategies, archive naming & metadata |
+| **[Learning Strategist & Skill Acquisition Coach](learning_skill_acquisition_coach_prompt.md)** | Learning Scientist & Skill Coach | Project-first learning plans, retrieval & spaced repetition, Anki flashcards, teach & quiz modes, ADHD-friendly 20–30 min sessions |
 | **[Senior Infrastructure Career Strategist & Interview Coach](career_growth_interview_coach_prompt.md)** | Career Strategist & Former Infrastructure Hiring Manager | Brag document/XYZ bullets, resume & LinkedIn tailoring, STAR-L story bank, mock interviews, cert roadmap, negotiation scripts, ADHD-aware job search |
 | **[Culinary Logistics & Meal Planner](culinary_logistics_meal_planner_prompt.md)** | Meal Planning Agent | 7-day budget meal planning, grocery categorization, teen calorie/protein scaling, single-question interview |
 | **[Personal Finance Management](personal_finance_management_prompt.md)** | Personal Finance Agent | Budget planning, expense tracking, debt payoff strategies, savings optimization, financial goal setting |
@@ -146,6 +152,12 @@ For maximum effectiveness, combine related prompts based on your current task:
 | Monitoring & alert-noise cleanup | Infrastructure Monitoring & Alerting | Incident Response, VMware Expert, Azure Solutions Architect |
 | Outage comms, CAB submissions & exec updates | Technical Communication & Executive Translator | Incident Response, IT Project Management |
 | Promotion, resume & interview prep | Career Strategist & Interview Coach | Technical Communication, ADHD Executive Function Coach |
+| Weekly planning that actually sticks | Weekly Reset & Life Operating System | ADHD Executive Function Coach |
+| Healthy routines for the whole family | Health, Fitness & Habit Coach | Culinary Logistics & Meal Planner, Weekly Reset |
+| Home repairs, projects & big-expense planning | Home Maintenance & Household Ops | Personal Finance Management |
+| Family vacations & day trips | Family Travel & Trip Planner | Personal Finance Management |
+| Family tree & local history archive | Genealogy & Local History Research | Systems & Procedure Documentation (archive SOPs) |
+| Learning a new technology or hobby | Learning Strategist & Skill Coach | (the matching technical prompt, e.g., Kubernetes, Terraform) |
 | Adding or improving a prompt in this repo | Prompt Engineering Architect | (the prompt being created or audited) |
 
 ---
