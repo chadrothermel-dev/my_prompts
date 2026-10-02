@@ -1,15 +1,15 @@
 # My Prompts Repository
 
-A curated library of specialized AI system prompts for enterprise systems engineering, observability, security, and personal productivity.
+A curated library of **32** specialized AI system prompts for enterprise systems engineering, identity, observability, security, communication, and personal productivity.
 
 ---
 
 ## Quick Start
 
-1. Browse the categorized directories below to find the prompt you need.
+1. Browse the categorized tables below to find the prompt you need.
 2. Open the prompt file and copy the full system prompt.
-3. Paste into your AI assistant's system instructions, Custom GPT, or agent framework.
-4. Provide your scenario, requirements, or question to execute.
+3. Paste it into your AI assistant's system instructions (Claude Project, Custom GPT, Claude Code skill, or agent framework).
+4. Provide your scenario, requirements, or question.
 
 > [!TIP]
 > **Combine prompts for maximum impact.** See the [Recommended Prompt Combinations](#recommended-prompt-combinations) table at the bottom for multi-prompt strategies.
@@ -47,23 +47,25 @@ Azure cloud services, infrastructure as code, configuration management, and scri
 
 ---
 
-## 🔐 Security, Compliance & Cryptography
+## 🔐 Identity, Security, Compliance & Cryptography
 
-Security hardening, regulatory compliance, PKI, and certificate lifecycle management.
+Identity and endpoint management, security hardening, regulatory compliance, PKI, and certificate lifecycle management.
 
 | Prompt | Persona | Key Focus Areas |
 | :--- | :--- | :--- |
+| **[Entra ID, Intune & Modern Workplace Identity Architect](entra_id_intune_identity_prompt.md)** | Senior Principal Identity & Endpoint Architect | Hybrid identity (Cloud Sync/Connect, PHS), Conditional Access baselines, passkeys/phishing-resistant MFA, PIM, Intune/Autopilot, Windows LAPS, Graph PowerShell, Microsoft365DSC |
 | **[Security & Compliance Hardening Expert](security_compliance_hardening_prompt.md)** | Senior Principal Security Architect | CIS/NIST/STIG/ISO 27001/SOC 2, Zero-Trust, IAM/PAM/PIM, vulnerability/patch management, hardening checklists |
 | **[PKI, TLS/SSL & Certificate Lifecycle Architect](pki_certificate_lifecycle_prompt.md)** | Senior Principal PKI Architect | AD CS hierarchy, Certificate Templates, GPO Auto-Enrollment, ACME/SCEP, Key Vault, OpenSSL CLI, TLS hardening |
 
 ---
 
-## 📊 Observability, SIEM & Log Engineering
+## 📊 Observability, Monitoring, SIEM & Log Engineering
 
-Log pipelines, SIEM platforms, and observability architecture.
+Metrics and alerting, log pipelines, SIEM platforms, and observability architecture.
 
 | Prompt | Persona | Key Focus Areas |
 | :--- | :--- | :--- |
+| **[Infrastructure Monitoring, Metrics & Alerting Architect](infrastructure_monitoring_alerting_prompt.md)** | Senior Principal Monitoring Architect | USE/RED/Golden Signals, symptom-based alerting, SLO burn-rate alerts, Azure Monitor/AMBA, Prometheus/Grafana/Alertmanager, Zabbix, SCOM, alert-noise reduction |
 | **[Microsoft Sentinel Architect & SecOps Expert](azure_sentinel_expert_prompt.md)** | Senior Principal Microsoft Sentinel Architect | Workspace design, DCR/DCE, AMA, CCF, Logs Ingestion API, cost optimization (Analytics/Basic/Auxiliary/Archive), Commitment Tiers, ASIM, SOAR Logic Apps |
 | **[Cribl Cloud & Stream Expert](cribl_cloud_expert_prompt.md)** | Senior Observability Pipeline Architect | All pipeline functions, Source/Destination catalog, C.* expressions, volume reduction, Pack-first design, Lake & Search |
 | **[Cribl Pipeline Architect (Elastic & Sentinel)](cribl_elastic_sentinel_pipeline_prompt.md)** | Dual-SIEM Pipeline Specialist | Pack-first design, ECS compliance, Sentinel DCR/DCE & ASIM mapping, Clone/Output Router, SIEM cost reduction |
@@ -81,28 +83,40 @@ Enterprise data protection, replication, cyber recovery, and DR orchestration.
 
 ---
 
-## 📋 Operations, Project Management & Documentation
+## 📋 Operations, Communication & Documentation
 
-Incident management, project delivery, procedure documentation, and knowledge transfer.
+Incident management, project delivery, stakeholder communication, procedure documentation, and knowledge transfer.
 
 | Prompt | Persona | Key Focus Areas |
 | :--- | :--- | :--- |
 | **[Incident Response & Troubleshooting Expert](incident_response_troubleshooting_prompt.md)** | Senior Principal SRE & Incident Commander | P1-P4 severity, 5 Whys/Ishikawa RCA, runbook templates, blameless post-mortems, SLI/SLO/SLA, diagnostics |
 | **[IT Project Management Expert](project_management_expert_prompt.md)** | Senior IT Project Management Architect | Agile/Scrum/Kanban, ITIL 4, Change/Incident/Problem management, RACI, risk registers, EVM, Azure DevOps Boards |
 | **[Systems & Procedure Documentation Architect](systems_procedure_documentation_expert_prompt.md)** | Principal Documentation Architect | Zero-Excuse SOPs, tacit knowledge extraction (shorthand expansion, interview, legacy refactor), runbooks, SAD, tribal gotchas, escalation gates |
+| **[Technical Communication & Executive Translator](technical_communication_executive_translator_prompt.md)** | Principal Technical Communications Strategist | BLUF writing, audience translation matrix, exec status updates, outage notifications, CAB summaries, business cases, vendor escalations |
 
 ---
 
-## 🏠 Personal & Lifestyle
+## 🏠 Personal, Career & Lifestyle
 
-Non-technical prompts for personal productivity, finance, and daily life.
+Non-technical prompts for personal productivity, career growth, finance, and daily life.
 
 | Prompt | Persona | Key Focus Areas |
 | :--- | :--- | :--- |
 | **[Adult ADHD Executive Function Coach & Behavioral Analyst](adhd_executive_function_coach_prompt.md)** | Board-Certified ADHD Life Strategist & Behavioral Analyst | Behavioral decoding (ABC model), 10 ADHD behavioral archetypes (Waiting Mode, Restraint Collapse, Urgency Addiction), 7 executive functions, task initiation, time blindness, working memory, RSD, workplace strategies for IT pros, parenting, habit formation |
+| **[Senior Infrastructure Career Strategist & Interview Coach](career_growth_interview_coach_prompt.md)** | Career Strategist & Former Infrastructure Hiring Manager | Brag document/XYZ bullets, resume & LinkedIn tailoring, STAR-L story bank, mock interviews, cert roadmap, negotiation scripts, ADHD-aware job search |
 | **[Culinary Logistics & Meal Planner](culinary_logistics_meal_planner_prompt.md)** | Meal Planning Agent | 7-day budget meal planning, grocery categorization, teen calorie/protein scaling, single-question interview |
 | **[Personal Finance Management](personal_finance_management_prompt.md)** | Personal Finance Agent | Budget planning, expense tracking, debt payoff strategies, savings optimization, financial goal setting |
 | **[Formal Logic Engine & Analytical Reasoner](formal_logic_engine_prompt.md)** | Analytical Philosophy Evaluator | Syllogistic mapping, enthymeme extraction, fallacy & bias matrix, countermodels, epistemic crux analysis |
+
+---
+
+## 🧰 Meta & Prompt Engineering
+
+Prompts for building and maintaining this library.
+
+| Prompt | Persona | Key Focus Areas |
+| :--- | :--- | :--- |
+| **[Prompt Engineering Architect & System Prompt Builder](prompt_engineering_architect_prompt.md)** | Principal Prompt Engineer | Build/audit/refactor/combine prompts, `my_prompts` house-style blueprint, audit rubric, Claude skill/Project/Custom GPT packaging, test inputs |
 
 ---
 
@@ -128,3 +142,33 @@ For maximum effectiveness, combine related prompts based on your current task:
 | Infrastructure CI/CD & GitOps delivery | CI/CD & GitOps Pipeline Engineer | Terraform Expert, Ansible Expert, PowerShell Expert |
 | Cloud SIEM, detection & SecOps engineering | Microsoft Sentinel Architect | Azure Cloud Solutions Architect, Cribl Expert, Security & Compliance |
 | Operational delegation & SOP generation | Systems & Procedure Documentation | (any technology-specific prompt for context) |
+| Entra ID / Conditional Access / Intune rollout | Entra ID, Intune & Identity Architect | Security & Compliance, PowerShell Expert, Windows Server Expert |
+| Monitoring & alert-noise cleanup | Infrastructure Monitoring & Alerting | Incident Response, VMware Expert, Azure Solutions Architect |
+| Outage comms, CAB submissions & exec updates | Technical Communication & Executive Translator | Incident Response, IT Project Management |
+| Promotion, resume & interview prep | Career Strategist & Interview Coach | Technical Communication, ADHD Executive Function Coach |
+| Adding or improving a prompt in this repo | Prompt Engineering Architect | (the prompt being created or audited) |
+
+---
+
+## Using These Prompts with Claude
+
+| Platform | How |
+| :--- | :--- |
+| **Claude Projects** | Paste the prompt into *Project instructions*; upload large reference docs as project knowledge. |
+| **Claude Code (skill)** | Create `~/.claude/skills/<name>/SKILL.md` with `name` and `description` frontmatter, then paste the prompt body. Use the Prompt Engineering Architect (Mode E) to convert. |
+| **API / agents** | Use the file contents as the `system` prompt; pass your scenario as the user message. |
+
+---
+
+## Prompt Anatomy (House Style)
+
+Every prompt follows the same skeleton so they are predictable and combinable:
+
+1. **Persona**: seniority, domain, signature outcome
+2. **Role & Primary Objective**: what it produces and which modern standards it enforces
+3. **Clarification Protocol**: only the questions that change the answer
+4. **Core Knowledge Domains**: decision matrices, standards tables, deprecations
+5. **Structured Response Protocol**: `<verification>` self-check, then delivery format
+6. **Ground Rules**: one-line *Never/Always* guardrails
+
+New prompts: use the [Prompt Engineering Architect](prompt_engineering_architect_prompt.md) in **Build** mode, name the file `snake_case_name_prompt.md`, and add a row to the matching table above.
