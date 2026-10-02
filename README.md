@@ -1,6 +1,6 @@
 # My Prompts Repository
 
-A curated library of **38** specialized AI system prompts for enterprise systems engineering, identity, observability, security, communication, and personal productivity.
+A curated library of **39** specialized AI system prompts for enterprise systems engineering, identity, observability, security, communication, and personal productivity.
 
 ---
 
@@ -109,6 +109,7 @@ Non-technical prompts for personal productivity, career growth, finance, and dai
 | **[Family Travel & Trip Logistics Planner](family_travel_trip_planner_prompt.md)** | Travel Logistics Planner | Day trips to week-long vacations, pacing rules, teen buy-in, booking priority, weather backups, packing & prep timelines, Game Day mode |
 | **[Genealogy & Local History Research Assistant](genealogy_local_history_research_prompt.md)** | Professional Genealogist & Local Historian | Genealogical Proof Standard, PA/Mid-Atlantic record map, PA German church records, brick-wall strategies, archive naming & metadata |
 | **[Learning Strategist & Skill Acquisition Coach](learning_skill_acquisition_coach_prompt.md)** | Learning Scientist & Skill Coach | Project-first learning plans, retrieval & spaced repetition, Anki flashcards, teach & quiz modes, ADHD-friendly 20–30 min sessions |
+| **[Career Interest Discovery & Occupational Fit Assessment](career_interest_discovery_assessment_prompt.md)** | Career Assessment Specialist & Vocational Counselor | Step-by-step RIASEC (Holland Code) interest inventory, O\*NET work values, strengths & peak experiences, work style, constraints, ranked occupation matches, 30-day exploration plan; works for teens through career changers |
 | **[Senior Infrastructure Career Strategist & Interview Coach](career_growth_interview_coach_prompt.md)** | Career Strategist & Former Infrastructure Hiring Manager | Brag document/XYZ bullets, resume & LinkedIn tailoring, STAR-L story bank, mock interviews, cert roadmap, negotiation scripts, ADHD-aware job search |
 | **[Culinary Logistics & Meal Planner](culinary_logistics_meal_planner_prompt.md)** | Meal Planning Agent | 7-day budget meal planning, grocery categorization, teen calorie/protein scaling, single-question interview |
 | **[Personal Finance Management](personal_finance_management_prompt.md)** | Personal Finance Agent | Budget planning, expense tracking, debt payoff strategies, savings optimization, financial goal setting |
@@ -151,6 +152,7 @@ For maximum effectiveness, combine related prompts based on your current task:
 | Entra ID / Conditional Access / Intune rollout | Entra ID, Intune & Identity Architect | Security & Compliance, PowerShell Expert, Windows Server Expert |
 | Monitoring & alert-noise cleanup | Infrastructure Monitoring & Alerting | Incident Response, VMware Expert, Azure Solutions Architect |
 | Outage comms, CAB submissions & exec updates | Technical Communication & Executive Translator | Incident Response, IT Project Management |
+| Figuring out what career fits (teen or adult) | Career Interest Discovery Assessment | Learning Strategist & Skill Coach, Career Strategist & Interview Coach |
 | Promotion, resume & interview prep | Career Strategist & Interview Coach | Technical Communication, ADHD Executive Function Coach |
 | Weekly planning that actually sticks | Weekly Reset & Life Operating System | ADHD Executive Function Coach |
 | Healthy routines for the whole family | Health, Fitness & Habit Coach | Culinary Logistics & Meal Planner, Weekly Reset |
