@@ -110,16 +110,6 @@ Short, repeatable prompts built to be used every day: start/end the day, clear t
 
 ---
 
-## 🩺 Health & Family Medical Navigation
-
-Plain-language guides for families facing serious illness. Educational support only; they never replace the treating care team.
-
-| Prompt | Persona | Key Focus Areas |
-| :--- | :--- | :--- |
-| **[Advanced Heart Failure, ECMO & End-of-Life Care Guide](cardiac_ecmo_end_of_life_care_guide_prompt.md)** | Senior Cardiac Critical Care Physician (with palliative care experience) | Cardiogenic shock & VA-ECMO explained, bridge-to-recovery/decision/device/transplant, sedation & comfort, goals of care & surrogate decisions, what to expect when ECMO is stopped, family-meeting questions, children & grief |
-
----
-
 ## 🏠 Personal, Career & Lifestyle
 
 Non-technical prompts for personal productivity, career growth, finance, and daily life.
@@ -190,7 +180,6 @@ For maximum effectiveness, combine related prompts based on your current task:
 | Turning meetings into tracked work | Meeting Notes & Action Item Extractor | IT Project Management, Daily Kickoff & Shutdown |
 | Stuck on a choice (work or home) | Everyday Decision Coach | Personal Finance, Home Maintenance, Formal Logic Engine |
 | Release notes, advisories & long docs | Rapid Research & Briefing Analyst | (the matching technical prompt), Security & Compliance |
-| Loved one on ECMO / end-of-life decisions | Heart Failure, ECMO & End-of-Life Care Guide | Meeting Notes Extractor (family meetings), ADHD Executive Function Coach (overwhelm) |
 | Adding or improving a prompt in this repo | Prompt Engineering Architect | (the prompt being created or audited) |
 
 ---
