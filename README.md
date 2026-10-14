@@ -1,6 +1,6 @@
 # My Prompts Repository
 
-A curated library of **39** specialized AI system prompts for enterprise systems engineering, identity, observability, security, communication, and personal productivity.
+A curated library of **45** specialized AI system prompts for enterprise systems engineering, identity, observability, security, communication, and personal productivity.
 
 ---
 
@@ -96,6 +96,20 @@ Incident management, project delivery, stakeholder communication, procedure docu
 
 ---
 
+## ⚡ Daily Productivity & Workflow
+
+Short, repeatable prompts built to be used every day: start/end the day, clear the inbox, process meetings, make decisions, and digest reading.
+
+| Prompt | Persona | Key Focus Areas |
+| :--- | :--- | :--- |
+| **[Daily Kickoff & Shutdown Ritual Coach](daily_kickoff_shutdown_ritual_prompt.md)** | Daily Operations Coach (ADHD-aware) | 5-min morning kickoff (one win, real focus time, < 2-min first step), midday re-anchor, end-of-day shutdown, work log & brag capture, standup generation, Floor Day mode |
+| **[Inbox & Message Triage Assistant](inbox_message_triage_reply_prompt.md)** | Executive Assistant & Comms Triage Specialist | 6-bucket triage, consequence ranking, hidden-ask & deadline detection, phishing red flags, BLUF reply drafts, "no" templates |
+| **[Meeting Notes, Decisions & Action Item Extractor](meeting_notes_action_extractor_prompt.md)** | Program Coordinator & Meeting Scribe | Decision vs. discussion separation, owner/due-date enforcement, "your actions" list, CAB/incident/design/vendor/1:1 add-ons, follow-up email draft |
+| **[Everyday Decision Coach & Decision-Fatigue Breaker](everyday_decision_coach_prompt.md)** | Decision Strategist (ADHD-aware) | Two-way vs. one-way door sizing, default rules, satisficing, weighted matrix, pre-mortem, research-loop breaker, always-recommend output |
+| **[Rapid Research & Briefing Analyst](rapid_research_briefing_analyst_prompt.md)** | Senior Research Analyst | 2-minute layered briefings, "does this affect me?" impact checks, source credibility ladder, fact/claim/inference labeling, compare & explain modes |
+
+---
+
 ## 🏠 Personal, Career & Lifestyle
 
 Non-technical prompts for personal productivity, career growth, finance, and daily life.
@@ -106,6 +120,7 @@ Non-technical prompts for personal productivity, career growth, finance, and dai
 | **[Weekly Reset & Life Operating System Coach](weekly_reset_life_planning_prompt.md)** | Personal Operations Coach (GTD + ADHD scaffolding) | 20–30 min weekly reset, brain dump → sort buckets, Big 3 priorities, time-blindness padding, daily/monthly check-ins |
 | **[Health, Fitness & Sustainable Habit Coach](health_fitness_habit_coach_prompt.md)** | Personal Trainer & Habit Coach (non-medical) | Minimum-effective-dose strength plans, "Floor" plans for bad weeks, sleep & energy, desk-worker correctives, habit stacking |
 | **[Home Maintenance & Household Operations Manager](home_maintenance_household_ops_prompt.md)** | Household Ops Manager ("Home as Infrastructure") | Home asset inventory, seasonal PM schedules, DIY vs. pro decisions, contractor vetting, chore matrix, capital replacement forecast |
+| **[Everyday Computer Help Desk Technician](everyday_computer_help_desk_prompt.md)** | Patient Help Desk Technician for non-technical users | One-action-per-step fix guides, plain-language clarifying questions, "what you should see" checks, OS identification, Wi-Fi/printer/email/password/slow PC fixes, scam pop-up safety, when to call a pro |
 | **[Family Travel & Trip Logistics Planner](family_travel_trip_planner_prompt.md)** | Travel Logistics Planner | Day trips to week-long vacations, pacing rules, teen buy-in, booking priority, weather backups, packing & prep timelines, Game Day mode |
 | **[Genealogy & Local History Research Assistant](genealogy_local_history_research_prompt.md)** | Professional Genealogist & Local Historian | Genealogical Proof Standard, PA/Mid-Atlantic record map, PA German church records, brick-wall strategies, archive naming & metadata |
 | **[Learning Strategist & Skill Acquisition Coach](learning_skill_acquisition_coach_prompt.md)** | Learning Scientist & Skill Coach | Project-first learning plans, retrieval & spaced repetition, Anki flashcards, teach & quiz modes, ADHD-friendly 20–30 min sessions |
@@ -160,6 +175,11 @@ For maximum effectiveness, combine related prompts based on your current task:
 | Family vacations & day trips | Family Travel & Trip Planner | Personal Finance Management |
 | Family tree & local history archive | Genealogy & Local History Research | Systems & Procedure Documentation (archive SOPs) |
 | Learning a new technology or hobby | Learning Strategist & Skill Coach | (the matching technical prompt, e.g., Kubernetes, Terraform) |
+| Starting and ending the workday | Daily Kickoff & Shutdown Ritual | Weekly Reset, ADHD Executive Function Coach |
+| Clearing a backed-up inbox or Teams | Inbox & Message Triage | Technical Communication & Executive Translator |
+| Turning meetings into tracked work | Meeting Notes & Action Item Extractor | IT Project Management, Daily Kickoff & Shutdown |
+| Stuck on a choice (work or home) | Everyday Decision Coach | Personal Finance, Home Maintenance, Formal Logic Engine |
+| Release notes, advisories & long docs | Rapid Research & Briefing Analyst | (the matching technical prompt), Security & Compliance |
 | Adding or improving a prompt in this repo | Prompt Engineering Architect | (the prompt being created or audited) |
 
 ---
