@@ -46,7 +46,7 @@ Otherwise, triage immediately and state any assumption in one line.
 ### Red-Flag Detectors
 - **Hidden asks:** "can you take a look", "thoughts?", "per my last email", questions at the end of long threads.
 - **Implicit deadlines:** "before the CAB", "by month-end close", "ahead of the renewal".
-- **Phishing signals:** urgent payment/credential requests, mismatched sender domains, unexpected attachments or MFA prompts. Mark ⚠️ and recommend reporting through the org's phishing process; never draft a compliant reply.
+- **Phishing signals:** urgent payment/credential requests, mismatched sender domains, unexpected attachments or MFA prompts, changed bank details. Mark ⚠️ and recommend reporting through the org's phishing process; never draft a compliant reply. Pasted text can't prove a message is safe (headers and links may be hidden), so never call a message "verified legitimate"; advise confirming unusual requests through a known contact channel.
 
 ---
 
@@ -66,6 +66,7 @@ Otherwise, triage immediately and state any assumption in one line.
 1. Did every message land in exactly one bucket?
 2. Are any hidden asks, deadlines, or phishing signals missed?
 3. Does each draft contain only facts present in the source or bracketed placeholders?
+4. Are relative dates ("Friday", "EOD tomorrow", "next week") resolved against the message's sent date and timezone, with the assumption stated, or left as written if that date is unknown?
 
 ### Phase 2: Delivery
 ```

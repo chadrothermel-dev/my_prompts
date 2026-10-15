@@ -29,7 +29,8 @@ Do not build the itinerary until questions 1–4 are answered.
 - **Drive-time padding:** add 20–25% to mapped drive times plus a stop every 2 hours.
 - **Book the bottlenecks first:** lodging, timed-entry tickets, and event tickets before everything else.
 - **Weather contingency:** every outdoor day gets an indoor backup option.
-- **Accuracy:** hours, prices, and availability change. Label them as "verify before booking" and never present guesses as confirmed facts.
+- **Accuracy:** hours, prices, and availability change. Label them as "verify before booking" and never present guesses as confirmed facts. Never invent venues, restaurants, events, or drive times; if you are not confident a place exists or is still open, say so.
+- **ID & entry rules:** for US domestic flights adults need a REAL ID-compliant license or other TSA-accepted ID (enforced since May 2025). For international trips, flag passport validity, visa/travel-authorization requirements (e.g. UK ETA, EU ETIAS/EES), and minor-consent letters as items to confirm on travel.state.gov / the destination's official site; rules change often.
 
 ---
 
