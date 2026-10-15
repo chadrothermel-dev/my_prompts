@@ -22,7 +22,7 @@ Core datacenter, virtualization, compute, networking, and operating system promp
 
 | Prompt | Persona | Key Focus Areas |
 | :--- | :--- | :--- |
-| **[VMware Virtualization Expert](vmware_virtualization_expert_prompt.md)** | Senior Principal Virtualization Architect | ESXi/vCenter/VCSA, HA/DRS/FT, vMotion, vSAN, Distributed Switches, NSX, Aria Operations, HCX, PowerCLI |
+| **[VMware Virtualization Expert](vmware_virtualization_expert_prompt.md)** | Senior Principal Virtualization Architect | ESXi/vCenter/VCSA, HA/DRS/FT, vMotion, vSAN, Distributed Switches, NSX, VCF Operations (Aria), HCX, PowerCLI |
 | **[Windows Server Expert](windows_server_expert_prompt.md)** | Senior Principal Windows Platform Architect | AD DS/FSMO, GPO (LSDOU), DNS/DHCP, Failover Clustering, Hyper-V, IIS, Storage Spaces Direct, PKI, LAPS |
 | **[Linux Systems Administration Expert](linux_systems_administration_prompt.md)** | Senior Principal Linux Systems Architect | systemd, dnf/apt, LVM, SELinux/AppArmor, SSH hardening, Bash scripting, performance tuning, Podman/Docker |
 | **[Enterprise Networking Infrastructure Expert](networking_infrastructure_expert_prompt.md)** | Senior Principal Network Architect | VLANs/STP/LACP, OSPF/BGP routing, Palo Alto/Fortinet firewalls, IPSec/SSL VPN, F5, SD-WAN, 802.1X NAC |
@@ -43,7 +43,7 @@ Azure cloud services, infrastructure as code, configuration management, and scri
 | **[PowerShell Expert](powershell_expert_prompt.md)** | 20+ Year PowerShell Principal Engineer | Enterprise scripting, PSScriptAnalyzer, pipeline architecture, PSGallery module integration |
 | **[CI/CD & GitOps Infrastructure Pipeline Engineer](cicd_gitops_infrastructure_prompt.md)** | Senior Principal DevSecOps Architect | Azure DevOps YAML, GitHub Actions OIDC, quality gates (tflint/checkov/Pester), Atlantis GitOps, drift detection |
 | **[Cloud FinOps & Cost Optimization Architect](cloud_finops_cost_optimization_prompt.md)** | Principal Cloud FinOps Architect | Reservations vs. Savings Plans, Azure Hybrid Benefit, storage tiering math, waste hunting scripts, tagging |
-| **[Microsoft Enterprise AI Architect & Mentor](microsoft_ai_architect_mentor_prompt.md)** | Enterprise AI Architect | M365 Copilot, Copilot Studio, Azure AI Foundry, Semantic Kernel, Azure AI Search RAG, Purview governance |
+| **[Microsoft Enterprise AI Architect & Mentor](microsoft_ai_architect_mentor_prompt.md)** | Enterprise AI Architect | M365 Copilot, Copilot Studio, Microsoft Foundry, Semantic Kernel, Azure AI Search RAG, Purview governance |
 
 ---
 
@@ -116,7 +116,7 @@ Non-technical prompts for personal productivity, career growth, finance, and dai
 
 | Prompt | Persona | Key Focus Areas |
 | :--- | :--- | :--- |
-| **[Adult ADHD Executive Function Coach & Behavioral Analyst](adhd_executive_function_coach_prompt.md)** | Board-Certified ADHD Life Strategist & Behavioral Analyst | Behavioral decoding (ABC model), 10 ADHD behavioral archetypes (Waiting Mode, Restraint Collapse, Urgency Addiction), 7 executive functions, task initiation, time blindness, working memory, RSD, workplace strategies for IT pros, parenting, habit formation |
+| **[Adult ADHD Executive Function Coach & Behavioral Analyst](adhd_executive_function_coach_prompt.md)** | ADHD Life Strategist & Executive Function Coach (not a clinician) | Behavioral decoding (ABC model), 10 ADHD behavioral archetypes (Waiting Mode, Restraint Collapse, Urgency Addiction), 7 executive functions, task initiation, time blindness, working memory, RSD, workplace strategies for IT pros, parenting, habit formation |
 | **[Weekly Reset & Life Operating System Coach](weekly_reset_life_planning_prompt.md)** | Personal Operations Coach (GTD + ADHD scaffolding) | 20–30 min weekly reset, brain dump → sort buckets, Big 3 priorities, time-blindness padding, daily/monthly check-ins |
 | **[Health, Fitness & Sustainable Habit Coach](health_fitness_habit_coach_prompt.md)** | Personal Trainer & Habit Coach (non-medical) | Minimum-effective-dose strength plans, "Floor" plans for bad weeks, sleep & energy, desk-worker correctives, habit stacking |
 | **[Home Maintenance & Household Operations Manager](home_maintenance_household_ops_prompt.md)** | Household Ops Manager ("Home as Infrastructure") | Home asset inventory, seasonal PM schedules, DIY vs. pro decisions, contractor vetting, chore matrix, capital replacement forecast |

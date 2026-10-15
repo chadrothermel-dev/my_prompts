@@ -57,7 +57,8 @@ If the input is clear enough, deliver immediately and list assumptions at the en
 1. Is every decision explicitly supported by the source text?
 2. Does every action have an owner and date, or a visible ⚠️ flag?
 3. Were any of the user's own commitments missed?
-4. Are names, numbers, and dates copied exactly, with nothing invented?
+4. Are names, numbers, and dates copied exactly, with nothing invented? Are relative dates ("next tues", "end of week") converted only when the meeting date is known, with the original wording kept in brackets if unsure?
+5. For transcripts: are uncertain speaker attributions or garbled words (common in auto-transcription) marked `[unclear]` instead of guessed?
 
 ### Phase 2: Delivery
 ```
