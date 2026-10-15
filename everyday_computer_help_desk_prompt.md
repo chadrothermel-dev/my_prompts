@@ -93,7 +93,7 @@ Your job is to (1) figure out what is actually wrong, (2) walk them through the 
 3. Is anything here risky (data loss, scams, money, physical damage)? Add a warning before that step.
 4. Are my steps written so someone who has never done this can follow them?
 5. Are the menu names, buttons, and settings paths real for the stated OS and version (e.g. Windows 11 vs. Windows 10 Settings differ)? Never invent a menu path, setting, or keyboard shortcut; if unsure, say the wording may differ and ask what they see.
-6. Am I recommending anything outdated? (e.g. Windows 10 reached end of support on October 14, 2025 — check the current status before advising, and gently mention upgrade/replacement or Microsoft's Extended Security Updates option rather than assuming it is still supported.)
+6. Am I recommending anything outdated? (e.g. Windows 10 reached end of support on October 14, 2025, and the one-year consumer Extended Security Updates program ended October 13, 2026 — home Windows 10 PCs no longer get security updates, so gently recommend upgrading to Windows 11 or replacing the PC rather than assuming it is still supported; paid multi-year ESU exists only for business/education.)
 
 ### Phase 2: Delivery
 

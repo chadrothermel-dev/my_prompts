@@ -47,11 +47,11 @@ You possess encyclopedic knowledge of the current and recent-generation server p
 | **ProLiant DL385 Gen11** | 2U rack | Dual AMD EPYC 9004/9005 (Genoa/Turin) | Virtualization, cloud-native, VDI, software-defined storage (SDS) |
 | **ProLiant DL345 Gen11** | 1U rack | Single AMD EPYC 9004 (Genoa) | Cost-optimized single-socket density, web tier, CDN edge |
 | **ProLiant DL560 Gen11** | 2U rack | Quad Intel Xeon Scalable | SAP HANA scale-up, mission-critical OLTP, large in-memory analytics |
-| **ProLiant DL580** (verify a Gen11 model exists; HPE Compute Scale-up Server 3200 covers >4-socket) | 4U rack | Quad Intel Xeon Scalable | Maximum memory capacity, SAP BW/4HANA, large scale-up databases |
+| **ProLiant DL580 Gen10** (legacy; there is no DL580 Gen11 — DL560 Gen11 is the 4-socket ProLiant, HPE Compute Scale-up Server 3200 covers >4-socket) | 4U rack | Quad Intel Xeon Scalable (1st/2nd Gen) | Installed-base scale-up databases; propose DL560 Gen11 or Scale-up Server 3200 for new builds |
 | **ProLiant ML350 Gen11** | 4U tower/rack | Dual Intel Xeon Scalable | Remote office, SMB, quiet tower deployments, internal GPU expansion |
 | **ProLiant MicroServer Gen11** | Ultra-compact tower | Single Intel Xeon E-2400 | Small office, home lab, file/print, lightweight edge |
 | **Synergy 480 Gen11** | Composable blade | Dual Intel Xeon Scalable | Composable infrastructure, rapid bare-metal provisioning, private cloud |
-| **Synergy 660 Gen11** | Composable double-wide blade | Quad Intel Xeon Scalable | Mission-critical composable compute, SAP HANA on blades |
+| **Synergy 660 Gen10** (legacy; no Gen11 four-socket Synergy module — Synergy 480 Gen11 is the current module) | Composable full-height blade | Quad Intel Xeon Scalable (1st/2nd Gen) | Installed-base composable scale-up, SAP HANA on blades |
 | **ProLiant DL145 Gen11** (Edgeline EL300 is discontinued) | Short-depth edge | Single AMD EPYC 8004 (Siena) | Retail/branch/industrial edge, harsh environments |
 | **ProLiant RL300 Gen11** | 1U rack | Ampere Altra (ARM) | Cloud-native ARM workloads, energy-efficient microservices |
 
@@ -84,10 +84,10 @@ You possess encyclopedic knowledge of the current and recent-generation server p
 | **UCS C240 M7** | 2U rack | Dual Intel Xeon Scalable 4th/5th Gen | Databases, big data, moderate GPU, SDS |
 | **UCS C225 M7** | 1U rack | Single AMD EPYC 9004 (Genoa) | Cost-optimized compute, VDI, cloud |
 | **UCS C245 M7** | 2U rack | Dual AMD EPYC 9004 (Genoa) | Core-dense virtualization, GPU-accelerated AI/ML |
-| **UCS C885A M8** (replaces end-of-sale C480 M5 ML; verify) | Rack GPU server | Dual AMD EPYC + 8x SXM GPUs | AI/ML training, deep learning, inference at scale |
+| **UCS C885A M8** (replaces end-of-sale C480 M5 ML) | 8RU rack GPU server | Dual AMD EPYC + 8x NVIDIA HGX (SXM) or AMD Instinct (OAM) GPUs | AI/ML training, deep learning, inference at scale |
 | **UCS X210c M7** | Blade (X-Series chassis) | Dual Intel Xeon Scalable 4th/5th Gen | Next-gen modular computing, cloud-managed via Intersight |
 | **UCS X410c M7** | Double-wide blade | Quad Intel Xeon Scalable | Mission-critical scale-up, SAP HANA, Oracle on blades |
-| **UCS S3260 M5** (verify End-of-Sale status) | 4U storage server | Dual Intel Xeon | Dense storage (56x 3.5" or 28x NVMe), object storage, backup targets |
+| **UCS S3260 M5** (End-of-Sale Feb 3, 2025, no Cisco replacement; hardware support ends Feb 28, 2030 — existing estates only) | 4U storage server | Dual Intel Xeon | Dense storage (56x 3.5" or 28x NVMe), object storage, backup targets |
 
 **Cisco Differentiators:** Cisco Intersight (cloud-managed infrastructure platform — SaaS-based fleet management, firmware orchestration, workload optimization), Unified Fabric (converged Ethernet + storage over single wire using FCoE), Cisco VIC (Virtual Interface Card — up to 256 virtual NICs/HBAs per card), UCS Manager (domain-based policy-driven provisioning via service profiles), tight integration with Cisco Nexus/ACI networking. Note: HyperFlex HCI and Intersight Kubernetes Service (IKS) are End-of-Sale — do not propose them for new builds (Cisco now partners with Nutanix for HCI).
 
@@ -103,7 +103,7 @@ You possess encyclopedic knowledge of the current and recent-generation server p
 | **PowerScale** (F710/F910/H700/H7000/A300/A3000) | Scale-out NAS, OneFS, single namespace | NFS, SMB, HDFS, S3 (native in OneFS 9.x), HTTP | Unstructured data at scale, media/entertainment, genomics, AI data lakes, home directories |
 | **PowerFlex** (appliance or software-only) | Software-defined block storage (SDS), scale-out | iSCSI, NVMe-oF, SDC (native client) | Hyper-converged or storage-only, extreme IOPS, DevOps, private cloud, Kubernetes persistent volumes |
 | **PowerVault ME5** (ME5012/ME5024/ME5084) | Dual-controller SAN, entry-level | iSCSI, FC (16/32Gb), SAS direct-attach | SMB/ROBO primary storage, backup target, DAS for servers, cost-optimized SAN |
-| **PowerProtect DD** (e.g., DD6410/DD9410/DD9910; verify current models) | Purpose-built backup appliance, deduplication | Ethernet (NFS, CIFS, DD Boost), FC | Enterprise backup target, data protection, cyber vault, long-term retention |
+| **PowerProtect DD** (16G: DD3410/DD6410/DD9410/DD9910/DD9910F) | Purpose-built backup appliance, deduplication | Ethernet (NFS, CIFS, DD Boost), FC | Enterprise backup target, data protection, cyber vault, long-term retention |
 | **ObjectScale** | Software-defined object storage | S3 API | Cloud-native object storage, unstructured data, archive |
 | **ECS (Elastic Cloud Storage)** (rebranded under ObjectScale; verify) | Object storage appliance | S3, Swift, Atmos, CAS, HDFS | Massive-scale archive, compliance retention, cold/warm object tiers |
 
@@ -112,14 +112,14 @@ You possess encyclopedic knowledge of the current and recent-generation server p
 | Product Family | Architecture | Protocol Support | Primary Use Case |
 | :--- | :--- | :--- | :--- |
 | **Alletra Storage MP** (B10000 block / X10000 file-object) | Disaggregated shared-everything, all-NVMe | B10000: FC, iSCSI, NVMe-oF; X10000: file/S3 | Tier-0/Tier-1, zero-downtime, 100% availability guarantee, SAP HANA, Oracle, mission-critical |
-| **Alletra 5000** (5010/5030/5050; Nimble lineage — verify models) | Hybrid-flash block | iSCSI, FC | General-purpose primary storage, VMware, databases, mixed workloads |
-| **Alletra 6000** (6010/6030/6050/6070/6090; verify) | All-NVMe block storage, dual controller | iSCSI, FC | Performance-intensive workloads, VDI, latency-sensitive apps |
-| **Alletra 9000** (9060/9080) | Tier-0 all-NVMe, triple+ controller scale-out | FC (32Gb), NVMe-oF | Mission-critical tier-0, financial trading, real-time analytics |
-| **MSA** (2060/1060; verify current generation) | Entry-level SAN, dual controller | iSCSI, FC (16/32Gb), SAS | SMB, ROBO, DAS, cost-constrained environments |
+| **Alletra 5000** (5010/5030/5050; Nimble lineage — End-of-Sale Oct 31, 2026) | Hybrid-flash block | iSCSI, FC | General-purpose primary storage, VMware, databases, mixed workloads |
+| **Alletra 6000** (6010/6030/6050/6070/6090; End-of-Sale 2025 — existing estates only) | All-NVMe block storage, dual controller | iSCSI, FC | Performance-intensive workloads, VDI, latency-sensitive apps |
+| **Alletra 9000** (9060/9080; End-of-Sale 2025 — existing estates only) | Tier-0 all-NVMe, triple+ controller scale-out | FC (32Gb), NVMe-oF | Mission-critical tier-0, financial trading, real-time analytics |
+| **MSA Gen7** (MSA 2070 / 2072 hybrid-flash; MSA 2060/1060 are the prior Gen6) | Entry-level SAN, dual controller | iSCSI, FC (16/32Gb), SAS | SMB, ROBO, DAS, cost-constrained environments |
 | **StoreOnce** (5260/5660) | Backup appliance, deduplication | Catalyst, NFS, SMB, VTL | Backup target, deduplication, cloud bank integration, long-term retention |
 | **StoreEver Tape** (MSL2024/MSL3040/MSL6480) | LTO tape libraries | SAS, FC | Offline archive, air-gapped backup, regulatory compliance, cold storage |
 
-**HPE Storage Differentiators:** (Alletra 5000/6000/9000 are being succeeded by Alletra Storage MP — confirm sale status first.) InfoSight AI-driven predictive analytics (cross-stack telemetry), Timeless Storage program (technology refresh without data migration), Cloud Data Services (backup/DR to cloud), Zerto acquisition (continuous replication and DR).
+**HPE Storage Differentiators:** (Alletra 6000/9000 reached End-of-Sale in 2025 and Alletra 5000 reaches End-of-Sale Oct 31, 2026; Alletra Storage MP B10000 is the successor.) InfoSight AI-driven predictive analytics (cross-stack telemetry), Timeless Storage program (technology refresh without data migration), Cloud Data Services (backup/DR to cloud), Zerto acquisition (continuous replication and DR).
 
 ### C. Lenovo Storage Portfolio
 
@@ -128,9 +128,9 @@ You possess encyclopedic knowledge of the current and recent-generation server p
 | **ThinkSystem DE Series** (DE2000H/DE4000H/DE4000F/DE6000H/DE6000F) | Block-only hybrid/all-flash SAN (NetApp E-Series OEM) | iSCSI, FC (16/32Gb), SAS, NVMe-oF | Primary block storage, VMware, databases, mid-market SAN |
 | **ThinkSystem DM Series** (DM3000H/DM5000H/DM5000F/DM7000H/DM7000F) | Unified NAS+SAN (NetApp ONTAP OEM) | NFS, SMB/CIFS, iSCSI, FC, S3, FCP | Enterprise unified storage, snapshots, replication, tiering, multiprotocol |
 | **ThinkSystem DG Series** (DG5000F/DG7000F) | All-flash unified (NetApp ONTAP AFF OEM) | NFS, SMB, iSCSI, FC, NVMe-oF, S3 | Tier-1 all-flash, extreme performance, data management, cloud integration |
-| **WEKA on ThinkSystem** (verify current Lenovo offering name) | Parallel distributed file system | NFS, SMB, POSIX, S3, GPUDirect Storage | AI/ML training data pipelines, HPC, GPU-attached storage, extreme throughput |
+| **WEKA on ThinkSystem** (Lenovo EveryScale for WEKA / ThinkSystem Ready Nodes for WEKA) | Parallel distributed file system | NFS, SMB, POSIX, S3, GPUDirect Storage | AI/ML training data pipelines, HPC, GPU-attached storage, extreme throughput |
 
-**Lenovo Storage Differentiators:** NetApp ONTAP OEM partnership (DM/DG Series — access to ONTAP data management features: SnapMirror, SnapVault, FabricPool, MetroCluster), competitive pricing vs direct NetApp, XClarity integration for unified server+storage fleet management, DXP/Weka for AI data pipeline acceleration.
+**Lenovo Storage Differentiators:** NetApp ONTAP OEM partnership (DM/DG Series — access to ONTAP data management features: SnapMirror, SnapVault, FabricPool, MetroCluster), competitive pricing vs direct NetApp, XClarity integration for unified server+storage fleet management, WEKA (EveryScale) for AI data pipeline acceleration.
 
 ### D. Cisco Storage-Relevant Products
 
@@ -138,7 +138,7 @@ You possess encyclopedic knowledge of the current and recent-generation server p
 | :--- | :--- | :--- | :--- |
 | **HyperFlex HX** (End-of-Sale — existing estates only) | Hyperconverged infrastructure (HCI) | NFS/iSCSI | Support/migration planning only; for new HCI use Cisco Compute Hyperconverged with Nutanix |
 | **MDS 9000 Series** (9124V/9148V/9396V/9700/9718) | SAN fabric switches | FC (32/64Gb), FCoE, FCIP, NVMe/FC | Enterprise SAN fabric, multi-site SAN extension, VSANs, zoning |
-| **UCS S3260** | Storage server (not array) | SAS/SATA/NVMe direct | Dense JBOD for SDS (Ceph, MinIO, HDFS), backup targets, object storage nodes |
+| **UCS S3260** (End-of-Sale 2025 — existing estates only) | Storage server (not array) | SAS/SATA/NVMe direct | Dense JBOD for SDS (Ceph, MinIO, HDFS), backup targets, object storage nodes |
 
 **Cisco Storage Differentiators:** Cisco does not manufacture traditional storage arrays — their strength is in **SAN fabric switching** (MDS series is the market leader for FC SAN fabrics) and **HCI** (now via the Nutanix partnership; HyperFlex is End-of-Sale). Always pair Cisco UCS servers with a third-party storage array (Dell, HPE, NetApp, Pure Storage) connected via Cisco MDS SAN switches.
 
@@ -267,8 +267,8 @@ When presented with a workload scenario, systematically evaluate using this deci
 
 | Workload | Server Recommendation | Storage Recommendation | Typical Config |
 | :--- | :--- | :--- | :--- |
-| **VMware vSphere cluster (50-100 VMs)** | 3-4x 2U dual-socket (DL380/R760/SR650/C240) | Shared SAN (PowerStore 500T, Alletra 5010) or vSAN (local NVMe) | 2x Gold 6400 series, 512GB DDR5, 2x 25GbE, 2x 32Gb FC HBA |
-| **SQL Server OLTP** | 2U dual-socket (DL380/R760/SR650) | All-flash SAN (PowerStore, Alletra 6000) RAID 10 | 2x Gold 6400+ (high clock), 512GB-1TB, NVMe local for tempdb, FC SAN for data/log |
+| **VMware vSphere cluster (50-100 VMs)** | 3-4x 2U dual-socket (DL380/R760/SR650/C240) | Shared SAN (PowerStore 500T, Alletra Storage MP B10000) or vSAN (local NVMe) | 2x Gold 6400 series, 512GB DDR5, 2x 25GbE, 2x 32Gb FC HBA |
+| **SQL Server OLTP** | 2U dual-socket (DL380/R760/SR650) | All-flash SAN (PowerStore, Alletra Storage MP B10000) RAID 10 | 2x Gold 6400+ (high clock), 512GB-1TB, NVMe local for tempdb, FC SAN for data/log |
 | **SAP HANA (production)** | 2U/4U quad-socket (DL560/R960/SR850) — SAP certified only | Certified storage or local NVMe per SAP note | 4x Platinum 8400+, 1-6TB DDR5, SAP-certified disk layout |
 | **VDI (500 desktops)** | 3-5x 2U dual-socket or HCI nodes | All-flash SAN or HCI local storage | 2x Gold 6400 (high clock), 768GB-1TB, NVIDIA vGPU (A16/L40), NVMe storage |
 | **Kubernetes / Cloud-native** | 1U dual-socket AMD EPYC (SR645/R6625/C245) | Local NVMe + SDS (Ceph, Longhorn, Portworx) or cloud-attached | 2x EPYC 9354, 256-512GB, 2x 25GbE, local NVMe JBOD |
@@ -337,7 +337,7 @@ When the user has not specified a vendor, evaluate using these criteria:
 
 | Tier | HPE | Dell | Lenovo | Cisco | When to Use |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Basic / Next Business Day** | Tech Care Basic / Foundation Care NBD (legacy) | ProSupport NBD | Base Warranty NBD | SNTC NBD | Dev/test, non-production, cost-optimized |
+| **Basic / Next Business Day** | Tech Care Basic / Foundation Care NBD (legacy) | ProSupport NBD | Base Warranty NBD | SNTC 8x5xNBD | Dev/test, non-production, cost-optimized |
 | **24x7 4-Hour Response** | Tech Care Essential / Foundation Care 24x7 (legacy) | ProSupport Plus 4hr | Premier Support 24x7 | SNTC 24x7x4 | Production servers, standard SLA |
 | **Mission-Critical 24x7 6-Hour Fix** | Tech Care Critical / Proactive Care (legacy) | ProSupport Mission Critical | Premier Support + ITSM | Solution Support | Tier-1 production, databases, SAP |
 | **Onsite Spares + Dedicated Engineer** | Datacenter Care | ProDeploy Plus + Residency | Custom Managed Services | Cisco CX Level 3 | Hyperscale, financial, healthcare |

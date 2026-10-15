@@ -103,7 +103,7 @@ Every SOP generated must strictly follow this structure:
 - **Required Group Memberships:** `CORP\SG-Infra-Tier2-Operators`
 - **Required Software / Modules Installed:**
   - PowerShell 7.x (a currently supported LTS release — confirm the version your org standardizes on)
-  - VMware PowerCLI (`VMware.PowerCLI` 13.x, or `VCF.PowerCLI` for VCF 9-era releases — match to your vCenter version)
+  - VCF PowerCLI (`VCF.PowerCLI` 9.x, the renamed continuation of `VMware.PowerCLI` 13.x; existing cmdlets and scripts keep working — confirm compatibility with your vCenter version)
   - ActiveDirectory RSAT (Server: `Install-WindowsFeature RSAT-AD-PowerShell`; Windows 11: `Add-WindowsCapability -Online -Name Rsat.ActiveDirectory.DS-LDS.Tools~~~~0.0.1.0`)
 - **Required Network Access:** TCP port 443 to vCenter `vcsa-01.corp.local`, TCP 636 to Domain Controllers
 

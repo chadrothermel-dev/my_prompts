@@ -52,11 +52,11 @@ ECS compliance is **mandatory** for Elastic Security detection rules, Observabil
 
 | ECS Field | Type | Required For | How to Set in Cribl |
 | :--- | :--- | :--- | :--- |
-| `@timestamp` | `date` (ISO 8601) | Everything — sorting, dashboards, alerts, ML | Normalize `_time` with Auto Timestamp; the Cribl Elasticsearch destination derives `@timestamp` from `_time` (verify in Data Preview). If set explicitly: `C.Time.strftime(_time, '%Y-%m-%dT%H:%M:%S.%LZ')` (`_time` is epoch **seconds**) |
+| `@timestamp` | `date` (ISO 8601) | Everything — sorting, dashboards, alerts, ML | Normalize `_time` with Auto Timestamp; the Cribl Elasticsearch destination renames `_time` to `@timestamp` at delivery (millisecond precision). If set explicitly: `C.Time.strftime(_time, '%Y-%m-%dT%H:%M:%S.%LZ')` (`_time` is epoch **seconds**) |
 | `message` | `text` | Discover, full-text search, fallback display | Eval: `message = _raw` (preserve original event) |
 | `ecs.version` | `keyword` | Schema version identification | Eval: `ecs.version = '<ECS version your target integration/mappings use>'` (verify; do not hardcode an arbitrary version) |
-| `event.kind` | `keyword` | Event classification (allowed values below are a subset — verify against the current ECS reference) | `event`, `alert`, `enrichment`, `metric`, `state`, `pipeline_error`, `signal` |
-| `event.category` | `keyword` (array) | SIEM rule matching | `authentication`, `configuration`, `database`, `driver`, `email`, `file`, `host`, `iam`, `intrusion_detection`, `malware`, `network`, `package`, `process`, `registry`, `session`, `threat`, `vulnerability`, `web` |
+| `event.kind` | `keyword` | Event classification (ECS allowed values; `signal` is reserved for Elastic solutions, `asset` is beta) | `event`, `alert`, `asset`, `enrichment`, `metric`, `state`, `pipeline_error`, `signal` |
+| `event.category` | `keyword` (array) | SIEM rule matching | `api`, `authentication`, `configuration`, `database`, `driver`, `email`, `file`, `host`, `iam`, `intrusion_detection`, `library`, `malware`, `network`, `package`, `process`, `registry`, `session`, `threat`, `vulnerability`, `web` |
 | `event.type` | `keyword` (array) | SIEM rule sub-classification | `access`, `admin`, `allowed`, `change`, `connection`, `creation`, `deletion`, `denied`, `end`, `error`, `group`, `indicator`, `info`, `installation`, `protocol`, `start`, `user` |
 | `event.outcome` | `keyword` | Auth/access result | `success`, `failure`, `unknown` |
 | `event.action` | `keyword` | Specific action taken | Vendor-specific (e.g., `logged-in`, `firewall-rule-matched`) |
@@ -75,7 +75,7 @@ ECS compliance is **mandatory** for Elastic Security detection rules, Observabil
 - **API:** Azure Monitor Logs Ingestion API. The legacy HTTP Data Collector API was retired on September 14, 2026 — never recommend it or the old Cribl "Azure Sentinel (Data Collector)" style config.
 - **Authentication:** Microsoft Entra ID OAuth2 via App Registration — requires Tenant ID, Client ID, and Client Secret (or certificate); the app needs the *Monitoring Metrics Publisher* role on the DCR.
 - **Format:** JSON array payload — fields must exactly match the schema defined in the DCR (Data Collection Rule).
-- **Limits (as of 2026; verify in Azure Monitor service-limits docs):** ~1 MB max per API call, 64 KB max field value, ~2 GB/minute per DCR.
+- **Limits (as of 2026; verify in Azure Monitor service-limits docs):** 1 MB max per API call (compressed or uncompressed), 64 KB max field value, 2 GB/minute and 12,000 requests/minute per DCR (HTTP 429 + `Retry-After` when exceeded).
 - **Cribl Destination Type:** "Microsoft Sentinel" destination — configure with DCR Immutable ID, DCE (Data Collection Endpoint) URL, Stream Name, and Entra credentials.
 
 #### Data Collection Rule (DCR) & Data Collection Endpoint (DCE) Model
@@ -98,7 +98,7 @@ Each DCR defines:
 | :--- | :--- | :--- | :--- | :--- |
 | **Built-in (Analytics)** | `CommonSecurityLog`, `Syslog`, `SecurityEvent`, `AzureActivity` | Standard Analytics | ✅ Full alerting, KQL, workbooks | Security-relevant logs, SIEM detection |
 | **Custom (Analytics)** | `PaloAlto_CL`, `CrowdStrike_CL` | Standard Analytics | ✅ Full alerting | Custom schemas, vendor-specific data |
-| **Basic Tier** | Any table set to Basic | Lower ingestion price than Analytics | ⚠️ Limited KQL, charged per GB queried; alerting support limited | High-volume, low-security-value logs |
+| **Basic Tier** | Supported Azure tables or DCR-based custom tables set to Basic | Lower ingestion price than Analytics | ⚠️ Full KQL but charged per GB queried; no Sentinel analytics rules (only Azure Monitor simple log alerts) | High-volume, low-security-value logs |
 | **Auxiliary / Sentinel data lake** | Tables set to Auxiliary or the data lake tier | Cheapest | ❌ No standard analytics rules; limited querying | Verbose debug/audit logs, compliance archive |
 
 > Tier names, pricing, and alerting capabilities have changed repeatedly (incl. the Microsoft Sentinel data lake). State the assumption and tell the user to confirm on the current Azure Monitor / Sentinel pricing page — never quote a fixed discount percentage.
@@ -234,10 +234,10 @@ Before building any custom pipeline, you **MUST** check the Cribl Pack Dispensar
 
 | Pack Name | Purpose | Use When |
 | :--- | :--- | :--- |
-| **`cribl-microsoft-sentinel`** | Converts vendor logs to CommonSecurityLog format for Sentinel | Routing firewall, IDS/IPS, or network appliance logs to Sentinel's `CommonSecurityLog` table |
-| **`cribl-microsoft-sentinel-syslog-dest`** | Formats data for Sentinel's `Syslog` table | Routing standard syslog data to Sentinel's built-in `Syslog` table |
-| **`cribl-azure-sentinel-csl-dest`** | Post-processing for CommonSecurityLog destination | Ensuring CEF field mappings are correct for Sentinel ingestion |
-| **`cribl-elastic-output`** | Routing post-processor for Elastic Data Streams | Dynamically setting `_index` to the correct data stream name based on log type |
+| **Microsoft Sentinel Pack** (search "Microsoft Sentinel"; confirm ID) | Converts vendor logs (Palo Alto, syslog, Windows events, Fortinet, CEF) to Sentinel table formats | Routing firewall, IDS/IPS, or network appliance logs to Sentinel's `CommonSecurityLog` table |
+| **Sentinel `Syslog`-table formatting** (no dedicated Pack ID confirmed; check the Microsoft Sentinel Pack or search the Dispensary) | Formats data for Sentinel's `Syslog` table | Routing standard syslog data to Sentinel's built-in `Syslog` table |
+| **`cribl-azure-sentinel-csl-dest`** (Microsoft Sentinel Common Security Log) | Post-processing for CommonSecurityLog destination | Ensuring CEF field mappings are correct for Sentinel ingestion |
+| **Elastic data-stream routing** (no dedicated Pack ID confirmed; search the Dispensary for "Elastic" or build a post-processing Pipeline) | Routing post-processor for Elastic Data Streams | Dynamically setting `_index` to the correct data stream name based on log type |
 
 ### Source-Specific Packs
 
@@ -248,7 +248,7 @@ Before building any custom pipeline, you **MUST** check the Cribl Pack Dispensar
 | **`cribl-crowdstrike-rest`** | CrowdStrike REST API events | Handles event stream and detection data from Falcon API |
 | **`cribl-windows-events`** | Windows Event Logs (via Cribl Edge) | Parses Windows Security/System/Application event XML; extracts EventID, account, logon type |
 | **`cribl-edge-for-windows`** | Windows endpoint collection | Comprehensive Windows log collection and normalization for Edge agents |
-| **`cribl-cef-source`** | CEF-formatted syslog | Parses ArcSight Common Event Format into structured fields |
+| **`cribl-common-event-format`** (CEF/LEEF) | CEF- or LEEF-formatted syslog | Pre-processor that parses ArcSight Common Event Format (and LEEF) into structured fields |
 | **`cribl-cisco-asa`** | Cisco ASA/Firepower | Parses ASA syslog messages; extracts ACL actions, NAT translations, VPN events |
 | **`cribl-fortinet`** | Fortinet FortiGate (FortiOS) | Parses FortiGate key-value logs; extracts policy actions, UTM events |
 | **`cribl-office365`** | Microsoft 365 Management Activity API | Processes O365 audit logs (Exchange, SharePoint, Entra ID, DLP) |
@@ -409,7 +409,7 @@ Before generating any pipeline configuration, execute this audit:
 
 2. **Pack Dispensary Check:**
    - Search for an existing Pack for this log source (e.g., `cribl-palo-alto-networks`, `cribl-crowdstrike-fdr`).
-   - Search for destination-specific Packs (e.g., `cribl-microsoft-sentinel`, `cribl-elastic-output`).
+   - Search for destination-specific Packs (e.g., search "Microsoft Sentinel", "Elastic").
    - If a Pack exists, evaluate its pipelines against the ECS and ASIM/CEF requirements.
    - Note any gaps in the Pack that require custom post-processing.
 

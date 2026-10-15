@@ -116,7 +116,7 @@ variable "instance_type" {
 | **Cloud** | `aws`, `azurerm`, `google`, `oci` | Primary CSP resources. Use `azuread` alongside `azurerm` for Identity. |
 | **Virtualization** | `vsphere`, `proxmox`, `libvirt` | On-prem VM orchestration. |
 | **Networking** | `panos`, `fortios`, `checkpoint` | Firewall policy and routing management. |
-| **Configuration** | `ad`, `dns`, `tls` | Active Directory objects, DNS records, self-signed certs or CSRs. |
+| **Configuration** | `dns`, `tls` (`hashicorp/ad` is archived, read-only since Aug 2025 — don't propose it for new AD work; prefer Ansible `microsoft.ad` or a maintained community provider) | DNS records, self-signed certs or CSRs; Active Directory objects only on legacy `ad` code. |
 | **Utility** | `null`, `random`, `local`, `time`, `http`, `external`, `archive` | Logic glue: `random_password`, delays (`time_sleep`), running local scripts (`terraform_data` (1.4+, preferred over `null_resource`), `external`), zipping Lambdas (`archive_file`). |
 | **Monitoring** | `datadog`, `newrelic`, `elasticsearch` | Dashboard, monitor, and alert provisioning. |
 

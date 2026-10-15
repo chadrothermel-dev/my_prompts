@@ -62,7 +62,7 @@ reg export HKLM\SYSTEM\CurrentControlSet\Services\CertSvc\Configuration C:\CA_Ba
 ### Certificate Templates Design
 - Always duplicate a built-in template and edit the copy (built-in V1 templates cannot be edited; never modify built-ins).
 - **Template abuse (ESC1–ESC15):** never combine "Supply in the request" with a Client Authentication/any-purpose EKU and broad enrollment rights; audit with Locksmith, Certify, or PSPKI and require manager approval for such templates.
-- **Strong certificate mapping (KB5014754):** domain controllers enforce strong mapping (Full Enforcement since 2025); ensure online-template certs carry the SID extension and offline/"Supply in request" certs use strong explicit mappings. Verify current enforcement status for the customer's patch level.
+- **Strong certificate mapping (KB5014754):** domain controllers enforce strong mapping (Full Enforcement default since the Feb 11, 2025 update; the `StrongCertificateBindingEnforcement` Compatibility-mode fallback was removed with the Sept 9, 2025 update, so weakly mapped certs now fail on patched DCs); ensure online-template certs carry the SID extension and offline/"Supply in request" certs use strong explicit mappings.
 - **Key Usage:** Restrict to minimum necessary (e.g., Digital Signature, Key Encipherment).
 - **Enhanced Key Usage (EKU):** Define strict scope (e.g., Server Authentication (1.3.6.1.5.5.7.3.1), Client Authentication (1.3.6.1.5.5.7.3.2)).
 - **Subject Name:** Supply in the request for web servers; derive from AD for user/machine Auto-Enrollment.

@@ -92,7 +92,7 @@ Microsoft Sentinel aligns cost with analytic value through these plans (table pl
 
 #### Proven Cost-Cutting Strategies:
 1. **Commitment Tiers Alignment:**
-   - Commitment Tiers start at 50–100 GB/day depending on product and current offer; discount percentages grow with tier size. Never quote tier floors or discount percentages from memory — compute break-even from the current Azure pricing page/calculator for the customer's region and currency.
+   - Commitment Tiers (simplified pricing) run from 100 GB/day up to 50,000 GB/day; a 50 GB/day Sentinel tier is in public preview under a promotion (purchase window extended to Dec 31, 2026, pricing locked to Mar 31, 2027 — check whether it is still offered). Discount percentages grow with tier size. Never quote tier floors or discount percentages from memory — compute break-even from the current Azure pricing page/calculator for the customer's region and currency.
    - Evaluate daily ingestion 30-day moving averages against the break-even point.
    - Commitment tier rules: you can raise a tier at any time; the 31-day commitment period must elapse before lowering it.
 2. **Maximize Zero-Cost & Granted Telemetry:**
@@ -118,7 +118,7 @@ Microsoft Sentinel aligns cost with analytic value through these plans (table pl
 
 #### Rule Archetypes & Selection Matrix
 - **Scheduled Query Rules:** Standard periodic KQL evaluation (e.g., query every 5 minutes looking back 5 minutes). Supports query frequency from 5 minutes to 14 days.
-- **Near-Real-Time (NRT) Rules:** Evaluated every minute looking back 1 minute. Designed for rapid triage of single-event critical indicators (e.g., Tier-0 credential modification). Has query and quota limits (e.g., 50 enabled NRT rules, 30 alerts per run) — check the current NRT limitations page.
+- **Near-Real-Time (NRT) Rules:** Evaluated every minute looking back 1 minute. Designed for rapid triage of single-event critical indicators (e.g., Tier-0 credential modification). Queries can reference multiple tables (joins), watchlists, and multiple workspaces, but have quota limits (e.g., 50 enabled NRT rules, 30 alerts per run) and only suit sources with <12 h ingestion delay — check the current NRT limitations page.
 - **Microsoft Incident Creation (Microsoft security) Rules:** Create Sentinel incidents from Microsoft security product alerts in Azure-portal-only workspaces. Automatically disabled when the workspace is onboarded to the Defender portal (Defender XDR creates incidents).
 - **Fusion:** ML multi-stage correlation for Azure-portal workspaces. In the Defender portal, the Defender XDR correlation engine replaces Fusion.
 - **Threat Intelligence Matching Rules:** Matches telemetry against uploaded or TAXII-fed indicators. Use the STIX-based `ThreatIntelIndicators` / `ThreatIntelObjects` tables; the legacy `ThreatIntelligenceIndicator` table is being retired (verify current status).

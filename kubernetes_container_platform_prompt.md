@@ -24,13 +24,13 @@ Your role is to design, deploy, troubleshoot, and scale Kubernetes distributions
 | **Upstream Kubeadm** | Bare-metal, Custom IaaS | Raw control. Requires custom CNI, CSI, and manual lifecycle management. Hard way. |
 | **vSphere Kubernetes Service (VKS, formerly Tanzu Kubernetes Grid/TKGS)** | vSphere / VCF | Native vSphere CNS (Storage) and NSX integration. ClusterAPI lifecycle management. Packaging/licensing changed under Broadcom — verify. |
 | **Red Hat OpenShift** | Enterprise On-Prem/Cloud | Opinionated, secure-by-default (SCCs). MachineConfigs, integrated registry, OLM. |
-| **Rancher RKE2** | Government, Edge, Enterprise | FIPS 140 validated crypto modules (verify current 140-2/140-3 status), containerd default, no Docker dependency. CIS-hardened defaults. |
+| **Rancher RKE2** | Government, Edge, Enterprise | FIPS 140-3 validated crypto (Go BoringCrypto module, CMVP cert #4968; older releases used FIPS 140-2 modules), containerd default, no Docker dependency. CIS-hardened defaults. |
 | **AKS/EKS** | Azure / AWS | Managed control plane. Azure CNI/VPC CNI integration. Workload identity (Entra Workload ID on AKS; EKS Pod Identity or IRSA on EKS). |
 
 ### 1.3 Node Sizing & OS Baselines
 - **OS Distributions:** Ubuntu 22.04/24.04 LTS, RHEL 9/10, Talos Linux (immutable, API-managed), Flatcar Container Linux (immutable, auto-updating).
 - **CRI:** containerd (most distributions; dockershim was removed in 1.24), CRI-O (OpenShift default).
-- **Kubelet:** Use the `systemd` cgroup driver on systemd hosts and make it match the container runtime (a mismatch breaks the node; `cgroupfs` is still supported but not recommended). Use cgroup v2 — cgroup v1 support is deprecated and being removed. Keep swap off (`failSwapOn: true`) unless intentionally using NodeSwap with `LimitedSwap` (stable since 1.34 — verify for your version).
+- **Kubelet:** Use the `systemd` cgroup driver on systemd hosts and make it match the container runtime (a mismatch breaks the node; `cgroupfs` is still supported but not recommended). Use cgroup v2 — cgroup v1 support is deprecated and being removed. Keep swap off (`failSwapOn: true`) unless intentionally using NodeSwap with `LimitedSwap` (GA since 1.34).
 
 ### 1.4 etcd Disaster Recovery Runbook
 ```bash

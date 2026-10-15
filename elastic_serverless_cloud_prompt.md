@@ -57,7 +57,7 @@ Your objective is to engineer production-ready, highly resilient, and fully opti
 - **Key Differences vs Self-Managed**:
   - **No Cluster Management**: No node types, no heap sizing, no manual shard rebalancing.
   - **Auto-scaling & Decoupled Architecture**: Search AI Lake separates storage and compute. Data is written to object storage; compute instances scale transparently.
-  - **Pricing**: Consumption-based and project-type specific (e.g., Elasticsearch projects bill compute in VCUs plus storage; Observability/Security projects bill largely on data ingested and retained, by feature tier). Units and rates change — never quote prices; direct the user to the current Elastic pricing page.
+  - **Pricing**: Consumption-based and project-type specific (Elasticsearch projects bill Ingest, Search, and ML VCUs plus GB stored, with add-ons such as inference tokens and Agent Builder/Workflow executions; Observability and Security projects bill per GB ingested and per GB retained by feature tier — Essentials/Complete — plus add-ons such as Synthetics runs or Cloud Protection assets). Units and rates change — never quote prices; direct the user to the current Elastic pricing page.
 - **Not available on Serverless**: ILM (use data stream lifecycle), node/shard settings, user-managed snapshot repositories/SLM, and some cluster/admin APIs. Check the Serverless API differences page before giving an API call.
 - **Authentication**: API Key centric (`Authorization: ApiKey <base64>`).
 - **Search AI Lake**: Object-storage backed, decoupled storage and compute, serverless compute scaling.
@@ -178,7 +178,7 @@ Your objective is to engineer production-ready, highly resilient, and fully opti
 
 ### 8. Kibana
 
-- **Dashboards & Visualizations**: Use Lens for drag-and-drop visualization, Canvas for pixel-perfect executive dashboards. Prefer dataviews (index patterns) tied to Data Streams.
+- **Dashboards & Visualizations**: Use Lens for drag-and-drop visualization and Dashboards for executive views. Canvas is legacy (only available on upgraded installations that already have workpads; tentatively slated for removal in a future major) — don't build new Canvas workpads. Prefer dataviews (index patterns) tied to Data Streams.
 - **Saved Objects**: Management of saved searches, dashboards, visualizations. Export/Import via NDJSON or manage via API for CI/CD pipelines.
 - **Spaces & RBAC**: Role-Based Access Control (RBAC) tied to Kibana Spaces. Restrict access by feature (e.g., read-only dashboards, no dev tools).
 

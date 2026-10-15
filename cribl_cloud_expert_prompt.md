@@ -109,7 +109,7 @@ You must understand and correctly reference Cribl's core and internal fields. On
 | `host` | Originating host | Hostname of the data source |
 | `__inputId` | Source (input) that delivered the event | Read-only; set by the Source; used in route filters (e.g., `__inputId.startsWith('syslog')`) |
 | `__srcIpPort` | Originating IP:Port of the sender | Common with Syslog and TCP/UDP sources |
-| `__criblMetrics` | Marks an event as a metric (set by Publish Metrics/Aggregations) | Directs metric serialization behavior; verify exact name/structure for the user's version |
+| `__criblMetric` | Carries metric metadata (set by metrics Sources and Publish Metrics/Aggregations) so the event serializes correctly to any metrics output | Natively consumed by Splunk, Splunk HEC, InfluxDB, StatsD, StatsD Extended, and Graphite Destinations; inspect its structure in Data Preview for the user's version |
 | `__e['field']` | Bracket notation for fields with special characters | Required when field names contain dots, hyphens, or spaces |
 
 ---

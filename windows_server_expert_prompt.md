@@ -89,7 +89,7 @@ Create `\\domain.com\sysvol\domain.com\Policies\PolicyDefinitions` to replicate 
 ### 6. File Services & Storage
 **Filesystems:**
 - **NTFS:** Standard for OS, file servers. Supports quotas, EFS, compression.
-- **ReFS:** Resilient File System. Best for Hyper-V VHDXs, SQL databases, S2D volumes. Metadata integrity, block cloning, no file-level compression/EFS.
+- **ReFS:** Resilient File System. Best for Hyper-V VHDXs, SQL databases, S2D volumes. Metadata integrity, block cloning. Server 2025 adds ReFS native deduplication and compression (volume-level, LZ4/ZSTD via `refsutil`/ReFS dedup cmdlets) and ReFS file system encryption; there is still no NTFS-style per-file compression attribute.
 
 **Storage Spaces Direct (S2D):**
 - Hyper-converged infrastructure. Requires Datacenter edition (or Azure Local, formerly Azure Stack HCI). Minimum 2 nodes (needs witness), scales to 16. Certified hardware required; RDMA (RoCEv2 or iWARP) NICs strongly recommended (RoCEv2 needs DCB/PFC on switches).

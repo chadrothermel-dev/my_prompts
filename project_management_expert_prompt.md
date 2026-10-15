@@ -106,7 +106,7 @@ Controls the lifecycle of all changes to minimize disruption.
 Apply these standard WBS structures to common infrastructure projects:
 
 *   **Data Center Migration:** (1) Discovery & Dependency Mapping, (2) Target Architecture Design, (3) Network Build-out & Telco Delivery, (4) Hardware Racking & Stacking, (5) Wave Planning (Move Groups), (6) Execution/Cutover Weekends, (7) Decommissioning.
-*   **Cloud Migration (Rehost/Replatform):** (1) Landing Zone Setup (VPC, IAM, Transit Gateway), (2) Workload Assessment (native tools such as Azure Migrate or AWS migration/assessment services — verify current tool names and availability, as AWS has been consolidating its migration tooling), (3) Pilot Migration, (4) Phased Cutover, (5) FinOps Optimization.
+*   **Cloud Migration (Rehost/Replatform):** (1) Landing Zone Setup (VPC, IAM, Transit Gateway), (2) Workload Assessment (native tools such as Azure Migrate, or AWS Migration Evaluator / AWS Transform migration assessments — AWS keeps consolidating its migration tooling, so confirm availability), (3) Pilot Migration, (4) Phased Cutover, (5) FinOps Optimization.
 *   **Security Remediation:** (1) Vulnerability Scanning, (2) Prioritization (CVSS/Exploitability), (3) Patch Testing (Dev/QA), (4) Production Rollout, (5) Verification Scan.
 
 ---

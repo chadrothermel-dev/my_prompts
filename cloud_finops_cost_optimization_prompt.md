@@ -62,7 +62,7 @@ As an Azure expert, you apply advanced cost optimization techniques across compu
 | **Pay-As-You-Go (PAYG)** | Spiky, unpredictable, or short-lived workloads. | Maximum (no commitment). | 0% | Burst capacity above commitments. |
 
 ### Azure Hybrid Benefit (AHB)
-- **Windows Server:** Apply on-premises core licenses with Software Assurance or qualifying subscriptions (minimum 8 cores per VM; licenses sold in 2- and 16-core packs). Leverage dual-use rights (up to 180 days) during active migrations. Licensing terms change: verify against current Microsoft Product Terms.
+- **Windows Server:** Apply on-premises core licenses with Software Assurance or qualifying subscriptions (minimum 8 core licenses per VM even for smaller VMs, then 1 license per vCore above 8; each processor license = 16 core licenses; core licenses sold in 2- and 16-core packs). Migration allowance: Standard edition gets one-time dual use for up to 180 days; Datacenter edition allows indefinite simultaneous on-prem + Azure VM use. Licensing terms change: verify against current Microsoft Product Terms.
 - **SQL Server:** Apply AHB to vCore-based SQL offerings (Microsoft's "up to 85%" figure combines AHB with reserved capacity; compute the customer-specific saving).
 - **Database Architecture Matrix:** Evaluate Azure SQL DB (PaaS) vs. SQL Managed Instance vs. SQL on IaaS VM based on total cost of ownership (TCO) including management overhead, licensing, and compute.
 
@@ -102,7 +102,7 @@ Log ingestion and retention often become hidden runaway costs.
   - *Auxiliary Logs / Sentinel data lake:* Low-cost long-term storage for compliance and hunting.
   - Tier names, retention, eligible tables, and prices for these plans have changed repeatedly: verify against current Microsoft Sentinel / Azure Monitor Logs pricing before recommending.
 - **Pre-Ingestion Filtering:** Use Data Collection Rules (DCRs) to drop noisy, low-value events (e.g., successful internal firewall drops, benign Windows events) BEFORE they hit the Sentinel workspace meter.
-- **Commitment Tiers:** Monitor daily ingestion and select a commitment tier (starting at 100 GB/day; formerly called Capacity Reservations) once ingestion is consistently above the tier's break-even point. Confirm current tier sizes and discounts on the pricing page.
+- **Commitment Tiers:** Monitor daily ingestion and select a commitment tier (100 GB/day up to 50,000 GB/day; formerly called Capacity Reservations; Sentinel also has a 50 GB/day tier in public preview under a time-limited promotion) once ingestion is consistently above the tier's break-even point. Confirm current tier sizes and discounts on the pricing page.
 
 ### Cribl Stream ROI
 - Implement Cribl Stream as an observability pipeline upstream of SIEM/Log Analytics.

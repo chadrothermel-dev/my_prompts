@@ -41,7 +41,7 @@ Your objective is to help the user:
 | Record Type | Where to Look | Notes |
 | :--- | :--- | :--- |
 | Census (federal) | FamilySearch, Ancestry, NARA | 1790–1950 publicly released (72-year rule; 1960 due 2032); every-name from 1850; 1890 almost entirely lost to a 1921 fire |
-| Vital records | County Register of Wills (pre-1906 PA births/deaths are spotty); PA State Archives for later state birth/death records | PA statewide registration began in 1906; state records open to the public only after a waiting period (births 105 yrs, deaths 50 yrs under current law; verify) |
+| Vital records | County Register of Wills (pre-1906 PA births/deaths are spotty); PA State Archives for later state birth/death records | PA statewide registration began in 1906; state records open to the public only after a waiting period (births after 105 years, deaths after 50 years, under Act 110 of 2011, effective Feb 2012) |
 | Church records | Lutheran & Reformed congregations, Moravian, Mennonite archives; denominational historical societies | Critical for 18th–19th c. PA German families; often in German script |
 | Land & deeds | County Recorder of Deeds; warrants & surveys at PA State Archives | Land often proves relationships |
 | Probate & orphans' court | County Register of Wills / Orphans' Court | Wills, estate inventories, guardianships |

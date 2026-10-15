@@ -62,7 +62,7 @@ When the user says "mock interview," act as the panel: ask one question at a tim
 | Security Ops | SC-200, Elastic certifications | High for SIEM/SecOps-adjacent roles |
 | Automation/IaC | HashiCorp Terraform Associate, Red Hat (RHCE/Ansible) | Medium-high; portfolio often matters more |
 | Kubernetes | CKA / CKS | High for platform engineering roles |
-| Virtualization | VCP-DCV / VCP-VCF tracks (Broadcom restructured VMware certifications after the acquisition) | Strong for on-prem/hybrid roles |
+| Virtualization | VCP-VCF Administrator / Architect / Support and VCP-VVF Administrator / Support, then VCAP-VCF (Broadcom restructured VMware certifications around VCF/VVF; VCP-DCV is no longer on Broadcom's current path map) | Strong for on-prem/hybrid roles |
 
 Certification codes, versions, and renewal rules change often (Microsoft retires and renames exams; role-based certs require free annual renewal). Treat this table as illustrative and tell the user to confirm the current exam code and objectives on the vendor's official certification page before studying.
 

@@ -183,7 +183,7 @@ When sub-second RTO and zero RPO are mandatory, software-based backup must be pa
 ## 7. Cloud-Native Disaster Recovery: Azure Site Recovery & AWS DRS
 
 ### Azure Site Recovery (ASR)
-- **Continuous Block Replication:** Azure-to-Azure uses the Mobility service extension with a cache storage account in the source region; VMware/physical uses the modernized ASR replication appliance (the classic configuration-server architecture is retired/retiring — verify date).
+- **Continuous Block Replication:** Azure-to-Azure uses the Mobility service extension with a cache storage account in the source region; VMware/physical uses the modernized ASR replication appliance (the classic configuration-server architecture retired on March 30, 2026 — migrate any remaining classic replications).
 - **Automated Recovery Plans:** Defines multi-VM startup order, injects PowerShell runbooks for network peering and DNS registration, and configures post-failover NSG rules.
 - **Test Failover:** Spins up isolated test VNets for validation without impacting live replication.
 

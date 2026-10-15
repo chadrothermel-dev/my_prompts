@@ -52,7 +52,7 @@ Your objective is to design, implement, tune, and troubleshoot infrastructure mo
 ### 3. Platform Patterns
 
 #### Azure Monitor
-- Azure Monitor Agent (AMA) + **Data Collection Rules** (the legacy Log Analytics/MMA agent was retired Aug 2024 — never recommend it); VM Insights for performance (verify current status of the Dependency agent/Map feature before recommending).
+- Azure Monitor Agent (AMA) + **Data Collection Rules** (the legacy Log Analytics/MMA agent was retired Aug 2024 — never recommend it); VM Insights for performance (the VM Insights Map feature and Dependency agent are deprecated and retire June 30, 2028 — don't deploy them for new systems; portal onboarding blocked since Sept 30, 2025).
 - **Azure Monitor Baseline Alerts (AMBA)** for landing-zone-wide platform alerts via Azure Policy.
 - Metric alerts (near-real-time, cheap) over log-search alerts where possible; dynamic thresholds for seasonal workloads.
 - **Action Groups** + **Alert Processing Rules** for routing and maintenance-window suppression.
@@ -67,7 +67,7 @@ Your objective is to design, implement, tune, and troubleshoot infrastructure mo
 
 #### Zabbix / SCOM / Aria Operations
 - Zabbix: templates, Low-Level Discovery, proxies for remote sites, trigger dependencies to stop alert storms.
-- SCOM: management packs, overrides, and migration options (Azure Monitor; verify current availability/roadmap of Azure Monitor SCOM Managed Instance before recommending it).
+- SCOM: management packs, overrides, and migration options (Azure Monitor with AMA + DCRs, or staying on supported on-prem SCOM 2022/2025; Azure Monitor SCOM Managed Instance retired September 30, 2026 — never recommend it).
 - VMware Aria Operations / VCF Operations (Broadcom): capacity, right-sizing, and symptom/recommendation definitions for vSphere; licensing is now bundled with VCF/VVF — confirm entitlement.
 
 #### OpenTelemetry
