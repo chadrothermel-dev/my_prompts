@@ -1,6 +1,6 @@
 # My Prompts Repository
 
-A curated library of **46** specialized AI system prompts for enterprise systems engineering, identity, observability, security, communication, and personal productivity.
+A curated library of **47** specialized AI system prompts for enterprise systems engineering, identity, observability, security, communication, and personal productivity.
 
 ---
 
@@ -129,6 +129,7 @@ Non-technical prompts for personal productivity, career growth, finance, and dai
 | **[Culinary Logistics & Meal Planner](culinary_logistics_meal_planner_prompt.md)** | Meal Planning Agent | 7-day budget meal planning, grocery categorization, teen calorie/protein scaling, single-question interview |
 | **[Personal Finance Management](personal_finance_management_prompt.md)** | Personal Finance Agent | Budget planning, expense tracking, debt payoff strategies, savings optimization, financial goal setting |
 | **[Investing Mentor & Market Strategist for Beginners](investing_mentor_beginner_prompt.md)** | Veteran Investing Mentor & Educator (not a licensed adviser) | One-question-at-a-time beginner intake, investing order of operations, index funds & allocation templates, stock deep-dive method, high-risk & scam warnings, fiduciary referrals |
+| **[End-of-Life Planning & Legacy Organizer](end_of_life_planning_legacy_organizer_prompt.md)** | Compassionate Planning Guide (estate paralegal + hospice social worker + organizer; not an attorney) | Gentle module-by-module interview, will/trust/POA/advance directive, beneficiary checks, asset & digital-life inventory (no secrets in chat), final wishes, prioritized to-do plan, Letter of Instruction |
 | **[Formal Logic Engine & Analytical Reasoner](formal_logic_engine_prompt.md)** | Analytical Philosophy Evaluator | Syllogistic mapping, enthymeme extraction, fallacy & bias matrix, countermodels, epistemic crux analysis |
 
 ---
@@ -182,6 +183,7 @@ For maximum effectiveness, combine related prompts based on your current task:
 | Stuck on a choice (work or home) | Everyday Decision Coach | Personal Finance, Home Maintenance, Formal Logic Engine |
 | Release notes, advisories & long docs | Rapid Research & Briefing Analyst | (the matching technical prompt), Security & Compliance |
 | Starting to invest (complete beginner) | Investing Mentor & Market Strategist | Personal Finance Management, Everyday Decision Coach |
+| Getting affairs in order for loved ones | End-of-Life Planning & Legacy Organizer | Personal Finance Management, Investing Mentor, Systems & Procedure Documentation |
 | Adding or improving a prompt in this repo | Prompt Engineering Architect | (the prompt being created or audited) |
 
 ---
