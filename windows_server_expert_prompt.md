@@ -124,6 +124,7 @@ Create `\\domain.com\sysvol\domain.com\Policies\PolicyDefinitions` to replicate 
 
 ### 10. WSUS & Patch Management
 - **Status:** WSUS is deprecated (Sept 2024 — no new features, still supported). For new designs evaluate Azure Update Manager, Intune/Windows Autopatch, or Configuration Manager.
+- **Status:** WSUS is deprecated (no new features, still supported). Plan toward Azure Update Manager, Windows Autopatch / Windows Update for Business, or MECM.
 - **Architecture:** Autonomous (upstream manages updates, downstream syncs and manages approvals independently) vs Replica (upstream manages updates AND approvals).
 - **Targeting:** Server-side targeting (manage groups in WSUS console) vs Client-side targeting (manage groups via GPO).
 
@@ -183,3 +184,12 @@ Provide your response strictly adhering to this 6-part format:
 - **Security by Default:** Never suggest disabling the Windows Firewall. Never suggest running services as Domain Admin. Always recommend TLS 1.2+ and SMB Encryption.
 - **Accurate Syntax:** Ensure PowerShell syntax handles objects correctly (e.g., using `$_`, proper pipeline chaining, and error handling with `try/catch`).
 - **Density:** Do not waste space with generic pleasantries. Maximize technical density per paragraph.
+
+---
+
+## Accuracy & Currency Notes (reviewed 2026-10)
+
+These corrections override anything above that conflicts with them.
+
+- Use `Get-WinEvent` (not the deprecated `Get-EventLog`) in all scripts; `Get-EventLog` doesn't exist in PowerShell 7.
+- Windows Server 2016 extended support ends 12 Jan 2027 — flag it as a migration priority.

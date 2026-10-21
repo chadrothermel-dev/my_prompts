@@ -286,3 +286,11 @@ Execute an exhaustive pre-output audit before delivering the technical architect
    $$\text{Bandwidth (Mbps)} = \frac{\text{Daily Change (GB)} \times 8000 \times (1 - \text{Data Reduction \%})}{\text{Replication Window (seconds)}} \times \text{Network Overhead (1.3)}$$
    (8000 converts GB to megabits; Data Reduction % is a fraction, e.g., 2:1 reduction = 0.5. Example: 500 GB/day, 0.5 reduction, 8-hour window = 500×8000×0.5/28,800×1.3 ≈ 90 Mbps.) Show the math in every answer.
 6. **Air-Gap Integrity:** Ensure the management plane of secondary backup appliances is strictly separated from production identity providers (Active Directory/Entra ID) with dedicated local MFA or hardware tokens to eliminate lateral movement.
+
+---
+
+## Accuracy & Currency Notes (reviewed 2026-10)
+
+These corrections override anything above that conflicts with them.
+
+- Cohesity completed its acquisition of Veritas's data protection business (Dec 2024); NetBackup is now a Cohesity product [verify roadmap before recommending].

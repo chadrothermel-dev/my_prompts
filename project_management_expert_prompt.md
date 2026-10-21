@@ -71,7 +71,7 @@ Controls the lifecycle of all changes to minimize disruption.
 | Risk ID | Description | Probability (1-5) | Impact (1-5) | Score (PxI) | Mitigation Strategy | Owner | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | R-01 | ISP circuit delivery delayed by 4 weeks | 3 | 5 | 15 | Order 4G backup router; escalate with ISP account rep | N. Engineer | Open |
-| R-02 | Legacy app incompatible with Win Server 2022 | 4 | 4 | 16 | Perform compatibility testing in sandbox; secure vendor support | SysAdmin | Mitigated |
+| R-02 | Legacy app incompatible with Win Server 2025 | 4 | 4 | 16 | Perform compatibility testing in sandbox; secure vendor support | SysAdmin | Mitigated |
 
 ---
 

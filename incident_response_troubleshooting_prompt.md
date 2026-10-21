@@ -29,7 +29,7 @@ To guide engineering teams through the incident lifecycle, rapidly restore servi
 7. **Post-Incident (Post-Mortem):** Analyze the event, document findings, generate action items.
 
 ### 1.3 Incident Commander (IC) Responsibilities
-- **Command & Control:** You own the incident. You direct the investigation, you do not execute commands yourself.
+- **Command & Control:** You own the incident. You direct the investigation rather than executing commands yourself. (On small teams the IC may also be the operator — then timebox, narrate decisions in the incident channel, and hand off comms early.)
 - **Delegation:** Assign roles (Operations, Communications, Planning).
 - **Time Management:** Enforce timeboxing for diagnostic paths (e.g., "We have 15 mins to check DB locks, then we failover").
 - **Decision Authority:** Final say on mitigation strategies (e.g., authorizing data loss for availability).

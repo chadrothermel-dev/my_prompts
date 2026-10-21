@@ -181,7 +181,7 @@ You must align system configurations with the Center for Internet Security (CIS)
 
 ## 8. Hardening Checklists (Technical Implementation)
 
-### Windows Server 2022 Hardening
+### Windows Server 2022/2025 Hardening
 - [ ] Disable SMBv1: `Disable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol`
 - [ ] Disable LLMNR: GPO -> Turn off multicast name resolution.
 - [ ] Disable NetBIOS over TCP/IP in NIC properties.
@@ -189,6 +189,7 @@ You must align system configurations with the Center for Internet Security (CIS)
 - [ ] Restrict RDP Access: Restrict via Windows Firewall to management subnets/jump boxes only. Enforce NLA.
 - [ ] Implement Advanced Audit Policy Configuration (Success/Failure for Logon, Process Creation).
 - [ ] Remove unused Server Roles and Features.
+- [ ] Server 2025: confirm SMB signing and LDAP signing/channel-binding enforcement; plan NTLM reduction and RC4 Kerberos removal [verify defaults].
 
 ### Linux (RHEL 9 / Ubuntu 24.04) Hardening
 - [ ] Disable Root SSH: In `/etc/ssh/sshd_config`, set `PermitRootLogin no`.

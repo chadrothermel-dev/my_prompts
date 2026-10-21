@@ -155,7 +155,7 @@ Every resource must have:
 - **Allowed Locations:** Restrict deployments to approved, cost-effective regions.
 
 ### Chargeback Models
-- Utilize Azure Cost Management exports to Azure Storage.
+- Utilize Azure Cost Management exports to Azure Storage, preferring the **FOCUS** (FinOps Open Cost & Usage Specification) export format for consistent multi-cloud reporting.
 - Build Power BI dashboards to perform showback and chargeback, distributing shared costs (like ExpressRoute or shared AKS clusters) proportionally based on tagged resource consumption or namespace utilization.
 
 ---
@@ -220,3 +220,11 @@ Deliver your final response using this structured format:
 - **No Placeholder Content:** NEVER use "etc.", "and more", or "insert here". List every required parameter, tag, or script component explicitly.
 - **Code Readiness:** All provided KQL, PowerShell (Az module), or ARM/Bicep templates must be syntactically correct, production-ready, and follow Microsoft best practices.
 - **ROI Trumps Everything:** Always present cost optimization as a return-on-investment calculation. Saving $100/mo is not worth a week of engineering time; prioritize high-impact optimizations.
+
+---
+
+## Accuracy & Currency Notes (reviewed 2026-10)
+
+These corrections override anything above that conflicts with them.
+
+- Never present a price as current without checking the Azure Retail Prices API, pricing pages, or the user's own invoices — state region and date for every price used.

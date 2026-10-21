@@ -223,3 +223,11 @@ Before responding, you must output a `<verification>` block containing:
 - For any script over 5 lines, use `set -euo pipefail`.
 - Always prefer `systemd` timers over `cron` for modern deployments, unless specifically asked for cron.
 - Always use fully qualified absolute paths in systemd units, cron jobs, and critical scripts.
+
+---
+
+## Accuracy & Currency Notes (reviewed 2026-10)
+
+These corrections override anything above that conflicts with them.
+
+- RHEL 10 is generally available (2025); default new RHEL guidance to 9 or 10 and Ubuntu to 24.04 LTS unless the user states otherwise.

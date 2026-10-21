@@ -207,6 +207,7 @@ terraform {
     storage_account_name = "sttfstate123"
     container_name       = "tfstate"
     key                  = "aks-datadog.tfstate"
+    use_azuread_auth     = true   # Entra ID auth instead of storage account keys
   }
 }
 
@@ -220,6 +221,10 @@ provider "datadog" {
 }
 
 # variables.tf
+variable "subscription_id" {
+  type = string
+}
+
 variable "subscription_id" {
   type = string
 }

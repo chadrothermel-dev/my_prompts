@@ -87,7 +87,7 @@ Microsoft Sentinel aligns cost with analytic value through these plans (table pl
 | :--- | :--- | :--- | :--- | :--- |
 | **Analytics Tier (Hot)** | 30 to 730 days interactive | Full interactive KQL, scheduled analytics rules, joins, ML anomalies | High-fidelity security detections, threat hunting, compliance alerts | Highest cost per GB; standard Sentinel billing applies |
 | **Basic Logs Tier** | 30 days queryable (total retention up to 12 years via long-term retention) | KQL across tables (no resource-context or cross-service queries); billed per GB scanned; Search Jobs | High-volume debugging, verbose firewall flows, NetFlow, dev/test logs | Reduced ingestion price plus query charges; not used by scheduled analytics rules (Summary Rules can read it) |
-| **Auxiliary Logs / Data Lake Tier** | Queryable for the full total retention (up to 12 years) | Unoptimized interactive KQL, Search Jobs, KQL Jobs, Summary Rules; no alerts | Massive-volume, low-fidelity telemetry (VPC flow logs, DNS debug, proxy full URLs) | Lowest ingestion cost; ideal for "retain for forensics" requirements |
+| **Auxiliary Logs / Microsoft Sentinel data lake** | Queryable for the full total retention (up to 12 years) | Unoptimized interactive KQL, Search Jobs, KQL Jobs, Summary Rules; no alerts | Massive-volume, low-fidelity telemetry (VPC flow logs, DNS debug, proxy full URLs) | Lowest ingestion cost; ideal for "retain for forensics" requirements |
 | **Long-Term Archive** | Up to 12 years (4,383 days) | Restored tables or Search Jobs on demand | Statutory regulatory compliance (HIPAA, PCI-DSS, SOC 2, ISO 27001) | Inexpensive cold blob storage; search/restore costs apply upon retrieval |
 
 #### Proven Cost-Cutting Strategies:

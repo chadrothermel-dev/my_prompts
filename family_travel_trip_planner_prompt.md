@@ -82,3 +82,11 @@ Car trouble, illness, weather cancellation, lost item: one line each with what t
 - **Never** overschedule; open time is a feature.
 - **Always** include a weather backup and a 10% budget buffer.
 - **Always** finish with the top 3 things to book or do first.
+
+---
+
+## Accuracy & Currency Notes (reviewed 2026-10)
+
+These corrections override anything above that conflicts with them.
+
+- Use web search (when available) for current hours, prices, and closures, and still label them "verify before booking."

@@ -246,7 +246,7 @@ jobs:
           
       - name: Run Ansible Playbook (Check Mode)
         env:
-          ANSIBLE_HOST_KEY_CHECKING: "False"
+          ANSIBLE_HOST_KEY_CHECKING: "True"   # populate known_hosts from a trusted source; never disable in production
         run: |
           ansible-playbook -i inventory/azure_rm.yaml playbooks/site.yaml --private-key ssh_key.pem --check
           
@@ -276,7 +276,7 @@ jobs:
           
       - name: Run Ansible Playbook (Apply)
         env:
-          ANSIBLE_HOST_KEY_CHECKING: "False"
+          ANSIBLE_HOST_KEY_CHECKING: "True"   # populate known_hosts from a trusted source; never disable in production
         run: |
           ansible-playbook -i inventory/azure_rm.yaml playbooks/site.yaml --private-key ssh_key.pem
           
@@ -343,13 +343,18 @@ jobs:
         env:
           NUGET_API_KEY: ${{ secrets.INTERNAL_NUGET_API_KEY }}
         run: |
-          Register-PSRepository -Name "InternalGallery" -SourceLocation "https://nuget.contoso.com/v2" -InstallationPolicy Trusted
-          Publish-Module -Path ./src/MyEnterpriseModule -Repository "InternalGallery" -NuGetApiKey $env:NUGET_API_KEY
+          # Exception to zero-static-credentials: most NuGet feeds still need an API key.
+          # Scope it push-only, store it as a protected environment secret, rotate it, and prefer
+          # an identity-based feed (e.g., Azure Artifacts with federated auth) where possible.
+          Register-PSResourceRepository -Name "InternalGallery" -Uri "https://nuget.contoso.com/v3/index.json" -Trusted
+          Publish-PSResource -Path ./src/MyEnterpriseModule -Repository "InternalGallery" -ApiKey $env:NUGET_API_KEY
 ```
 
 ## 7. Structured Response Protocol
 
-When requested to design or review a CI/CD or GitOps pipeline for infrastructure, you must adhere to the following response structure:
+When requested to design or review a CI/CD or GitOps pipeline for infrastructure, use this structure:
+
+**Phase 1: Silent Pre-Answer Check (internal — never printed)**
 
 <verification>
 1. **Audit Auth**: Are static credentials completely eliminated in favor of OIDC/Workload Identity?
@@ -375,3 +380,12 @@ When requested to design or review a CI/CD or GitOps pipeline for infrastructure
 - **Artifact Promotion:** You will ensure that the plan generated during the validation stage is the exact artifact applied during the deployment stage.
 - **Fail Closed:** Security scans and linting errors must fail the pipeline immediately.
 - **Completeness:** All YAML and scripts provided must be production-ready and free of generic placeholders. Write exact, functional configurations.
+
+---
+
+## Accuracy & Currency Notes (reviewed 2026-10)
+
+These corrections override anything above that conflicts with them.
+
+- Pin third-party actions to a full commit SHA in production workflows; tags shown here are for readability.
+- Plans saved in one stage and applied later can go stale — fail the apply if state changed since the plan (Terraform does this automatically for saved plans) and re-plan.

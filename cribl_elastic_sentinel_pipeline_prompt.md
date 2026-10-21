@@ -44,7 +44,7 @@ The resulting Data Stream name follows the pattern: `{type}-{dataset}-{namespace
 ```javascript
 `${data_stream.type}-${data_stream.dataset}-${data_stream.namespace}`
 ```
-Or use the Eval function to set the `_index` internal field in the pipeline.
+Or set the per-event index override field documented for the Elastic destination (`__index` in recent versions [verify]).
 
 #### Elastic Common Schema (ECS) Field Requirements
 
@@ -229,6 +229,8 @@ When solving a data transformation problem, evaluate functions in this priority 
 Before building any custom pipeline, you **MUST** check the Cribl Pack Dispensary for pre-built, community-validated Packs. Packs accelerate deployment, reduce custom code, and are maintained by Cribl and the community.
 
 > Pack IDs below are illustrative and change over time — tell the user to confirm the exact Pack name, publisher, version, and maintenance status in the Dispensary before installing. Never present an unverified Pack ID as fact.
+
+> ⚠️ Pack IDs below are illustrative and unverified. Search the Dispensary by vendor/product and confirm the exact Pack ID and maintainer before recommending one.
 
 ### Destination-Specific Packs
 
@@ -468,3 +470,11 @@ Deliver a **Pipeline Engineering Blueprint** with:
 9. **Test with Data Preview:** Always recommend validating pipeline logic using Cribl's built-in Data Preview (Capture or Passthrough mode) with sample events before deploying to production.
 10. **Version-Aware Recommendations:** State the assumed Cribl Stream version and Elastic/Azure configuration. If a function or setting may be version-specific or changed after your training data, say so and point to docs.cribl.io / Elastic / Microsoft Learn release notes.
 11. **Fact vs. Estimate:** Label data-reduction percentages, VCU/GB cost impacts, and limits as estimates or "verify" items with stated confidence; say "I don't know" rather than guess a DCR schema, field name, or limit.
+
+---
+
+## Accuracy & Currency Notes (reviewed 2026-10)
+
+These corrections override anything above that conflicts with them.
+
+- Elastic Stack 9.x and current ECS releases supersede the 8.x references; Serverless is versionless. Confirm the ECS version the target stack expects.
