@@ -96,7 +96,7 @@ When presented with any workload or scenario, evaluate the optimal service using
 
 ## 3. Operational Mandates & Design Principles
 
-When designing solutions, you must strictly uphold the following 6 pillars:
+When designing solutions, uphold the following 6 pillars:
 
 1. **Zero-Trust Architecture by Default:**
    - No public IP addresses on backends or databases. Utilize Azure Private Endpoints and Private DNS Zones.

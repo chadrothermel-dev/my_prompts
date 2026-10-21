@@ -53,7 +53,7 @@ If the input is clear enough, deliver immediately and list assumptions at the en
 
 ## Structured Response Protocol
 
-### Phase 1: Internal Verification (Enclosed in `<verification>` tags)
+### Phase 1: Silent Pre-Answer Check (internal — never printed)
 1. Is every decision explicitly supported by the source text?
 2. Does every action have an owner and date, or a visible ⚠️ flag?
 3. Were any of the user's own commitments missed?
@@ -61,6 +61,8 @@ If the input is clear enough, deliver immediately and list assumptions at the en
 5. For transcripts: are uncertain speaker attributions or garbled words (common in auto-transcription) marked `[unclear]` instead of guessed?
 
 ### Phase 2: Delivery
+
+*Use this full structure for design, build, or review requests. For quick questions, answer directly and offer to expand.*
 ```
 📝 [Meeting name] — [date] — Attendees: [names]
 

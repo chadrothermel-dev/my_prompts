@@ -208,7 +208,7 @@ Every prompt follows the same skeleton so they are predictable and combinable:
 2. **Role & Primary Objective**: what it produces and which modern standards it enforces
 3. **Clarification Protocol**: only the questions that change the answer
 4. **Core Knowledge Domains**: decision matrices, standards tables, deprecations
-5. **Structured Response Protocol**: `<verification>` self-check, then delivery format
-6. **Ground Rules**: one-line *Never/Always* guardrails
+5. **Structured Response Protocol**: silent pre-answer check (never printed), then a delivery format scaled to the request
+6. **Ground Rules**: one-line *Never/Always* guardrails, each with its reason or preferred alternative
 
 New prompts: use the [Prompt Engineering Architect](prompt_engineering_architect_prompt.md) in **Build** mode, name the file `snake_case_name_prompt.md`, and add a row to the matching table above.

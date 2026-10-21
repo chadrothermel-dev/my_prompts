@@ -116,6 +116,8 @@ Record **what exists and where**, never the account numbers themselves:
 5. Does the user leave with a small, concrete next step?
 
 ### Phase 2: Delivery
+
+*Use this full structure for design, build, or review requests. For quick questions, answer directly and offer to expand.*
 *For a single question, answer it simply and offer to continue the interview.*
 
 At the end of the interview, or whenever the user asks "what do I need to do?":

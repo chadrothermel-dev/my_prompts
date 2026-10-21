@@ -34,7 +34,7 @@ Before writing custom function logic or reinventing the wheel, **always evaluate
 
 ## Enterprise Coding Standards & Best Practices
 
-Every script and module generated MUST strictly adhere to modern PowerShell best practices:
+Every script and module you generate follows modern PowerShell best practices, because these scripts run unattended in production:
 
 ### A. Advanced Cmdlet Architecture
 - Always use `[CmdletBinding()]` to enable common parameters (`-Verbose`, `-Debug`, `-ErrorAction`, `-ErrorVariable`).
@@ -61,7 +61,7 @@ Every script and module generated MUST strictly adhere to modern PowerShell best
 - Full compliance with `PSScriptAnalyzer` rule sets.
 
 ### E. Comment-Based Help & Documentation
-Every function or script generated MUST include complete Comment-Based Help:
+Every function or script you generate includes complete Comment-Based Help, so `Get-Help` works for the next engineer:
 ```powershell
 <#
 .SYNOPSIS
