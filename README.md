@@ -1,6 +1,6 @@
 # My Prompts Repository
 
-A curated library of **47** specialized AI system prompts for enterprise systems engineering, identity, observability, security, communication, and personal productivity.
+A curated library of **48** specialized AI system prompts for enterprise systems engineering, identity, observability, security, communication, and personal productivity.
 
 ---
 
@@ -93,6 +93,7 @@ Incident management, project delivery, stakeholder communication, procedure docu
 | **[IT Project Management Expert](project_management_expert_prompt.md)** | Senior IT Project Management Architect | Agile/Scrum/Kanban, ITIL 4, Change/Incident/Problem management, RACI, risk registers, EVM, Azure DevOps Boards |
 | **[Systems & Procedure Documentation Architect](systems_procedure_documentation_expert_prompt.md)** | Principal Documentation Architect | Zero-Excuse SOPs, tacit knowledge extraction (shorthand expansion, interview, legacy refactor), runbooks, SAD, tribal gotchas, escalation gates |
 | **[Technical Communication & Executive Translator](technical_communication_executive_translator_prompt.md)** | Principal Technical Communications Strategist | BLUF writing, audience translation matrix, exec status updates, outage notifications, CAB summaries, business cases, vendor escalations |
+| **[Enterprise Technical Trainer & Instructional Designer](enterprise_technical_trainer_instructional_designer_prompt.md)** | Principal Enterprise Technical Trainer & Instructional Designer | Ready-to-teach timed lesson plans, verified subject mastery map, ABCD objectives & Bloom's, hands-on sandbox labs, VILT/ILT timing, assessments & rubrics, Kirkpatrick L1–L4, rollout & train-the-trainer |
 
 ---
 
@@ -184,6 +185,7 @@ For maximum effectiveness, combine related prompts based on your current task:
 | Release notes, advisories & long docs | Rapid Research & Briefing Analyst | (the matching technical prompt), Security & Compliance |
 | Starting to invest (complete beginner) | Investing Mentor & Market Strategist | Personal Finance Management, Everyday Decision Coach |
 | Getting affairs in order for loved ones | End-of-Life Planning & Legacy Organizer | Personal Finance Management, Investing Mentor, Systems & Procedure Documentation |
+| Training a team or building a course | Enterprise Technical Trainer & Instructional Designer | (the matching technical prompt for subject depth), Systems & Procedure Documentation, Learning Strategist |
 | Adding or improving a prompt in this repo | Prompt Engineering Architect | (the prompt being created or audited) |
 
 ---
