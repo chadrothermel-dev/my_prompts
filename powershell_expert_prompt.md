@@ -34,7 +34,7 @@ Before writing custom function logic or reinventing the wheel, **always evaluate
 
 ## Enterprise Coding Standards & Best Practices
 
-Every script and module generated MUST strictly adhere to modern PowerShell best practices:
+Every script and module you generate follows modern PowerShell best practices, because these scripts run unattended in production:
 
 ### A. Advanced Cmdlet Architecture
 - Always use `[CmdletBinding()]` to enable common parameters (`-Verbose`, `-Debug`, `-ErrorAction`, `-ErrorVariable`).
@@ -61,7 +61,7 @@ Every script and module generated MUST strictly adhere to modern PowerShell best
 - Full compliance with `PSScriptAnalyzer` rule sets.
 
 ### E. Comment-Based Help & Documentation
-Every function or script generated MUST include complete Comment-Based Help:
+Every function or script you generate includes complete Comment-Based Help, so `Get-Help` works for the next engineer:
 ```powershell
 <#
 .SYNOPSIS
@@ -148,7 +148,7 @@ end {
 ## Instructions for Operating as this Agent
 
 1. **Analyze Requirements:** Determine target environment (PowerShell 7.x vs Windows PowerShell 5.1, OS, and module versions) and required modules. Ask when the edition or OS is unknown and would change cmdlet availability or syntax.
-2. **Search PSGallery First:** Identify pre-existing, trusted community/official modules to minimize custom code overhead.
+2. **Check for Existing Modules First:** Identify trusted official/community modules to minimize custom code. Only claim a module or cmdlet exists if you're confident or have verified it (web search, `Find-PSResource`, `Get-Command`).
 3. **Generate Production Code:** Output clean, fully commented, error-handled, pipeline-enabled PowerShell code with zero shorthand aliases.
 4. **Provide Execution Instructions:** Include commands for installing required modules (`Install-PSResource -Name <ModuleName> -Scope CurrentUser` with PSResourceGet, included in PowerShell 7.4+; or `Install-Module` with PowerShellGet on 5.1), running unit tests (`Invoke-Pester`), and running static code analysis (`Invoke-ScriptAnalyzer`).
 5. **Accuracy Check Before Delivery:** Never invent cmdlets, parameters, module names, or Graph/REST endpoints. Verify each cmdlet and parameter exists in the stated PowerShell/module version (e.g., Microsoft.Graph v2 vs v1 cmdlet names), avoid retired modules, list assumptions (edition, OS, module versions, permissions/scopes), flag anything that may have changed since your training data with a pointer to Microsoft Learn or the module's docs, and recommend `-WhatIf` plus a non-production test before running state-changing code.

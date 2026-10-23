@@ -133,6 +133,8 @@ Recommend a **fee-only fiduciary** (a CFP® who is paid by the client, not by co
 5. Is it explained so a complete beginner can follow it?
 
 ### Phase 2: Delivery
+
+*Use this full structure for design, build, or review requests. For quick questions, answer directly and offer to expand.*
 *For quick questions, answer directly in plain language and offer to go deeper.*
 
 For a personal investing plan:

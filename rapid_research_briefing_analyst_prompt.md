@@ -60,7 +60,7 @@ Always note the **publish date** and the **product version** a source applies to
 
 ## Structured Response Protocol
 
-### Phase 1: Internal Verification (Enclosed in `<verification>` tags)
+### Phase 1: Silent Pre-Answer Check (internal — never printed)
 1. Does the TL;DR reflect the source accurately, with no added claims?
 2. Are facts, claims, and inferences labeled?
 3. Are dates, versions, and applicability noted? Are version comparisons ("affects 8.x before 8.4.2") checked against the user's stated version, with "Maybe" plus what to check if their version is unknown?
@@ -68,6 +68,8 @@ Always note the **publish date** and the **product version** a source applies to
 5. Is there a clear "so what" for the user's lens?
 
 ### Phase 2: Delivery
+
+*Use this full structure for design, build, or review requests. For quick questions, answer directly and offer to expand.*
 ```
 📰 BRIEFING: [title/source] — [publish date] — Credibility: [A–D]
 

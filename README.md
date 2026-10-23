@@ -1,6 +1,6 @@
 # My Prompts Repository
 
-A curated library of **49** specialized AI system prompts for enterprise systems engineering, identity, observability, security, communication, and personal productivity.
+A curated library of **52** specialized AI system prompts for enterprise systems engineering, identity, observability, security, communication, and personal productivity.
 
 ---
 
@@ -24,6 +24,7 @@ Core datacenter, virtualization, compute, networking, and operating system promp
 | :--- | :--- | :--- |
 | **[VMware Virtualization Expert](vmware_virtualization_expert_prompt.md)** | Senior Principal Virtualization Architect | ESXi/vCenter/VCSA, HA/DRS/FT, vMotion, vSAN, Distributed Switches, NSX, VCF Operations (Aria), HCX, PowerCLI |
 | **[Windows Server Expert](windows_server_expert_prompt.md)** | Senior Principal Windows Platform Architect | AD DS/FSMO, GPO (LSDOU), DNS/DHCP, Failover Clustering, Hyper-V, IIS, Storage Spaces Direct, PKI, LAPS |
+| **[Windows Workstation Performance & Cleanup Engineer](windows_workstation_tuning_prompt.md)** | Senior Windows Endpoint Engineer | Read-only assessment first, 4-tier findings report (startup / bloatware / review / junk), restore point + reversible changes, Docker/WSL/VM disk reclaim, never-remove list, Docker Desktop repair |
 | **[Linux Systems Administration Expert](linux_systems_administration_prompt.md)** | Senior Principal Linux Systems Architect | systemd, dnf/apt, LVM, SELinux/AppArmor, SSH hardening, Bash scripting, performance tuning, Podman/Docker |
 | **[Enterprise Networking Infrastructure Expert](networking_infrastructure_expert_prompt.md)** | Senior Principal Network Architect | VLANs/STP/LACP, OSPF/BGP routing, Palo Alto/Fortinet firewalls, IPSec/SSL VPN, F5, SD-WAN, 802.1X NAC |
 | **[Enterprise Data Center Hardware Expert](datacenter_hardware_expert_prompt.md)** | Distinguished 30+ Year Hardware Architect | Lenovo/HPE/Dell/Cisco server portfolios, storage arrays, CPU/RAM/NIC selection matrices, workload blueprints |
@@ -39,6 +40,7 @@ Azure cloud services, infrastructure as code, configuration management, and scri
 | :--- | :--- | :--- |
 | **[Azure Cloud Solutions Architect](azure_cloud_solutions_architect_prompt.md)** | Senior Principal Azure Architect | Full Azure service catalog, Zero-Trust, Well-Architected Framework (WAF), Landing Zones (CAF), Bicep/Terraform |
 | **[Terraform Infrastructure Expert](terraform_infrastructure_expert_prompt.md)** | Senior Principal IaC Architect | HCL, multi-provider (Azure/AWS/VMware), state management, modules, Terragrunt, Policy-as-Code (Sentinel/OPA) |
+| **[Personal Web Project Builder & Publisher](web_project_publishing_prompt.md)** | Senior Full-Stack Engineer | Local HTTP/Docker run, hosting matrix (GitHub Pages, Cloudflare, Netlify, Azure SWA), large-media strategy, web-safe video, maps & 3D libraries, Pages Actions deploy, works-locally-broken-online fixes |
 | **[Ansible Automation Expert](ansible_automation_expert_prompt.md)** | Senior Principal Automation Architect | Playbooks, Roles/Collections, AWX/AAP, Jinja2, variable precedence, Vault, Windows/Linux modules, Molecule |
 | **[PowerShell Expert](powershell_expert_prompt.md)** | 20+ Year PowerShell Principal Engineer | Enterprise scripting, PSScriptAnalyzer, pipeline architecture, PSGallery module integration |
 | **[CI/CD & GitOps Infrastructure Pipeline Engineer](cicd_gitops_infrastructure_prompt.md)** | Senior Principal DevSecOps Architect | Azure DevOps YAML, GitHub Actions OIDC, quality gates (tflint/checkov/Pester), Atlantis GitOps, drift detection |
@@ -124,6 +126,7 @@ Non-technical prompts for personal productivity, career growth, finance, and dai
 | **[Tire Evaluation & Best-Value Buying Research Analyst](tire_evaluation_buying_research_prompt.md)** | Veteran Tire Specialist & Consumer Research Analyst | Vehicle & fitment intake (size, load, speed), sidewall & wear-pattern diagnosis, tire categories incl. 3PMSF/EV, out-the-door cost per 10k miles, deep research loop with stop rule, mandatory double-check pass |
 | **[Everyday Computer Help Desk Technician](everyday_computer_help_desk_prompt.md)** | Patient Help Desk Technician for non-technical users | One-action-per-step fix guides, plain-language clarifying questions, "what you should see" checks, OS identification, Wi-Fi/printer/email/password/slow PC fixes, scam pop-up safety, when to call a pro |
 | **[Family Travel & Trip Logistics Planner](family_travel_trip_planner_prompt.md)** | Travel Logistics Planner | Day trips to week-long vacations, pacing rules, teen buy-in, booking priority, weather backups, packing & prep timelines, Game Day mode |
+| **[Video & Media Production Engineer](video_media_production_prompt.md)** | Senior Post-Production Engineer & Media Archivist | Archival/stock footage sourcing with rights notes, 4:3-to-16:9 options, FFmpeg trim/join/encode recipes, PowerPoint & VLC kiosk loops, soundtrack rights, YouTube & web publishing |
 | **[Genealogy & Local History Research Assistant](genealogy_local_history_research_prompt.md)** | Professional Genealogist & Local Historian | Genealogical Proof Standard, PA/Mid-Atlantic record map, PA German church records, brick-wall strategies, archive naming & metadata |
 | **[Learning Strategist & Skill Acquisition Coach](learning_skill_acquisition_coach_prompt.md)** | Learning Scientist & Skill Coach | Project-first learning plans, retrieval & spaced repetition, Anki flashcards, teach & quiz modes, ADHD-friendly 20–30 min sessions |
 | **[Career Interest Discovery & Occupational Fit Assessment](career_interest_discovery_assessment_prompt.md)** | Career Assessment Specialist & Vocational Counselor | Step-by-step RIASEC (Holland Code) interest inventory, O\*NET work values, strengths & peak experiences, work style, constraints, ranked occupation matches, 30-day exploration plan; works for teens through career changers |
@@ -187,6 +190,9 @@ For maximum effectiveness, combine related prompts based on your current task:
 | Starting to invest (complete beginner) | Investing Mentor & Market Strategist | Personal Finance Management, Everyday Decision Coach |
 | Getting affairs in order for loved ones | End-of-Life Planning & Legacy Organizer | Personal Finance Management, Investing Mentor, Systems & Procedure Documentation |
 | Training a team or building a course | Enterprise Technical Trainer & Instructional Designer | (the matching technical prompt for subject depth), Systems & Procedure Documentation, Learning Strategist |
+| Archival video loop or event slideshow | Video & Media Production Engineer | Personal Web Project Builder (streaming page), Windows Workstation Performance (kiosk PC) |
+| Publishing a map, 3D model or video site | Personal Web Project Builder & Publisher | Video & Media Production, CI/CD & GitOps Pipeline Engineer |
+| Slow PC or full disk on a dev workstation | Windows Workstation Performance & Cleanup | PowerShell Expert, Kubernetes & Container Platform Engineer |
 | Buying tires (best quality for the price) | Tire Evaluation & Buying Research Analyst | Everyday Decision Coach, Rapid Research & Briefing Analyst |
 | Adding or improving a prompt in this repo | Prompt Engineering Architect | (the prompt being created or audited) |
 
@@ -210,7 +216,7 @@ Every prompt follows the same skeleton so they are predictable and combinable:
 2. **Role & Primary Objective**: what it produces and which modern standards it enforces
 3. **Clarification Protocol**: only the questions that change the answer
 4. **Core Knowledge Domains**: decision matrices, standards tables, deprecations
-5. **Structured Response Protocol**: `<verification>` self-check, then delivery format
-6. **Ground Rules**: one-line *Never/Always* guardrails
+5. **Structured Response Protocol**: silent pre-answer check (never printed), then a delivery format scaled to the request
+6. **Ground Rules**: one-line *Never/Always* guardrails, each with its reason or preferred alternative
 
 New prompts: use the [Prompt Engineering Architect](prompt_engineering_architect_prompt.md) in **Build** mode, name the file `snake_case_name_prompt.md`, and add a row to the matching table above.
