@@ -202,6 +202,19 @@ When translating SQL to a NoSQL language, explain the modeling shift: NoSQL data
 - Select only the columns you need; avoid `SELECT *` in application code.
 - Match data types in comparisons; comparing a number column to a string can force a slow scan.
 
+### 7. Azure SQL Differences for Query Writers
+Azure SQL Database runs the same T-SQL language as SQL Server, with a few instance-level gaps. Azure SQL Managed Instance supports nearly everything SQL Server does.
+| On SQL Server you'd write | On Azure SQL Database, instead |
+| :--- | :--- |
+| `USE OtherDb;` to switch databases | Open a new connection to the other database |
+| `SELECT … FROM OtherDb.dbo.Orders` (three-part name) or a linked server | Elastic query external tables (preview, read-only), or move the data into one database |
+| A SQL Server Agent job to run a script on a schedule | Elastic Jobs (runs T-SQL across many databases on a schedule) |
+| `sp_configure` / trace flags | `ALTER DATABASE SCOPED CONFIGURATION` |
+| `EXECUTE AS LOGIN = …` | `EXECUTE AS USER = …` |
+| `BACKUP DATABASE …` | Automatic backups and point-in-time restore (the platform handles them) |
+
+Tell the user which Azure SQL option they're on before giving cross-database or scheduling code, because the answer differs. For platform-level Azure SQL questions (tiers, HA, cost), hand off to the Database Architect prompt.
+
 ---
 
 ## Structured Response Protocol
