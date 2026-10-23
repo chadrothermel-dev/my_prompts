@@ -220,7 +220,7 @@ Alert on symptoms users feel (failed connections, latency, replication lag beyon
 
 ### NoSQL & Specialty Platforms
 - **MongoDB:** replica sets for HA, sharding for scale, a shard key chosen carefully because it is hard to change; Atlas for managed service and vector search.
-- **Azure Cosmos DB:** multiple APIs (NoSQL, MongoDB, Cassandra, Gremlin, Table, PostgreSQL); cost and throughput are measured in request units (RUs); the partition key choice determines scale; five consistency levels from strong to eventual.
+- **Azure Cosmos DB:** multiple APIs (NoSQL, MongoDB, Cassandra, Gremlin, Table); cost and throughput are measured in request units (RUs); the partition key choice determines scale; five consistency levels from strong to eventual. Azure Cosmos DB for PostgreSQL is on a retirement path and blocks new deployments; for distributed PostgreSQL, use Elastic Clusters in Azure Database for PostgreSQL flexible server (built on the Citus extension).
 - **Cassandra and DynamoDB:** design one table per query pattern around the partition key; avoid scans; plan secondary indexes deliberately.
 - **Redis and Valkey:** cache and fast data structures with TTLs and eviction policies; persistence is optional, so it's not a system of record by default. Redis licensing changed in 2024 and Valkey is the Linux Foundation fork; confirm current licensing for the user's use case.
 - **Search engines and SIEM data stores** (Elasticsearch, Azure Data Explorer for logs) are covered by the Elastic and Microsoft Sentinel prompts.
@@ -229,7 +229,7 @@ Alert on symptoms users feel (failed connections, latency, replication lag beyon
 
 ## Versions, Lifecycle & Deprecated Technology
 
-> As of October 2026, verified against vendor and lifecycle pages. These dates change; confirm with the official page before planning.
+> As of October 2026. SQL Server, Azure, and PostgreSQL rows were checked against official pages; the Oracle 19c and MySQL dates come from vendor announcements and release reporting. These dates change, so confirm with the official page before planning.
 
 ### Current Releases and Support Windows
 | Platform | Current release | Support notes |
@@ -237,7 +237,7 @@ Alert on symptoms users feel (failed connections, latency, replication lag beyon
 | SQL Server | **2025 (17.x)** | 2022: mainstream ends Jan 11, 2028 · 2019: extended ends Jan 8, 2030 · 2017: extended ends Oct 12, 2027 · **2016: extended support ended Jul 14, 2026** (paid Extended Security Updates available until 2029) · 2014 and earlier: out of support |
 | Oracle Database | **AI Database 26ai** (long-term release) | 19c: Premier Support to Dec 31, 2029, Extended Support to Dec 31, 2032 (per Oracle's 2025 announcement; confirm in MOS note 742060.1) · 21c was an innovation release with short support |
 | PostgreSQL | **18**; 19 in release candidate | Each major supported 5 years · **14 reaches end of life Nov 12, 2026** |
-| MySQL | **9.7 LTS** and **8.4 LTS** | 8.0 is end-of-life (April 2026) · Innovation releases are supported only until the next one ships |
+| MySQL | **9.7 LTS** and **8.4 LTS** | 8.0 is end-of-life (April 2026) · Innovation releases are supported only until the next one ships · releases after 9.7 use calendar versioning (YY.M) (confirm on the MySQL releases page) |
 | Azure Data Studio | Retired Feb 28, 2026 | Use VS Code + MSSQL extension; SSMS for administration |
 
 ### Deprecated or Retired → Use Instead
@@ -259,6 +259,7 @@ Alert on symptoms users feel (failed connections, latency, replication lag beyon
 | MySQL | `mysql_native_password` | `caching_sha2_password` |
 | MySQL | `utf8` (alias of 3-byte `utf8mb3`) | `utf8mb4` |
 | Azure | Azure Database for PostgreSQL Single Server and Azure Database for MySQL Single Server (retired) | The flexible server offerings |
+| Azure | Azure Cosmos DB for PostgreSQL (retirement path; new deployments blocked) | Elastic Clusters in Azure Database for PostgreSQL flexible server; Azure Cosmos DB for NoSQL for NoSQL workloads |
 
 ---
 
