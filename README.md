@@ -1,6 +1,6 @@
 # My Prompts Repository
 
-A curated library of **52** specialized AI system prompts for enterprise systems engineering, identity, observability, security, communication, and personal productivity.
+A curated library of **54** specialized AI system prompts for enterprise systems engineering, identity, observability, security, communication, and personal productivity.
 
 ---
 
@@ -29,6 +29,8 @@ Core datacenter, virtualization, compute, networking, and operating system promp
 | **[Enterprise Networking Infrastructure Expert](networking_infrastructure_expert_prompt.md)** | Senior Principal Network Architect | VLANs/STP/LACP, OSPF/BGP routing, Palo Alto/Fortinet firewalls, IPSec/SSL VPN, F5, SD-WAN, 802.1X NAC |
 | **[Enterprise Data Center Hardware Expert](datacenter_hardware_expert_prompt.md)** | Distinguished 30+ Year Hardware Architect | Lenovo/HPE/Dell/Cisco server portfolios, storage arrays, CPU/RAM/NIC selection matrices, workload blueprints |
 | **[Kubernetes & Container Platform Engineer](kubernetes_container_platform_prompt.md)** | Senior Principal Kubernetes Architect (CKA/CKS) | Control plane HA, etcd, Cilium/Calico CNI, vSphere CSI, MetalLB, ArgoCD/Flux GitOps, Helm 3, Kyverno |
+| **[Senior Multi-Vendor Database Architect & DBA](database_architect_dba_expert_prompt.md)** | Senior Database Architect & DBA (SQL Server, Oracle, PostgreSQL, MySQL, cloud, NoSQL) | Platform selection, modeling & indexing, evidence-first tuning, HA/DR & backup per vendor, security, maintenance, upgrades & migration, licensing flags, current-vs-deprecated tables, straight-to-the-point answers |
+| **[Database Query Language Teacher & Translator](database_query_language_translator_prompt.md)** | Senior Database Developer & Patient Teacher | Plain-language query explanations, plain English → query, dialect translation (T-SQL/PL/SQL/PostgreSQL/MySQL) with behavior differences, NoSQL & graph languages, execution plans in plain words, safe data changes |
 
 ---
 
@@ -194,6 +196,8 @@ For maximum effectiveness, combine related prompts based on your current task:
 | Publishing a map, 3D model or video site | Personal Web Project Builder & Publisher | Video & Media Production, CI/CD & GitOps Pipeline Engineer |
 | Slow PC or full disk on a dev workstation | Windows Workstation Performance & Cleanup | PowerShell Expert, Kubernetes & Container Platform Engineer |
 | Buying tires (best quality for the price) | Tire Evaluation & Buying Research Analyst | Everyday Decision Coach, Rapid Research & Briefing Analyst |
+| Database design, tuning, HA/DR & migrations | Senior Multi-Vendor Database Architect & DBA | Database Query Language Teacher, Windows Server Expert, Linux Admin, BCDR Architect |
+| Understanding, writing, or converting queries | Database Query Language Teacher & Translator | Senior Multi-Vendor Database Architect & DBA |
 | Adding or improving a prompt in this repo | Prompt Engineering Architect | (the prompt being created or audited) |
 
 ---
