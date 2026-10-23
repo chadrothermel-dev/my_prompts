@@ -1,6 +1,6 @@
 # My Prompts Repository
 
-A curated library of **48** specialized AI system prompts for enterprise systems engineering, identity, observability, security, communication, and personal productivity.
+A curated library of **49** specialized AI system prompts for enterprise systems engineering, identity, observability, security, communication, and personal productivity.
 
 ---
 
@@ -121,6 +121,7 @@ Non-technical prompts for personal productivity, career growth, finance, and dai
 | **[Weekly Reset & Life Operating System Coach](weekly_reset_life_planning_prompt.md)** | Personal Operations Coach (GTD + ADHD scaffolding) | 20–30 min weekly reset, brain dump → sort buckets, Big 3 priorities, time-blindness padding, daily/monthly check-ins |
 | **[Health, Fitness & Sustainable Habit Coach](health_fitness_habit_coach_prompt.md)** | Personal Trainer & Habit Coach (non-medical) | Minimum-effective-dose strength plans, "Floor" plans for bad weeks, sleep & energy, desk-worker correctives, habit stacking |
 | **[Home Maintenance & Household Operations Manager](home_maintenance_household_ops_prompt.md)** | Household Ops Manager ("Home as Infrastructure") | Home asset inventory, seasonal PM schedules, DIY vs. pro decisions, contractor vetting, chore matrix, capital replacement forecast |
+| **[Tire Evaluation & Best-Value Buying Research Analyst](tire_evaluation_buying_research_prompt.md)** | Veteran Tire Specialist & Consumer Research Analyst | Vehicle & fitment intake (size, load, speed), sidewall & wear-pattern diagnosis, tire categories incl. 3PMSF/EV, out-the-door cost per 10k miles, deep research loop with stop rule, mandatory double-check pass |
 | **[Everyday Computer Help Desk Technician](everyday_computer_help_desk_prompt.md)** | Patient Help Desk Technician for non-technical users | One-action-per-step fix guides, plain-language clarifying questions, "what you should see" checks, OS identification, Wi-Fi/printer/email/password/slow PC fixes, scam pop-up safety, when to call a pro |
 | **[Family Travel & Trip Logistics Planner](family_travel_trip_planner_prompt.md)** | Travel Logistics Planner | Day trips to week-long vacations, pacing rules, teen buy-in, booking priority, weather backups, packing & prep timelines, Game Day mode |
 | **[Genealogy & Local History Research Assistant](genealogy_local_history_research_prompt.md)** | Professional Genealogist & Local Historian | Genealogical Proof Standard, PA/Mid-Atlantic record map, PA German church records, brick-wall strategies, archive naming & metadata |
@@ -186,6 +187,7 @@ For maximum effectiveness, combine related prompts based on your current task:
 | Starting to invest (complete beginner) | Investing Mentor & Market Strategist | Personal Finance Management, Everyday Decision Coach |
 | Getting affairs in order for loved ones | End-of-Life Planning & Legacy Organizer | Personal Finance Management, Investing Mentor, Systems & Procedure Documentation |
 | Training a team or building a course | Enterprise Technical Trainer & Instructional Designer | (the matching technical prompt for subject depth), Systems & Procedure Documentation, Learning Strategist |
+| Buying tires (best quality for the price) | Tire Evaluation & Buying Research Analyst | Everyday Decision Coach, Rapid Research & Briefing Analyst |
 | Adding or improving a prompt in this repo | Prompt Engineering Architect | (the prompt being created or audited) |
 
 ---
