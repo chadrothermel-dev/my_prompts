@@ -1,6 +1,6 @@
 # My Prompts Repository
 
-A curated library of **54** specialized AI system prompts for enterprise systems engineering, identity, observability, security, communication, and personal productivity.
+A curated library of **55** specialized AI system prompts for enterprise systems engineering, identity, observability, security, communication, and personal productivity.
 
 ---
 
@@ -130,6 +130,7 @@ Non-technical prompts for personal productivity, career growth, finance, and dai
 | **[Family Travel & Trip Logistics Planner](family_travel_trip_planner_prompt.md)** | Travel Logistics Planner | Day trips to week-long vacations, pacing rules, teen buy-in, booking priority, weather backups, packing & prep timelines, Game Day mode |
 | **[Video & Media Production Engineer](video_media_production_prompt.md)** | Senior Post-Production Engineer & Media Archivist | Archival/stock footage sourcing with rights notes, 4:3-to-16:9 options, FFmpeg trim/join/encode recipes, PowerPoint & VLC kiosk loops, soundtrack rights, YouTube & web publishing |
 | **[Genealogy & Local History Research Assistant](genealogy_local_history_research_prompt.md)** | Professional Genealogist & Local Historian | Genealogical Proof Standard, PA/Mid-Atlantic record map, PA German church records, brick-wall strategies, archive naming & metadata |
+| **[Music History Expert & Listening Guide](music_history_expert_prompt.md)** | Veteran Music Historian & Educator | Classical to rock, jazz, blues, country, R&B/soul/funk, hip-hop, electronic, Latin, Caribbean & global; lineage maps, forces of change (technology, migration, industry), plain-language listening vocabulary, listening guides from what you like, contested firsts, fair credit, no lyric reproduction |
 | **[Learning Strategist & Skill Acquisition Coach](learning_skill_acquisition_coach_prompt.md)** | Learning Scientist & Skill Coach | Project-first learning plans, retrieval & spaced repetition, Anki flashcards, teach & quiz modes, ADHD-friendly 20–30 min sessions |
 | **[Career Interest Discovery & Occupational Fit Assessment](career_interest_discovery_assessment_prompt.md)** | Career Assessment Specialist & Vocational Counselor | Step-by-step RIASEC (Holland Code) interest inventory, O\*NET work values, strengths & peak experiences, work style, constraints, ranked occupation matches, 30-day exploration plan; works for teens through career changers |
 | **[Senior Infrastructure Career Strategist & Interview Coach](career_growth_interview_coach_prompt.md)** | Career Strategist & Former Infrastructure Hiring Manager | Brag document/XYZ bullets, resume & LinkedIn tailoring, STAR-L story bank, mock interviews, cert roadmap, negotiation scripts, ADHD-aware job search |
@@ -198,6 +199,7 @@ For maximum effectiveness, combine related prompts based on your current task:
 | Buying tires (best quality for the price) | Tire Evaluation & Buying Research Analyst | Everyday Decision Coach, Rapid Research & Briefing Analyst |
 | Database design, tuning, HA/DR & migrations | Senior Multi-Vendor Database Architect & DBA | Database Query Language Teacher, Windows Server Expert, Linux Admin, BCDR Architect |
 | Understanding, writing, or converting queries | Database Query Language Teacher & Translator | Senior Multi-Vendor Database Architect & DBA |
+| Exploring music history or building a listening list | Music History Expert & Listening Guide | Learning Strategist & Skill Coach, Genealogy & Local History (local music scenes) |
 | Adding or improving a prompt in this repo | Prompt Engineering Architect | (the prompt being created or audited) |
 
 ---
