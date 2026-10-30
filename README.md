@@ -1,6 +1,6 @@
 # My Prompts Repository
 
-A curated library of **55** specialized AI system prompts for enterprise systems engineering, identity, observability, security, communication, and personal productivity.
+A curated library of **57** specialized AI system prompts for enterprise systems engineering, identity, observability, security, communication, and personal productivity.
 
 ---
 
@@ -112,6 +112,8 @@ Short, repeatable prompts built to be used every day: start/end the day, clear t
 | **[Meeting Notes, Decisions & Action Item Extractor](meeting_notes_action_extractor_prompt.md)** | Program Coordinator & Meeting Scribe | Decision vs. discussion separation, owner/due-date enforcement, "your actions" list, CAB/incident/design/vendor/1:1 add-ons, follow-up email draft |
 | **[Everyday Decision Coach & Decision-Fatigue Breaker](everyday_decision_coach_prompt.md)** | Decision Strategist (ADHD-aware) | Two-way vs. one-way door sizing, default rules, satisficing, weighted matrix, pre-mortem, research-loop breaker, always-recommend output |
 | **[Rapid Research & Briefing Analyst](rapid_research_briefing_analyst_prompt.md)** | Senior Research Analyst | 2-minute layered briefings, "does this affect me?" impact checks, source credibility ladder, fact/claim/inference labeling, compare & explain modes |
+| **[Pennsylvania & U.S. Federal Government Research Analyst](pa_federal_government_research_prompt.md)** | Nonpartisan Government Research Analyst & former legislative staffer | PA General Assembly + Congress bill status with exact status ladder, printer's numbers & text versions, laws/regulations (Federal Register, PA Bulletin, IRRC), budgets & spending (IFO, CBO, USAspending), official data (Census, BLS, data.pa.gov), news vs. official record, as-of dates on every live fact, nonpartisan |
+| **[Public Records Request Assistant (PA Right-to-Know & Federal FOIA)](public_records_rtk_foia_request_prompt.md)** | Open-Records Specialist (not an attorney) | Already-public check first, right law & right office, specific send-ready requests, RTKL 5-day/30-day/15-day and FOIA 20-day/90-day deadline math, fee limits & waivers, appeal drafts (OOR, OGIS), drafts only |
 
 ---
 
@@ -190,6 +192,8 @@ For maximum effectiveness, combine related prompts based on your current task:
 | Turning meetings into tracked work | Meeting Notes & Action Item Extractor | IT Project Management, Daily Kickoff & Shutdown |
 | Stuck on a choice (work or home) | Everyday Decision Coach | Personal Finance, Home Maintenance, Formal Logic Engine |
 | Release notes, advisories & long docs | Rapid Research & Briefing Analyst | (the matching technical prompt), Security & Compliance |
+| Bills, laws, budgets & government data (PA + federal) | PA & U.S. Federal Government Research Analyst | Public Records Request Assistant, Rapid Research & Briefing Analyst |
+| Getting records that aren't online (Right-to-Know / FOIA) | Public Records Request Assistant | PA & U.S. Federal Government Research Analyst, Technical Communication & Executive Translator |
 | Starting to invest (complete beginner) | Investing Mentor & Market Strategist | Personal Finance Management, Everyday Decision Coach |
 | Getting affairs in order for loved ones | End-of-Life Planning & Legacy Organizer | Personal Finance Management, Investing Mentor, Systems & Procedure Documentation |
 | Training a team or building a course | Enterprise Technical Trainer & Instructional Designer | (the matching technical prompt for subject depth), Systems & Procedure Documentation, Learning Strategist |
