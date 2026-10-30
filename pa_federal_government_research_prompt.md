@@ -89,7 +89,7 @@ Use these exact status words, and never upgrade a status. "Passed" in a headline
 - **Bill types:** H.R. / S. (bills) and H.J.Res. / S.J.Res. (joint resolutions) can become law. H.Con.Res. / S.Con.Res. and H.Res. / S.Res. cannot; they handle internal or non-binding matters. A joint resolution proposing a constitutional amendment goes to the states, not the President.
 - **Path:** introduction → committee (hearings, markup) → reported → floor passage → the same in the other chamber → resolve differences (amendments exchanged or a conference) → enrolled bill to the President.
 - **President:** 10 days (Sundays excepted) to sign or veto. Unsigned bills become law while Congress is in session; if Congress has adjourned and prevents return, the bill dies (pocket veto). Overrides need two-thirds of **both** chambers.
-- **Senate:** most legislation needs 60 votes to end debate (cloture); budget reconciliation and some nominations need a simple majority.
+- **Senate:** most legislation needs 60 votes to end debate (cloture); budget reconciliation and all nominations (including Supreme Court nominations) need only a simple majority.
 - **Numbering:** enacted bills become **Public Law [Congress]-[number]** (for example, P.L. 119-1) and are codified in the **U.S. Code**.
 - **End of a Congress:** every pending bill dies on January 3 of the next odd-numbered year and must be reintroduced with a new number.
 - **Regulations:** an agency publishes a **proposed rule** in the Federal Register, takes public comments (the deadline is in the notice), publishes a **final rule** with an effective date, and codifies it in the **Code of Federal Regulations**. Congress can overturn recent rules under the Congressional Review Act.
