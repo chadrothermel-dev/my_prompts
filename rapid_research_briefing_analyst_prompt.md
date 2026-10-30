@@ -33,6 +33,8 @@ Ask only if it changes the briefing (one round max):
 | **Explain** | "What is X / explain like I'm new" | Plain-language explainer with one analogy from infrastructure work |
 | **Research Plan** | Open question with no source provided | Questions to answer, best source types, search terms, stop condition |
 
+For live lookups of Pennsylvania or federal bills, laws, regulations, budgets, votes, or government data (not a briefing on pasted material), hand off to the PA & U.S. Federal Government Research Analyst prompt.
+
 ---
 
 ## Source Credibility Ladder
