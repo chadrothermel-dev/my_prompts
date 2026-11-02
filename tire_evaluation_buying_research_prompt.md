@@ -37,6 +37,7 @@ Every recommendation must fit the vehicle **exactly** (size, load index, speed r
 | 7 | **Budget** (per tire or for the full set) and **how long you'll keep the car** | No reason to buy 80,000-mile tires for a car you'll sell next year |
 | 8 | **Current tire condition:** brand/model, age, tread depth, any odd wear, vibration, or slow leaks | Evaluation, and whether to replace 2 or 4 |
 | 9 | **Preferred retailer or installer**, if any | Include them in the price comparison |
+| 10 | **Warning lights** (especially the TPMS light) and **who drives it** (e.g., a new driver, short trips only) | A TPMS light may mean sensor work; a low-mileage or new-driver car changes which tier is the best value |
 
 ---
 
@@ -76,15 +77,22 @@ Every recommendation must fit the vehicle **exactly** (size, load index, speed r
 | Highway / all-terrain / mud-terrain (truck & SUV) | From pavement comfort to off-road traction | Noise, weight, and fuel economy worsen toward mud-terrain |
 | EV-specific / EV-rated | Load, low rolling resistance, low noise (sometimes foam-lined) | Cost; standard tires may reduce range |
 
-### 4. Total Cost, Not Sticker Price
+### 4. TPMS (Tire Pressure Monitoring) & Low-Use Cars
+- **A TPMS warning light** means either low pressure (check and inflate first) or a sensor problem. If the light blinks for about a minute at startup and then stays on, that usually points to a failed sensor or a system fault rather than low air.
+- **Sensor batteries are sealed and typically last roughly 5–10 years.** When one dies, the sensor is replaced. If a car has the original sensors and the tires are being replaced anyway, replacing the sensors at the same visit saves a second round of mounting labor. Ask the shop whether they replace all four or only the failed one.
+- **Service kits vs. new sensors:** a service kit (new valve core, seal, nut) is routine at every tire change; a failed sensor needs a new part. After either, sensors may need a **relearn** or programming step, and the right sensor type (OEM-style vs. programmable universal) depends on the vehicle [verify with the installer].
+- **Low-mileage or short-trip cars and new drivers:** age and sidewall cracking can matter more than tread wear, so a mid-priced, well-reviewed budget-tier tire often beats a premium tire the owner will never wear out. Say so, and still keep wet and snow grip in the comparison.
+
+### 5. Total Cost, Not Sticker Price
 **Out-the-door cost** = tires + mounting + balancing + valve stems or TPMS service kits + disposal fees + taxes + optional road-hazard protection + alignment (recommended with new tires, especially with uneven wear) − rebates.
 
 - **Cost per 10,000 miles** = out-the-door cost ÷ (expected life in miles ÷ 10,000). Use the treadwear warranty as a ceiling, not a promise: warranties are prorated and require documented rotations.
+- **Itemize every quote** (tires, mounting and balancing labor, valve stems or TPMS kit, sensors, disposal, alignment, taxes) and say plainly whether labor is included. If a figure excludes labor, show labor as its own line instead of leaving it out. Labor rates vary by shop, so mark estimates **[verify]** until the shop gives a written quote.
 - Check **manufacturer rebates** (often seasonal), retailer promotions, and **price matching**.
 - Compare installed prices at several retailer types: online sellers with local installers, national tire chains, warehouse clubs, big-box stores, and local independent shops.
 - Watch for up-sells you may not need: nitrogen fills, premium valve stems on non-TPMS cars, and road-hazard plans you won't use.
 
-### 5. Research Sources (Ranked)
+### 6. Research Sources (Ranked)
 | Tier | Source | Use for |
 | :--- | :--- | :--- |
 | A | Vehicle door sticker / owner's manual; tire manufacturer spec pages | Size, load, speed, warranty, UTQG |
@@ -104,7 +112,9 @@ Every recommendation must fit the vehicle **exactly** (size, load index, speed r
 3. **Verify availability** of each candidate in the **exact size and load/speed rating**. Drop any that aren't offered.
 4. **Gather evidence** for each: test results, warranty, UTQG, noise/comfort notes, recalls.
 5. **Price it** at 3 or more sellers, including installation, and note any rebate (amount and end date).
-6. **Score** against the user's weighted priorities and narrow to a Good / Better / Best shortlist.
+6. **Give a purchase link for every shortlisted tire** (one link per option, to the exact size page) and confirm each link loaded and showed the stated price. If a retailer's site blocks the lookup, say so, mark that price **[verify]**, and offer another retailer's page instead of guessing.
+7. **Vet installers when asked** (a named shop or "where should I go"): use public reviews, certifications (e.g., ASE), equipment (TPMS tool, road-force balancer), and a written itemized quote as the evidence. Report only what you found; never invent a shop's prices, hours, or reputation, and do not treat one review as a verdict.
+8. **Score** against the user's weighted priorities and narrow to a Good / Better / Best shortlist.
 
 **Stop rule:** research is complete only when every shortlisted tire (a) is confirmed in the exact size, load index, and speed rating; (b) has performance claims backed by at least two independent sources, or is clearly flagged otherwise; and (c) has prices with a source and a date. If a gap can't be closed, say exactly what's unverified and how the user can check it. Never fill a gap with a guess.
 
@@ -146,7 +156,8 @@ For an evaluation or recommendation:
 4. **My pick:** the one tire and one sentence why, tied to their priorities.
 5. **Where to buy:** the best out-the-door offer found, plus any rebate and its deadline.
 6. **Buying checklist:** confirm the size at the counter, check DOT dates (prefer tires made within about the last year), ask for alignment if needed, keep receipts and the rotation log for the warranty.
-7. **✅ Verified:** a short list of the double-check results, plus anything still marked [verify].
+7. **Report format:** if the user asks for a report or PDF, include the vehicle and fitment, the verdict, the shortlist table, the itemized installed cost (labor shown separately), TPMS findings, installer notes, and purchase links, each priced with its source and date.
+8. **✅ Verified:** a short list of the double-check results, plus anything still marked [verify].
 
 ---
 
